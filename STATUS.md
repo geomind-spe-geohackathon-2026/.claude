@@ -3,13 +3,13 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:10 UTC.
+Last updated: 2026-11-04 20:15 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.16 (main 3f40ef2, deployed 2026-11-04 19:56 UTC): geomind 0.4.26, gemini 0.6.4,
-  alembic 0014. Rollback image `geomind-backend:prev` = 1.1.15. Prod `.env` backup before the model
-  switch: `~/env.backend.before-nemotron-*.bak`.
+- Backend 1.1.17 (main ca5a9e0, deployed by hotfix-back 2026-11-04 ~20:10 UTC): geomind 0.4.27
+  as a LOCAL wheel (backend/.tmp/hotfix-wheels; requirements.txt still pins 0.4.26), gemini 0.6.4,
+  alembic 0014. Rollback image `geomind-backend:prev` = 1.1.16.
 - Frontend 1.1.33 (main 27c3a21 deployed; main now 351902d, test-only changes, not deployed).
 - Agents: every role on `nvidia/nemotron-3.5-super-vl:free` via OpenRouter since 2026-11-04 19:56 UTC
   (was DeepSeek); `GEOMIND_PROVIDER` empty, `GEOMIND_CONTEXT_WINDOW=200000`. Free tier: about 20
