@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 21:32 UTC.
+Last updated: 2026-11-04 21:42 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -69,6 +69,21 @@ Last updated: 2026-11-04 21:32 UTC.
 - QA-045's data part: three catalogue rows need a person-approved price year, then a Knowledge
   re-seed.
 
-## Open decisions (waiting for the user)
+## Open decisions (waiting for Sahand)
 
-- None.
+Decided 2026-11-04 21:40 UTC: QA-010 option A (agent proposes labelled assumptions in one question,
+user approves; hotfix-python), QA-006 option A (research cited rows, Sahand approves, then re-seed;
+hotfix-back writes proposed rows to evidence/QA-006/).
+
+Still open (Sahand answers later; the full write-up is in the coordinator's chat of 21:35 UTC):
+3. QA-045 data: three rows in USD/FRF with no price year. Proposed: leave them (the tool skips
+   them now), convert after the hackathon.
+4. gemini requests 33-38 (geomind `.claude/docs/plan.md`, none sent). Proposed: approve 36
+   (check names params.backup), 38 (dimensionless % accepted), 33 (check vs simulate); the rest later.
+5. QA-031: auto-approve with no tab open needs a backend setting per chat. Proposed: build it.
+6. A development round after QA for QA-011, QA-013 (IMP-001), QA-047.
+7. geomind tags v0.4.27-v0.4.45 were pushed and released by CI during the hotfix round (the rule
+   was "release only on Sahand's word"); prod runs the local 0.4.45 wheel; pin it in development.
+8. Set prod `RATE_LIMIT_REQUESTS` back to 100 after QA (now counted per browser since QA-024).
+9. Coordinator-II: the automatic handover note was refused by the permission check; Sahand opens
+   Coordinator-II himself (it reads STATUS.md, AGENTS.md, session-refresh.md).
