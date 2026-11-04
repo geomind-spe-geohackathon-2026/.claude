@@ -61,3 +61,4 @@ CH4 (gas for a boiler or CHP). 330 operating days of the doublet; backup covers 
 ## Status
 
 (one line per scenario; updated while testing)
+- Setup: project "QA2 qa-func-2 base" (4b318ee0-b410-4e37-8cf6-c835bc76d8c2) created with the PDF and CSVs; first request drafted, not sent. S1-S8 not started.
