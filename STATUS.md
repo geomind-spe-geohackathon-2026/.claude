@@ -7,7 +7,7 @@ Last updated: 2026-11-05 00:20 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.50 (2026-11-05 ~00:30 UTC, QA-031 per-chat auto-approve API): geomind 0.4.49 as a LOCAL wheel,
+- Backend 1.1.53 (2026-11-04 ~23:35 UTC, QA-011, QA-013): geomind 0.4.54 as a LOCAL wheel,
   gemini 0.6.4, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
 - Frontend 1.1.50 (deployed 2026-11-04 21:08 UTC). Hotfix sessions deploy themselves with two calls:
   `cd <repo>`, then exactly `scripts/hotfix_deploy.sh`.
@@ -51,7 +51,10 @@ Last updated: 2026-11-05 00:20 UTC.
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
 - QA sessions qa-1, qa-4, qa-5 paused by Sahand 2026-11-04 23:25 UTC and ARCHIVED ~23:30 UTC;
-  their state is in `notes/sessions/qa-paused-2026-11-04.md`. No QA session runs now. (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+  their state is in `notes/sessions/qa-paused-2026-11-04.md`. QA round 2 started 2026-11-04 23:36 UTC (briefs `notes/qa-round-2/`, agent-browser only):
+  qa-func-1 session_01J2V3UWzfrtoJbvYqwfh6XD (chat + case, Opus), qa-func-2 session_01J2V3UVVo1KkYNZFZvsvmoe
+  (design + simulation, Opus), qa-func-3 session_01J2V3UYXcyVDumnDzjdqJZD (economics, scoring, report,
+  Opus), qa-ux session_01J2V3UYjXaURZYEzofAQh3n (UI/UX, Sonnet). (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
   qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
