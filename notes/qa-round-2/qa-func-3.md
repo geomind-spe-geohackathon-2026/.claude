@@ -54,4 +54,4 @@ pump efficiency 70 %, 330 operating days, supply 100 C heating / 20 C cooling.
 
 ## Status
 
-- S1: not started
+- S1: running (chat 63c70b89-4c1e-496b-b908-2f9220c73457, sent 2026-11-05 ~01:00 UTC). Note: Auto-approve toggle does not switch on before the first message is sent (aria-pressed stays false); works inside the chat. Not yet reported (qa-ux area).
