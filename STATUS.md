@@ -3,11 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 21:42 UTC.
+Last updated: 2026-11-05 00:20 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.43 (deployed by hotfix-back 2026-11-04 21:30 UTC): geomind 0.4.45 as a LOCAL wheel,
+- Backend 1.1.47 (as of 2026-11-05 00:10 UTC): geomind 0.4.48 as a LOCAL wheel,
   gemini 0.6.4, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
 - Frontend 1.1.50 (deployed 2026-11-04 21:08 UTC). Hotfix sessions deploy themselves with two calls:
   `cd <repo>`, then exactly `scripts/hotfix_deploy.sh`.
@@ -38,7 +38,9 @@ Last updated: 2026-11-04 21:42 UTC.
 - Hotfix sessions resumed 2026-11-04 20:25 UTC (paused 20:10-20:25). Deploy windows at :00 and :30 UTC
   only (a blocker may go at once); every deploy still ends running agent runs until QA-035.
 
-- Coordinator: session_01J2V3UXGweG4JrR4wkEWtg9 (opens and closes the sessions, sends reports).
+- Coordinator: Coordinator-II, session_01J2V3UXD6UT73meeapsG2MS (since 2026-11-05 00:20 UTC; opens and
+  closes the sessions, sends reports). Generation 1 (session_01J2V3UXGweG4JrR4wkEWtg9) archived;
+  its handover note is `notes/sessions/coordinator-1.md`.
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
   hotfix-front (session_01J2V3UYxh6obK4VSajGwZvk, area frontend, frontend clone),
   hotfix-back (session_01J2V3UWh6RugyR1DAxrkNhH, areas backend, data, infra, backend clone),
@@ -85,5 +87,4 @@ Still open (Sahand answers later; the full write-up is in the coordinator's chat
 7. geomind tags v0.4.27-v0.4.45 were pushed and released by CI during the hotfix round (the rule
    was "release only on Sahand's word"); prod runs the local 0.4.45 wheel; pin it in development.
 8. Set prod `RATE_LIMIT_REQUESTS` back to 100 after QA (now counted per browser since QA-024).
-9. Coordinator-II: the automatic handover note was refused by the permission check; Sahand opens
-   Coordinator-II himself (it reads STATUS.md, AGENTS.md, session-refresh.md).
+9. Done 2026-11-05 00:20 UTC: Coordinator-II is running (handover was automatic).
