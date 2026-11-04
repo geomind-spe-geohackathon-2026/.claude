@@ -3,18 +3,18 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:20 UTC.
+Last updated: 2026-11-04 20:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.21 (main 8b9ae2b, deployed by the coordinator 2026-11-04 20:16 UTC): geomind 0.4.29 as a
+- Backend 1.1.22 (main a35d668, deployed by the coordinator 2026-11-04 20:20 UTC): geomind 0.4.29 as a
   LOCAL wheel (QA-009 and QA-004 shipped; backend/.tmp/hotfix-wheels; requirements.txt still pins
   0.4.26), gemini 0.6.4, alembic 0014. Prod `.env` backups: `~/env.backend.before-*.bak`.
 - Frontend 1.1.33 deployed; main has 1.1.37 (QA-008, QA-001, QA-005, QA-003) waiting for a deploy:
   the sessions' permission check refuses `scripts/hotfix_deploy.sh` for hotfix-front and hotfix-python.
-- Agents: every role on `~deepseek/deepseek-flash-latest` via OpenRouter since 2026-11-04 20:16 UTC
-  (nemotron 19:56-20:16, DeepSeek v4.1 flash before); `GEOMIND_PROVIDER=deepseek`,
-  `GEOMIND_CONTEXT_WINDOW=200000`. Never a Claude model.
+- Agents: every role on `deepseek/deepseek-v4.1-flash-1017`, OpenRouter provider `morph/fp8` first
+  (`GEOMIND_PROVIDER=morph/fp8`), since 2026-11-04 20:20 UTC; `GEOMIND_CONTEXT_WINDOW=200000`.
+  Never a Claude model.
 
 ## Clones (project root, one clone each, no worktrees)
 

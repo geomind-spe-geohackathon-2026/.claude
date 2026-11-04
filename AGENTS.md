@@ -67,7 +67,7 @@ its file, sets the status, and tells the team in the chat. Follow its README exa
 The full list with reasons is in `.claude/memory/` (files `feedback-*.md`). The ones broken most:
 
 - Chat with Sahand in Persian; write every file in English. Never write a secret into a file.
-- The geomind agents never use a Claude model (production: `~deepseek/deepseek-flash-latest` on OpenRouter). No live run, end-to-end
+- The geomind agents never use a Claude model (production: `deepseek/deepseek-v4.1-flash-1017`, provider `morph/fp8`, on OpenRouter). No live run, end-to-end
   test or LLM token use without Sahand's OK.
 - Nobody asks gemini for anything without Sahand's permission; list needs for him instead.
 - `main` is what production runs. The mode decides the branch, the tests and the way to `main`
