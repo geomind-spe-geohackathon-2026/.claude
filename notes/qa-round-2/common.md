@@ -19,7 +19,8 @@ clearly labelled assumption, or say you do not know); note what was asked.
 
 ## Tool: agent-browser only
 
-- Use `agent-browser` (installed globally; start with `agent-browser skills get core`). Never use
+- Use `agent-browser` (installed globally). Load its guides first: `agent-browser skills get core`,
+  then `agent-browser skills get dogfood` (exploratory testing and QA). Never use
   Playwright or write Playwright scripts.
 - Always pass `--session <your-name>` so sessions do not share a browser. One browser at a time;
   `agent-browser --session <your-name> close` when you pause or finish.
