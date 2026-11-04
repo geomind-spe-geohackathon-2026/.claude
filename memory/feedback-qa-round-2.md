@@ -11,7 +11,8 @@ Sahand, 2026-11-04 ~23:50 UTC, to Coordinator-II:
   for functionality only, with tasks that do not overlap.
 - The functional flow matters most: chatting with the agents, the case, the design, the
   simulation, the economics, the scoring and the report. Not login or account basics.
-- Use good models for the functional sessions (Opus); the UI/UX session may use a cheaper one.
+- Use good models for the functional sessions; since 2026-11-04 23:45 UTC every QA session runs on
+  Sonnet (claude-sonnet-5-5), Sahand's word.
 - Browser tool: agent-browser (vercel-labs, `npm i -g agent-browser`, installed on the Dell) ONLY.
   No Playwright: its token cost is too high. Replaces Playwright in older QA instructions.
 - Inputs: only the competition files (`gemini/examples/hackathon_2026/`: the requirements PDF and

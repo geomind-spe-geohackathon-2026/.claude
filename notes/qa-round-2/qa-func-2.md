@@ -1,6 +1,6 @@
 # qa-func-2: design and simulation
 
-Model: Opus. Rules: `common.md`. Area: FUNCTIONALITY of the design and the simulation. Get to a
+Model: Sonnet (Sahand 2026-11-04 23:45 UTC). Rules: `common.md`. Area: FUNCTIONALITY of the design and the simulation. Get to a
 complete case quickly with your own project (one chat request with the competition files,
 auto-approve on); do not test the case step (qa-func-1's area) unless it blocks you.
 

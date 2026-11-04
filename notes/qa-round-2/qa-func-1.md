@@ -1,6 +1,6 @@
 # qa-func-1: chat and the case
 
-Model: Opus. Rules: `common.md`. Area: FUNCTIONALITY of the chat-driven case, from the first
+Model: Sonnet (Sahand 2026-11-04 23:45 UTC). Rules: `common.md`. Area: FUNCTIONALITY of the chat-driven case, from the first
 message to a complete, correct case. Not UI looks (qa-ux), not design or simulation (qa-func-2),
 not economics, scoring or report (qa-func-3).
 

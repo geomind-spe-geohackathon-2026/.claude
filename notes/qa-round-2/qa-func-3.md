@@ -1,6 +1,6 @@
 # qa-func-3: economics, scoring and report
 
-Model: Opus. Rules: `common.md`. Area: FUNCTIONALITY after the simulation. Get to a simulated
+Model: Sonnet (Sahand 2026-11-04 23:45 UTC). Rules: `common.md`. Area: FUNCTIONALITY after the simulation. Get to a simulated
 design quickly with your own project (competition files, auto-approve on); do not test the case,
 design or simulation steps (qa-func-1, qa-func-2) unless they block you.
 
