@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:45 UTC.
+Last updated: 2026-11-04 20:55 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -56,6 +56,16 @@ Last updated: 2026-11-04 20:45 UTC.
   sessions share the admin account, QA-024). Set it back to 100 after the round (Fatemeh runs it;
   backup `~/env.backend.before-ratelimit.bak`).
 - `~/.claude/settings.json` allows `scripts/hotfix_deploy.sh` (added by Fatemeh 2026-11-04 20:35 UTC).
+
+## To do in development mode after the QA round
+
+- Backend `requirements.txt` still pins geomind 0.4.26; production runs local wheels (geomind up to
+  0.4.41) from `backend/.tmp/hotfix-wheels`: pin the released version, empty the folder.
+- Frontend `src/api/schema.d.ts` was patched by hand for QA-040 (1.1.49): run `npm run gen:api` and
+  review the ~1100-line diff.
+- Set the prod backend `RATE_LIMIT_REQUESTS` back to 100 (QA round only).
+- Run every automated test that needs no LLM in every repo; the hotfixes ran none.
+- QA-011 (resume a nested run after a provider failure) and QA-013 (IMP-001) are development work.
 
 ## Open decisions (waiting for the user)
 
