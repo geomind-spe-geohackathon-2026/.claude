@@ -1,0 +1,52 @@
+diff --git a/.env.example b/.env.example
+index 7ae4f9f..5f757db 100644
+--- a/.env.example
++++ b/.env.example
+@@ -119,3 +119,15 @@ MINIO_PORT=9000
+ MINIO_CONSOLE_PORT=9001
+ API_PORT=8000
+ FRONTEND_PORT=5173
++
++# Agent tools (feature agent-tools-2026-11-05)
++# The host's docker group id, for the worker's sandbox containers.
++DOCKER_GID=1001
++ASSISTANT_SANDBOX=docker
++GEOMIND_SANDBOX_IMAGE=gemini-sandbox:0.6.5
++GEOMIND_SANDBOX_TIMEOUT=60s
++GEOMIND_SANDBOX_MEMORY=1g
++GEOMIND_SANDBOX_DISK=256m
++GEOMIND_SANDBOX_CPU=1
++# SearXNG on the internal network (../infrastructure/searxng).
++GEOMIND_SEARCH_URL=http://searxng:8080
+diff --git a/Dockerfile b/Dockerfile
+index 1382467..d0751cd 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -2,6 +2,10 @@ FROM python:3.12-slim
+ 
+ ENV MALLOC_ARENA_MAX=2
+ 
++# The docker CLI for geomind's run_python sandbox; the worker reaches the host daemon through
++# the socket mounted in compose.yml (ASSISTANT_SANDBOX=docker).
++COPY --from=docker:28-cli /usr/local/bin/docker /usr/local/bin/docker
++
+ WORKDIR /app/backend
+ 
+ COPY requirements.txt ./
+diff --git a/compose.yml b/compose.yml
+index ab7398c..b6f150b 100644
+--- a/compose.yml
++++ b/compose.yml
+@@ -34,6 +34,12 @@ services:
+     <<: *service
+     container_name: geomind-celery
+     command: [python, -m, src.main, --celery]
++    # run_python starts one sandbox container per run on the host daemon (no network, limits
++    # from GEOMIND_SANDBOX_*); DOCKER_GID is the host's docker group.
++    volumes:
++      - /var/run/docker.sock:/var/run/docker.sock
++    group_add:
++      - ${DOCKER_GID:?Set DOCKER_GID in .env}
+ 
+ networks:
+   geomind:
