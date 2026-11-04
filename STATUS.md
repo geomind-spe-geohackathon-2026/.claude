@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:15 UTC.
+Last updated: 2026-11-04 20:30 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -17,7 +17,8 @@ Last updated: 2026-11-04 20:15 UTC.
 - `.claude` (this, agents) and `documents` (people) are repos too, on `main`; set up a machine with `.claude/setup.md`.
 
 - backend, frontend, geomind, infrastructure on `main`; gemini on `dev` (its default branch).
-- geomind still has 10 old worktrees under `geomind/.tmp/`, all synced; Fatemeh removes them.
+- No worktrees anywhere (removed 2026-11-04 20:30 UTC). Old local files: `~/geomind-archive/`
+  (screenshots, QA screenshots of 2026-11-03, the old root git); DB backups `~/geomind-backups/`.
 
 ## How we work now
 
