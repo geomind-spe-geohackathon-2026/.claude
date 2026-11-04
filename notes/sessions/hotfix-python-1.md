@@ -85,3 +85,12 @@ first. Order for you:
 
 Check your context with `get_session` (no id) at the start of each piece; at 75 % follow
 `.claude/session-refresh.md` (your successor is hotfix-python-III).
+
+## Open question from the coordinator (answer it first)
+
+hotfix-back proposes these settings for run_python and search; reply to the coordinator in one
+line, OK or the names/formats geomind needs (check `geomind/runtime.py`, which lists the sandbox
+settings as removed: bring them back): `ASSISTANT_SANDBOX=docker`,
+`GEOMIND_SANDBOX_IMAGE=gemini-sandbox:0.6.5`, `GEOMIND_SANDBOX_TIMEOUT=60s`,
+`GEOMIND_SANDBOX_MEMORY=1g`, `GEOMIND_SANDBOX_DISK=256m`, `GEOMIND_SANDBOX_CPU=1`,
+`GEOMIND_SEARCH_URL=http://searxng:8080`.
