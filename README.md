@@ -7,6 +7,7 @@ every code repo has its own `.claude/` with the same layout. Start with `AGENTS.
 
 | Folder | Holds | When to read |
 |---|---|---|
+| `session-refresh.md` | Project root only. How a session hands over to a fresh one at 75 % context. | When your context reaches 75 %. |
 | `STATUS.md` | Project root only. The short current state: production, clones, how we work now, open decisions. | First, every session; update it the moment any of it changes. |
 | `memory/` | Project root only. The shared memory: standing rules (`feedback-*.md`), decisions and facts, one per file, indexed in `memory/MEMORY.md`. | At the start of every session. |
 | `docs/` | Repos only. Reference for working on the code: API, conventions, testing, structure. | Before changing that repo. |

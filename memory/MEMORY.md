@@ -5,6 +5,7 @@ The shared memory of every Claude session on this project: one fact per file, `[
 Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../handoff/path-map.md) gives where each is now. The newest state of production is in `shared-clones-and-production.md` and the project root `documents/project/ops/`.
 
 ## Since the handoff (NTNU Dell sessions, 2026-11-04)
+- [Session refresh at 75%](feedback-session-refresh.md) — every session hands over to <name>-II, -III at 75% context; .claude/session-refresh.md
 - MODEL (Fatemeh, 2026-11-04 20:20 UTC, done): every geomind role on deepseek/deepseek-v4.1-flash-1017 with OpenRouter provider morph/fp8 (GEOMIND_PROVIDER=morph/fp8), backend 1.1.22 [[feedback-llm-model]]
 - [Write shared context at once](feedback-write-shared-context.md) — anything every session needs goes into root .claude at once: memory (rules), STATUS.md (state), QA (bugs)
 - [docs vs .claude layout](feedback-docs-vs-claude-layout.md) — people: documents/ (root, repo documents) and docs/ (repos); agents: .claude/ (root = repo .claude) and AGENTS.md

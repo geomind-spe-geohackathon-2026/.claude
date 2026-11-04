@@ -29,3 +29,5 @@ Every 30 minutes, and when you finish, send the coordinator one short report wit
 
 
 Commit before you start and when you finish: commit and push your SCENARIOS.md line and every qa.py change at once; never leave uncommitted changes in a shared clone.
+
+At 75 % context, hand over to a fresh session (qa-<n>-II) as `~/geomind-spe-hackathon-2026/.claude/session-refresh.md` says. Read the coordinator's id from `.claude/STATUS.md` before you message it.
