@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:30 UTC.
+Last updated: 2026-11-04 20:12 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -46,8 +46,11 @@ Last updated: 2026-11-04 20:30 UTC.
   hotfix-python (session_01J2V3UVLj3VrnUPsEatss4J, areas geomind, gemini; local wheels).
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
-- QA sessions qa-1 to qa-8: one scenario each (`documents/project/quality-assurance/SCENARIOS.md`);
-  they start once the Playwright system libraries are installed on the Dell.
+- QA sessions (started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+  qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
+  qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
+  qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
+  qa-7 session_01J2V3UVMbdhwimT6VJxfNMq, qa-8 session_01J2V3UW8MS1wyUTdvJmh8UC.
 
 ## Open decisions (waiting for the user)
 
