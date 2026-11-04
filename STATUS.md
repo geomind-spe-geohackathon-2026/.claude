@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:00 UTC.
+Last updated: 2026-11-04 20:05 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -32,6 +32,15 @@ Last updated: 2026-11-04 20:00 UTC.
   QA-010 and IMP-006 need Sahand's decision).
 - No file holds Persian text; chat with the user in Persian.
 - Commit and push everything when a piece of work ends.
+
+## QA round (started 2026-11-04 20:00 UTC)
+
+- Coordinator: session_01J2V3UXGweG4JrR4wkEWtg9 (opens and closes the sessions, sends reports).
+- Hotfix sessions: hotfix-front (session_01J2V3UYxh6obK4VSajGwZvk, frontend clone only) and
+  hotfix-back (session_01J2V3UWh6RugyR1DAxrkNhH, backend, geomind, gemini). They claim bugs with
+  `qa.py next` and deploy with `scripts/hotfix_deploy.sh` (one deploy at a time, a shared lock).
+- QA sessions qa-1 to qa-8: one scenario each (`documents/project/quality-assurance/SCENARIOS.md`);
+  they start once the Playwright system libraries are installed on the Dell.
 
 ## Open decisions (waiting for the user)
 
