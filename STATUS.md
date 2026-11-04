@@ -23,6 +23,9 @@ Last updated: 2026-11-05 00:20 UTC.
 - No worktrees anywhere (removed 2026-11-04 20:30 UTC). Old local files: `~/geomind-archive/`
   (screenshots, QA screenshots of 2026-11-03, the old root git); DB backups `~/geomind-backups/`.
 
+- Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
+  rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
+
 ## How we work now
 
 - Mode: ask the user at the start of every session (development, production, hotfix);
