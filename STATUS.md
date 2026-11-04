@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:25 UTC.
+Last updated: 2026-11-04 20:30 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -35,6 +35,9 @@ Last updated: 2026-11-04 20:25 UTC.
 - Commit and push everything when a piece of work ends.
 
 ## QA round (started 2026-11-04 20:00 UTC)
+
+- PAUSED (Fatemeh, 2026-11-04 20:30 UTC): the hotfix sessions wait for the coordinator's "resume";
+  they claim, fix and deploy nothing until then.
 
 - Coordinator: session_01J2V3UXGweG4JrR4wkEWtg9 (opens and closes the sessions, sends reports).
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
