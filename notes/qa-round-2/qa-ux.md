@@ -45,4 +45,8 @@ Project for all clicking: "QA2 qa-ux flow". Evidence in `/tmp/qa-ux/`, bugs thro
 ## Status
 
 (one line per scenario, updated while testing)
-- S1-S11: not started
+- S1 partial: login, projects list, new-project dialog (validation on blank shared memory OK), chat page. Project "QA2 qa-ux flow" (4cfeab2d-...). At 1280x577 the New project dialog is cut off at top (recheck).
+- S2 done: attach 3 files (chips ready, names truncated), Enter sends.
+- S3 in progress: streaming OK; tool rows jargon ("Search rag 1+ matches" repeated, "Describe case 2+ keys").
+- S4 in progress: set_case approval card -> QA-057 (JSON indentation lost).
+- S5-S11: not started
