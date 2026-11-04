@@ -90,3 +90,9 @@ While an agent is working, the chat shows an animated indicator (spinning circle
 dots) to the left of that agent's name; it goes away when the agent's turn ends, waits for an
 approval, or fails. Each working agent has its own, nested agents too. Stock shadcn/lucide;
 respect prefers-reduced-motion. Independent of sections 1-5; ship at once.
+
+Addition (Sahand ~00:10 UTC): to the RIGHT of the working agent's name, one short line of what
+it is doing now, replaced by the next as each step ends. Source: the current tool call mapped to
+a short phrase per tool ("Reading the case", "Running the simulation", "Searching the web for
+<query>"); no tool running = "Thinking"; an unknown tool shows its name humanised. One line,
+truncated with an ellipsis, full text in a tooltip; muted; no layout jump.
