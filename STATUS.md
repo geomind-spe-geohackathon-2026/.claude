@@ -9,8 +9,10 @@ Last updated: 2026-11-04 21:05 UTC.
 
 - Backend 1.1.40 (deployed by hotfix-back 2026-11-04 21:02 UTC): geomind 0.4.42 as a LOCAL wheel,
   gemini 0.6.4, alembic 0014. Since QA-035 a deploy resumes running runs (verified: 5 resumed).
-- Frontend 1.1.33 deployed; main has 1.1.46 (13 fixes) (QA-008, QA-001, QA-005, QA-003) waiting for a deploy:
-  the sessions' permission check refuses `scripts/hotfix_deploy.sh` for hotfix-front and hotfix-python.
+- Frontend 1.1.46 deployed by Fatemeh 2026-11-04 20:30 UTC (bundle index-DAOiLoAA.js). main 1.1.49
+  (QA-038, QA-036, QA-040 frontend part) fails the image build (type error, plant-ranges.tsx:173);
+  hotfix-front fixes it, then the coordinator deploys (Fatemeh's OK, 21:05 UTC: the coordinator runs
+  `frontend/scripts/hotfix_deploy.sh` whenever a hotfix session's deploy is refused).
 - Agents: every role on `deepseek/deepseek-v4.1-flash-1017`, OpenRouter provider `morph/fp8` first
   (`GEOMIND_PROVIDER=morph/fp8`), since 2026-11-04 20:20 UTC; `GEOMIND_CONTEXT_WINDOW=200000`.
   Never a Claude model.
