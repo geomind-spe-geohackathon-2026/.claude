@@ -11,3 +11,5 @@ Sahand (2026-11-02 20:48, "never, never"): never use Sonnet for the agents; use 
 2026-11-02 20:50 Sahand: for now NO live agent runs and NO LLM token use anywhere (only bug fixes); post-deploy smoke tests must not call the model.
 
 **2026-11-04 19:56 UTC (Fatemeh, done):** production and `.env.example` run every role on `nvidia/nemotron-3.5-super-vl:free`; the backend's `ASSISTANT_MODEL_PREFIX` default is that id (backend 1.1.16). DeepSeek is no longer used.
+
+**2026-11-04 20:16 UTC (Fatemeh, done):** back to DeepSeek, as the alias `~deepseek/deepseek-flash-latest` for every OpenRouter model setting (17 roles, `.env.example`, `ASSISTANT_MODEL_PREFIX` default), `GEOMIND_PROVIDER=deepseek`; backend 1.1.21.

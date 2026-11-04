@@ -5,7 +5,7 @@ The shared memory of every Claude session on this project: one fact per file, `[
 Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../handoff/path-map.md) gives where each is now. The newest state of production is in `shared-clones-and-production.md` and the project root `documents/project/ops/`.
 
 ## Since the handoff (NTNU Dell sessions, 2026-11-04)
-- MODEL (2026-11-04 19:56 UTC, done): every geomind role on nvidia/nemotron-3.5-super-vl:free via OpenRouter, backend 1.1.16; DeepSeek no longer used [[feedback-llm-model]]
+- MODEL (Fatemeh, 2026-11-04 20:16 UTC, done): every geomind role on ~deepseek/deepseek-flash-latest (OpenRouter alias), GEOMIND_PROVIDER=deepseek, backend 1.1.21; nemotron was tried 19:56-20:16 [[feedback-llm-model]]
 - [Write shared context at once](feedback-write-shared-context.md) — anything every session needs goes into root .claude at once: memory (rules), STATUS.md (state), QA (bugs)
 - [docs vs .claude layout](feedback-docs-vs-claude-layout.md) — people: documents/ (root, repo documents) and docs/ (repos); agents: .claude/ (root = repo .claude) and AGENTS.md
 - [Development modes](feedback-development-modes.md) — ask the mode every session: development (dev, all non-LLM tests, agent merges), production (dev, PR a person approves), hotfix (main directly, no tests, deploy, ff dev); always commit and push
