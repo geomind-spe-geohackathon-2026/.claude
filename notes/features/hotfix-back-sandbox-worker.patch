@@ -1,3 +1,26 @@
+diff --git a/.env.dev.example b/.env.dev.example
+index 1f02dbe..ae773cd 100644
+--- a/.env.dev.example
++++ b/.env.dev.example
+@@ -95,3 +95,18 @@ GEOMIND_MEMORY=on
+ GEOMIND_MEMORY_SIMILARITY=0.8
+ GEOMIND_MCP_TIMEOUT=30
+ MALLOC_ARENA_MAX=2
++
++# Agent tools (feature agent-tools-2026-11-05)
++# Not used in dev: compose.yml (production) gives the worker container the host's docker group;
++# stack-up runs the worker on the host.
++DOCKER_GID=
++# stack-up exports none instead when the sandbox image is missing.
++ASSISTANT_SANDBOX=docker
++# The image stack-up pulls or builds: gemini-sandbox:<installed gemini version>.
++GEOMIND_SANDBOX_IMAGE=gemini-sandbox:0.6.5
++GEOMIND_SANDBOX_TIMEOUT=60s
++GEOMIND_SANDBOX_MEMORY=1g
++GEOMIND_SANDBOX_DISK=256m
++GEOMIND_SANDBOX_CPU=1
++# Empty in dev: no SearXNG, so web_search and read_web_page are not offered.
++GEOMIND_SEARCH_URL=
 diff --git a/.env.example b/.env.example
 index 7ae4f9f..5f757db 100644
 --- a/.env.example
@@ -33,6 +56,22 @@ index 1382467..d0751cd 100644
  WORKDIR /app/backend
  
  COPY requirements.txt ./
+diff --git a/README.md b/README.md
+index a1f7fe2..e78eff4 100644
+--- a/README.md
++++ b/README.md
+@@ -54,7 +54,10 @@ value missing. The assistant uses OpenRouter only when `OPENROUTER_API_KEY` is s
+ `.env.dev`; otherwise `ASSISTANT_LLM=fake` plays a scripted run. Logs and pids are in
+ `.tmp/stack/`. With the image `gemini-sandbox:<gemini version>` present (built from a gemini
+ checkout with `make sandbox-image`; stack-up builds it from `.tmp/snap` when missing) the stack
+-uses `ASSISTANT_SANDBOX=docker`.
++uses `ASSISTANT_SANDBOX=docker`. In production the worker container gets the docker CLI and the
++host's socket (`compose.yml`, group `DOCKER_GID`) and runs `GEOMIND_SANDBOX_IMAGE` with the
++`GEOMIND_SANDBOX_*` limits; `GEOMIND_SEARCH_URL` points the agents' `web_search` at SearXNG
++(`../infrastructure/searxng`, internal only). Dev has no SearXNG, so the web tools are off there.
+ 
+ ## Database and checks
+ 
 diff --git a/compose.yml b/compose.yml
 index ab7398c..b6f150b 100644
 --- a/compose.yml
@@ -50,3 +89,14 @@ index ab7398c..b6f150b 100644
  
  networks:
    geomind:
+diff --git a/docs/ASSISTANT.md b/docs/ASSISTANT.md
+index 777355e..6a63253 100644
+--- a/docs/ASSISTANT.md
++++ b/docs/ASSISTANT.md
+@@ -37,5 +37,5 @@ copies a case's MinIO files into a per-run temp folder; documents use
+ ## Settings
+ 
+ `ASSISTANT_LLM` (`openrouter` or `fake`, fake refused in production),
+-`ASSISTANT_SANDBOX` (`none` or `docker`), `ASSISTANT_RUN_MAX_TOKENS` (per run),
++`ASSISTANT_SANDBOX` (`none` or `docker`; `docker` starts geomind's `run_python` sandbox containers from the worker through the host socket, image and limits in `GEOMIND_SANDBOX_IMAGE`, `_TIMEOUT`, `_MEMORY`, `_DISK`, `_CPU`; `DOCKER_GID` is the host's docker group for the worker container), `GEOMIND_SEARCH_URL` (SearXNG for `web_search`, `http://searxng:8080` in production; empty means the web tools are not offered), , `ASSISTANT_RUN_MAX_TOKENS` (per run),
+ `ASSISTANT_DELTA_TTL_SECONDS`.
