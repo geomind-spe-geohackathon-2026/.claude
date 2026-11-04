@@ -27,9 +27,9 @@ Last updated: 2026-11-04 20:15 UTC.
 
 - Mode: ask the user at the start of every session (development, production, hotfix);
   `documents/project/ops/development-modes.md`. Current mode of the last session: hotfix.
-- QA: testing the live app; every bug in `documents/project/quality-assurance/BUGS.md` (QA-001 to QA-014 open,
-  QA-007 blocker: ask_economics fails again and again); ideas in `IMPROVEMENTS.md` (IMP-001 to IMP-009,
-  QA-010 and IMP-006 need Sahand's decision).
+- QA: testing the live app; every bug in `documents/project/quality-assurance/BUGS.md` (QA-001 to QA-019; statuses there,
+  QA-007 blocker: ask_economics fails again and again); ideas in `IMPROVEMENTS.md` (IMP-001 to IMP-011,
+  QA-010 and IMP-006 need Sahand's decision). Run a61cfb19 was left `waiting` with no process after the 20:02 UTC deploy (QA-017).
 - No file holds Persian text; chat with the user in Persian.
 - Commit and push everything when a piece of work ends.
 
