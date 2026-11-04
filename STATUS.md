@@ -3,16 +3,14 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 21:05 UTC.
+Last updated: 2026-11-04 21:32 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.40 (deployed by hotfix-back 2026-11-04 21:02 UTC): geomind 0.4.42 as a LOCAL wheel,
-  gemini 0.6.4, alembic 0014. Since QA-035 a deploy resumes running runs (verified: 5 resumed).
-- Frontend 1.1.46 deployed by Fatemeh 2026-11-04 20:30 UTC (bundle index-DAOiLoAA.js). main 1.1.49
-  (QA-038, QA-036, QA-040 frontend part) fails the image build (type error, plant-ranges.tsx:173);
-  hotfix-front fixes it, then the coordinator deploys (Fatemeh's OK, 21:05 UTC: the coordinator runs
-  `frontend/scripts/hotfix_deploy.sh` whenever a hotfix session's deploy is refused).
+- Backend 1.1.43 (deployed by hotfix-back 2026-11-04 21:30 UTC): geomind 0.4.45 as a LOCAL wheel,
+  gemini 0.6.4, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
+- Frontend 1.1.50 (deployed 2026-11-04 21:08 UTC). Hotfix sessions deploy themselves with two calls:
+  `cd <repo>`, then exactly `scripts/hotfix_deploy.sh`.
 - Agents: every role on `deepseek/deepseek-v4.1-flash-1017`, OpenRouter provider `morph/fp8` first
   (`GEOMIND_PROVIDER=morph/fp8`), since 2026-11-04 20:20 UTC; `GEOMIND_CONTEXT_WINDOW=200000`.
   Never a Claude model.
@@ -66,7 +64,10 @@ Last updated: 2026-11-04 21:05 UTC.
   review the ~1100-line diff.
 - Set the prod backend `RATE_LIMIT_REQUESTS` back to 100 (QA round only).
 - Run every automated test that needs no LLM in every repo; the hotfixes ran none.
-- QA-011 (resume a nested run after a provider failure) and QA-013 (IMP-001) are development work.
+- QA-011 (resume a nested run after a provider failure), QA-013 (IMP-001) and QA-047's record of
+  half-done engineer work are development work.
+- QA-045's data part: three catalogue rows need a person-approved price year, then a Knowledge
+  re-seed.
 
 ## Open decisions (waiting for the user)
 
