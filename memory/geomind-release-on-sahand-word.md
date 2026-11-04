@@ -13,3 +13,5 @@ Release geomind only when Sahand himself says so (2026-11-04: "don't release unt
 **Why:** more changes may come for the new gemini version; also the Dell's permission check refuses production steps (main, tags) unless Sahand asks in his own thread.
 
 **How to apply:** after each piece: merge, push dev, report. A release needs Sahand's message in the thread; then main is fast-forwarded (--ff-only) to dev and tagged. See [[fresh-sessions-for-work]], [[package-release-plan]].
+
+**Replaced 2026-11-05 (Sahand):** see [[feedback-decisions-2026-11-05]].

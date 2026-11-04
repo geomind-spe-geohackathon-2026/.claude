@@ -10,3 +10,5 @@ Sahand, 2026-11-03: gemini's APIs given to others do not change. The version sta
 **Why:** other projects depend on the API, and no API change is planned for now.
 
 **How to apply:** speed work must keep every public name, signature and output; check `test_api_compatibility` and `test_competition_surface`. See [[package-release-plan]] and [[gemini-workspace]].
+
+**Replaced 2026-11-05 (Sahand):** see [[feedback-decisions-2026-11-05]].

@@ -14,3 +14,5 @@ Related: [[gemini-scenario-design]], [[feedback-contribution-gemini-source-of-tr
 
 10:19 Sahand clarified: rule = BACKWARD COMPATIBLE. Nothing existing may break (no rename/removal/signature or behaviour change); additions are allowed if they break nothing. Most important: everything the competition uses stays exactly the same. So API cleanups of leftovers (evaluate.run_all vs verdict, call_* names, physics.control/diagnostics, public ops) are NOT done (they would break). Test: 0.4.0 snapshot must be a subset of the current API (additions ok) + competition-surface test (examples/hackathon.py calls and outputs unchanged).
 10:21 FINAL: one last breaking cleanup (<30 min: remove evaluate.run_all in favour of verdict; move physics.control/diagnostics out of physics; keep call_* and ops) released as 0.5.0. Freeze baseline = 0.5.0: from then backward compatible, nothing geomind relies on may change.
+
+**Replaced 2026-11-05 (Sahand):** see [[feedback-decisions-2026-11-05]].

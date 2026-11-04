@@ -13,3 +13,5 @@ Nobody asks gemini for anything without Sahand's permission. gemini is the sourc
 **Why:** Sahand's permanent rule, relayed by the coordinator on 2026-11-03.
 
 **How to apply:** write the need in the file, mention it to Sahand, and wait for approval. See [[shared-clones-and-production]].
+
+**Replaced 2026-11-05 (Sahand):** see [[feedback-decisions-2026-11-05]].
