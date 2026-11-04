@@ -3,14 +3,15 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:15 UTC.
+Last updated: 2026-11-04 20:25 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.17 (main ca5a9e0, deployed by hotfix-back 2026-11-04 ~20:10 UTC): geomind 0.4.27
-  as a LOCAL wheel (backend/.tmp/hotfix-wheels; requirements.txt still pins 0.4.26), gemini 0.6.4,
-  alembic 0014. Rollback image `geomind-backend:prev` = 1.1.16.
-- Frontend 1.1.33 (main 27c3a21 deployed; main now 351902d, test-only changes, not deployed).
+- Backend 1.1.19 (main 8888753, deployed by hotfix-back 2026-11-04 20:07 UTC): geomind 0.4.28 as a
+  LOCAL wheel (backend/.tmp/hotfix-wheels; requirements.txt still pins 0.4.26), gemini 0.6.4,
+  alembic 0014. On worker start, runs left `running` end as failed/interrupted (QA-017).
+- Frontend 1.1.33 deployed; main has 1.1.37 (QA-008, QA-001, QA-005, QA-003) waiting for a deploy:
+  the sessions' permission check refuses `scripts/hotfix_deploy.sh` for hotfix-front and hotfix-python.
 - Agents: every role on `nvidia/nemotron-3.5-super-vl:free` via OpenRouter since 2026-11-04 19:56 UTC
   (was DeepSeek); `GEOMIND_PROVIDER` empty, `GEOMIND_CONTEXT_WINDOW=200000`. Free tier: about 20
   requests a minute and 1000 a day. Never a Claude model.
