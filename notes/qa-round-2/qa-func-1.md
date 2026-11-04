@@ -96,4 +96,9 @@ labelled assumption in one question; never silently invented.
 
 ## Status
 
-- S1..S10: not started.
+- S1: in progress (2026-11-05 23:39 UTC). Project "QA2 qa-func-1 S1 full case"
+  (a0947848-b958-4ee9-8927-56ec0a9cff03), shared memory Off, auto-approve off, three files
+  attached in New project; first message sent; run active (Geoscientist listing files). No bug yet.
+- S9 note: empty project with files attached shows chips "Build the case from my files", "Build
+  the case by questions", "Which files do you need?" (fine for an empty case; recheck later).
+- S2..S10: not started.
