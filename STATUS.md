@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-04 20:25 UTC.
+Last updated: 2026-11-04 20:35 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -50,6 +50,11 @@ Last updated: 2026-11-04 20:25 UTC.
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
   qa-7 session_01J2V3UVMbdhwimT6VJxfNMq, qa-8 session_01J2V3UW8MS1wyUTdvJmh8UC.
+
+- TEMPORARY for the QA round: prod backend `.env` has `RATE_LIMIT_REQUESTS=1000` (was 100; all QA
+  sessions share the admin account, QA-024). Set it back to 100 after the round (Fatemeh runs it;
+  backup `~/env.backend.before-ratelimit.bak`).
+- `~/.claude/settings.json` allows `scripts/hotfix_deploy.sh` (added by Fatemeh 2026-11-04 20:35 UTC).
 
 ## Open decisions (waiting for the user)
 
