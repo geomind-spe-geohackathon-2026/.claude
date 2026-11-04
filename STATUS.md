@@ -47,8 +47,8 @@ Last updated: 2026-11-05 00:20 UTC.
   hotfix-python (session_01J2V3UVLj3VrnUPsEatss4J, areas geomind, gemini; local wheels).
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
-- QA sessions PAUSED by Sahand 2026-11-04 23:25 UTC (qa-1, qa-4, qa-5; resume only on the
-  coordinator's word). (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+- QA sessions qa-1, qa-4, qa-5 paused by Sahand 2026-11-04 23:25 UTC and ARCHIVED ~23:30 UTC;
+  their state is in `notes/sessions/qa-paused-2026-11-04.md`. No QA session runs now. (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
   qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
