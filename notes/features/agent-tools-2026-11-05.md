@@ -83,3 +83,10 @@ conversions, the geomind agents never use a Claude model.
    result shape; hotfix-front builds the views.
 3. hotfix-python: move the how-to from role prompts into skills.
 4. The QA sessions test the new tools (the coordinator adds them to their briefs).
+
+## 6. Busy indicator next to the agent name (hotfix-front; Sahand 2026-11-05 ~00:05 UTC)
+
+While an agent is working, the chat shows an animated indicator (spinning circle or pulsing
+dots) to the left of that agent's name; it goes away when the agent's turn ends, waits for an
+approval, or fails. Each working agent has its own, nested agents too. Stock shadcn/lucide;
+respect prefers-reduced-motion. Independent of sections 1-5; ship at once.
