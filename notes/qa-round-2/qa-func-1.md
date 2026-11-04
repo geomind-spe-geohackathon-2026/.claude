@@ -21,4 +21,79 @@ Cover at least:
 
 ## Scenarios
 
-(write them here before you test)
+Reference values (from the PDF and the CSVs, checked 2026-11-05 by qa-func-1):
+- Heating CSV: columns `date, heating_demand_MWth`, 365 rows 2027-01-01..2027-12-31, max 30.0 MW
+  on 2027-01-28, min 2.673 MW, 111.668 GWh/year. Cooling CSV: `date, cooling_demand_MWcool`, 365
+  rows, max 10.0 MW on 2027-07-19, 146 days at 0, 23.743 GWh/year.
+- Reservoir: midpoint 2500 m TVD, gross thickness 100 m, gradient 30 C/km, surface 12 C (so
+  87 C at 2500 m), pressure 250 bar(g), permeability 200 mD. Brine: 1030 kg/m3, 0.40 mPa s,
+  GLR 0.8 Nm3/m3 (Nm3 at 0 C, 1.01325 bar(a)), gas 80 mol% CH4, 20 mol% CO2.
+- Constraints: 1-3 doublets, max 300 and min 50 m3/h per doublet, max brine cooling 40 C,
+  pump hydraulic efficiency 70 %, equal production/injection volumes, 330 operating days,
+  supply 100 C heating, 20 C cooling.
+- The PDF gives no site location, no weather, no prices, no return temperatures: anything the
+  agents put there must be asked, sourced (Knowledge/connector with source, publisher, year) or a
+  labelled assumption the user approved.
+
+### qa-func-1-S1: one chat request with the three files (auto-approve off)
+Goal: the first message builds the plan and the case. Steps: New project "QA2 qa-func-1 S1
+full case"; upload the PDF and both CSVs; write "Design a geothermal heating and cooling plant
+for this challenge; the files hold the demand and the requirements." Watch: the project lead
+plans; the case lead and the geoscientist read the files (read/list_files steps); questions are
+clear, one at a time or grouped, answerable from what a user knows. Correct: no question about a
+value the files already give; no tool error loops; the run ends waiting for the user or done.
+
+### qa-func-1-S2: the case against the PDF and the CSVs
+Goal: every case value matches the reference above. Steps: after S1, open the Case page and read
+the case through the chat ("show me the case"). Correct: demand series 365 days, peaks 30.0 and
+10.0 MW on the right dates, totals 111.67 and 23.74 GWh; reservoir, brine, constraints exactly as
+the PDF, with the right units (bar(g) vs bar(a), mol%, Nm3); supply temperatures 100 C and
+20 C. Any value no file gave and no user approved is a bug (no defaults rule).
+
+### qa-func-1-S3: approvals (approve, reject, edit; sources)
+Goal: approval cards are complete and act right. Steps: in S1's chat with auto-approve off,
+approve one set_case, reject one with a reason, edit one value before approving. Correct: the
+card shows values, units and sources; a Knowledge or connector value carries source, publisher,
+year; agent assumptions come labelled in one question (QA-010); reject makes the agent change
+its proposal, not repeat it (QA-042); an edited value is the one stored.
+
+### qa-func-1-S4: auto-approve on
+Goal: the same request with auto-approve on runs without stopping on tool approvals. Steps: new
+project "QA2 qa-func-1 S4 auto"; auto-approve on; same files and request. Correct: no approval
+card waits; questions to the user still appear; the case ends complete; values same as S2.
+
+### qa-func-1-S5: change the case by chat
+Goal: one value changes, nothing else. Steps: in a project with a complete case, write "The
+reservoir is at 3000 m TVD"; then "the permeability is 150 mD". Correct: only depth changes (the
+agent may ask whether temperature should follow the gradient, 102 C, and pressure hydrostatic,
+as the PDF allows; it must ask, not silently change); a new case version; the Case page shows it;
+other values unchanged (compare versions).
+
+### qa-func-1-S6: cancel mid-run and start again
+Goal: no lost work (QA-047, QA-022). Steps: start a case run, cancel while the case lead is
+working, send "go on". Correct: cancelled messages and steps stay in the chat; the next run
+reuses the stored case and saved work, does not start from zero or re-ask answered questions.
+
+### qa-func-1-S7: a run across a deploy (QA-035)
+Goal: a run that spans :00 or :30 UTC resumes. Steps: start a long run a few minutes before a
+deploy window; watch after. Correct: the run resumes, the chat keeps streaming or says what
+happened; no run stuck waiting with no process (QA-017).
+
+### qa-func-1-S8: provider error and retry (QA-011, QA-030)
+Goal: a provider error is retried and shown. Steps: observe during all runs (cannot be forced).
+Correct: the chat shows the retry; the nested run goes on; one bug per error kind.
+
+### qa-func-1-S9: next-step chips follow the state
+Goal: chips match the project state. Steps: read the chips on an empty project, after the files
+are uploaded, with a complete case, after a case change. Correct: no "build the case" chip when a
+case is complete; chips name the next real step (design) (QA-023).
+
+### qa-func-1-S10: a user who does not know
+Goal: questions the files cannot answer are handled. Steps: when asked for a value the files do
+not give (location, weather, return temperatures), answer "I do not know; propose a sourced
+value" or "use your assumption". Correct: a sourced proposal with source/publisher/year, or a
+labelled assumption in one question; never silently invented.
+
+## Status
+
+- S1..S10: not started.
