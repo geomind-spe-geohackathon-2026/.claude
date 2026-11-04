@@ -47,7 +47,7 @@ Last updated: 2026-11-05 00:20 UTC.
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
   hotfix-front (session_01J2V3UYxh6obK4VSajGwZvk, area frontend, frontend clone),
   hotfix-back (session_01J2V3UWh6RugyR1DAxrkNhH, areas backend, data, infra, backend clone),
-  hotfix-python (session_01J2V3UVLj3VrnUPsEatss4J, areas geomind, gemini; local wheels).
+  hotfix-python-II (session_01J2V3UXSA2mo8MG4igf5y4n since 2026-11-04 23:52 UTC, areas geomind, gemini; local wheels).
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
 - QA sessions qa-1, qa-4, qa-5 paused by Sahand 2026-11-04 23:25 UTC and ARCHIVED ~23:30 UTC;
