@@ -7,7 +7,7 @@ Last updated: 2026-11-05 00:20 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.47 (as of 2026-11-05 00:10 UTC): geomind 0.4.48 as a LOCAL wheel,
+- Backend 1.1.50 (2026-11-05 ~00:30 UTC, QA-031 per-chat auto-approve API): geomind 0.4.49 as a LOCAL wheel,
   gemini 0.6.4, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
 - Frontend 1.1.50 (deployed 2026-11-04 21:08 UTC). Hotfix sessions deploy themselves with two calls:
   `cd <repo>`, then exactly `scripts/hotfix_deploy.sh`.
