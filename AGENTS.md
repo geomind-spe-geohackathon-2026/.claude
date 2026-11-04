@@ -30,7 +30,8 @@ are repos like the others (`.claude` and `documents` on GitHub): commit and push
 At the start of every session, before any change, ask the user which mode this session works in:
 **development**, **production** or **hotfix** (`documents/project/ops/development-modes.md`).
 Work by that mode's rules until the user changes it. Without an answer, change nothing. In every
-mode, commit and push everything left when a piece of work ends.
+mode, commit and push before you start a piece of work and as soon as it is done: uncommitted work
+in a shared clone blocks every deploy of that repo.
 
 ## Read both: `.claude/` for agents, `documents/` and `docs/` for people
 

@@ -27,3 +27,5 @@ Keep SCENARIOS.md's line for S4 current: when you start, at each stop and at the
 
 Every 30 minutes, and when you finish, send the coordinator one short report with send_message (session_id session_01J2V3UXGweG4JrR4wkEWtg9): how far you got, the bug ids you reported. Never message other QA or hotfix sessions. Every file in English. Keep CPU low (one browser at a time, close it when done). When your scenario is done, try it once more with small variations, then report and stop.
 
+
+Commit before you start and when you finish: commit and push your SCENARIOS.md line and every qa.py change at once; never leave uncommitted changes in a shared clone.
