@@ -34,7 +34,7 @@ after any long tool output:
    - `title`: your name with the next Roman numeral: `Coordinator-II`, `hotfix-back-II`,
      `qa-3-II`, then `-III` and so on;
    - `tags`: the same as yours;
-   - `model`: `claude-opus-5-5` for hotfix sessions only, `claude-sonnet-5-5` for every other
+   - `model`: `claude-opus-5-5` for hotfix and coordinator sessions, `claude-sonnet-5-5` for every other
      session (`memory/feedback-session-models.md`);
    - `prompt`: "You are <title>, the successor of <your name> (<your session id>). Read
      ~/geomind-spe-hackathon-2026/.claude/notes/sessions/<name>-<n>.md and follow it; your role's
