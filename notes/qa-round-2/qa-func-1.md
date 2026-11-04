@@ -102,3 +102,14 @@ labelled assumption in one question; never silently invented.
 - S9 note: empty project with files attached shows chips "Build the case from my files", "Build
   the case by questions", "Which files do you need?" (fine for an empty case; recheck later).
 - S2..S10: not started.
+
+### Update by qa-func-1-II (2026-11-05 ~00:00 UTC / 01:00 local)
+- Backend went 1.1.53 -> 1.1.54 during S1; the run resumed. A case_lead step shows "interrupted by a
+  crash; it may have run in part" (QA-025 area), then the run continued (QA-035 OK).
+- S1/S3 reject: first set_case card proposed time_zone UTC, text "the user's instruction is that the
+  times are UTC" (user never said so). Denied with a reason; the agent then asked the time zone,
+  I answered "do not know, use UTC as labelled assumption"; the new proposal labelled it UNCONFIRMED
+  (reject works, QA-042 OK). Approved; case values (site, fluid, demand, supply temps) match the
+  reference. Requirements card (flow 300/50, cooling 40, pump 0.7, reinjection 1, 330 d, 100/20 C)
+  matches; no 1-3 doublets entry seen yet. Approval card has only Approve / Deny / Reason: no edit control.
+- To do: file the "invented user instruction" bug, check doublets, edit test, S2.
