@@ -1,0 +1,97 @@
+# Project memory (geomind-spe-hackathon-2026)
+
+The shared memory of every Claude session on this project: one fact per file, `[[name]]` links between them. Read this index at the start of a session; open a file when its topic comes up. Write new facts here, not in a session's private memory, and keep one line per file in this index.
+
+Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../handoff/path-map.md) gives where each is now. The newest state of production is in `shared-clones-and-production.md` and the project root `documents/project/ops/`.
+
+## Since the handoff (NTNU Dell sessions, 2026-11-04)
+- [Write shared context at once](feedback-write-shared-context.md) — anything every session needs goes into root .claude at once: memory (rules), STATUS.md (state), QA (bugs)
+- [docs vs .claude layout](feedback-docs-vs-claude-layout.md) — people: documents/ (root, repo documents) and docs/ (repos); agents: .claude/ (root = repo .claude) and AGENTS.md
+- [Development modes](feedback-development-modes.md) — ask the mode every session: development (dev, all non-LLM tests, agent merges), production (dev, PR a person approves), hotfix (main directly, no tests, deploy, ff dev); always commit and push
+- [QA process](feedback-qa-process.md) — bugs from testing go in documents/project/quality-assurance (BUGS.md + one file per bug + evidence); hotfix sessions fix one by one and report
+- [Shared clones and production](shared-clones-and-production.md) — second session and live site on this laptop; stage by path, push only after checks
+- [gemini workspace](gemini-workspace.md) — gemini/ is the one gemini clone, on dev (its default branch); no worktrees
+- [Package release rule](package-release-plan.md) — project-wide: no -e between projects, real versions, gemini releases from dev, geomind from main
+- [Docker via sg](docker-via-sg.md) — use sg docker on the Dell; no gh, geomind repo private
+- [Agent-first UX direction](ux-direction-agent-first.md) — chat first, forms stay; work on dev in ux/frontend; agents always deepseek, never Sonnet
+- [gemini requests need approval](gemini-requests-need-approval.md) — never ask gemini directly; list needs in gemini-requests.md for Sahand to approve
+- [gemini API freeze](gemini-api-freeze-0-5-x.md) — APIs given out never change; version stays 0.5.x; speed is next after fixes
+- [Keep QA test projects](qa-keep-test-projects.md) — geomind.team QA: leave QA-TEST projects in place, no cleanup delete
+- [GEOMIND II team plan](geomind-teams-plan.md) — agreed team/agent layout; start only on Sahand's word
+- [gemini structure optimisation idea](gemini-structure-optimisation-idea.md) — parked: optimise modules and connections via a superstructure; wait for Sahand
+- [Fresh sessions for work](fresh-sessions-for-work.md) — delegate heavy work to fresh subagents on the Dell; main session coordinates
+- [Suggestions follow project state](suggestions-follow-project-state.md) — next-step chips come from the project state, never generic
+- [CPU budget on the Dell](cpu-budget-dell.md) — use ≤75-80% CPU (≈24 of 32 cores), nice long jobs, tell subagents
+- [Release on Sahand's word](geomind-release-on-sahand-word.md) — geomind releases only when Sahand says so; work collects on dev
+
+## From the handoff pack (2026-11-04 16:35 UTC)
+- USER RULE (Sahand 2026-11-04 16:31 UTC): chat in Persian OK, but ALL files English only (no Persian) [[feedback-files-english]]
+- FIX RULE (Sahand 2026-11-04 16:27 UTC, msg cmsg_016VUmQoW7nUde2xdqUWA2PoBDHa5uWAr4Crdr5qo5kfii): fix bugs in frontend/backend, leave geomind unchanged where possible; send NO bugs to gemini for now. B12+B14 -> FRONTEND I, B13 (internal error after loop route, project 12408e95) -> BACKEND I (16:27).
+- PROD NOW (2026-11-04 16:15 UTC): backend 1.1.12 (main 0b2ca9f, tag v1.1.12; geomind 0.4.24, gemini 0.6.4 + gemini-sandbox:0.6.4; alembic 0014; :prev 1.1.11 85ed4cf; DB backup geomind-prod-20261104T160921Z.dump) + frontend 1.1.32 (45e5fbb; :prev cd042d1). Knowledge re-seeded 16:15 with v0.4.24 cost-sources.csv (171 rows) + .md. ENV: ONE plain .env per repo (Sahand 14:36; no .env.production); key names synced with .env.example (test-enforced); prod backend .env has ASSISTANT_RUN_MAX_TOKENS=off, GEOMIND_EVOLVE_STOP_*=off; backup ~/env.production.bak.
+- geomind 0.4.24 RELEASED 2026-11-04 ~15:55 UTC: tag v0.4.24 -> main=dev 2936fa4; wheel .../releases/download/v0.4.24/geomind-0.4.24-py3-none-any.whl sha256 f8d1b911f938e77ca8f0887d37ca9c57770b4b1ef19217c7d89a8737208ec098; all 15 e2e bugs fixed (list /mnt/project-files/geomind/e2e-bugs-2026-11-04.md), context per agent/session, usage fields, gemini 0.6.4, 171-row catalogue; no live rerun (Sahand 14:25 test stop). Deployed in backend 1.1.12. gemini requests 33/34/35 in geomind plan.md await Sahand (not sent). DECIDED 15:40: catalogue stays in Knowledge, not in the wheel.
+- TEST STOP + RELEASE (Sahand 2026-11-04 14:25-14:26 UTC): no more live/e2e tests for now; 14:26 msg cmsg_016VUmQoW7nUde2xdqUWA2Po85NorjxYa6g1RMwdSHg4Bc: fix every bug first, then release 0.4.24 (his OK for main+tag). Release = all fixes merged + release profile green, NO e2e rerun.
+- PER-AGENT USAGE UI (Sahand 2026-11-04 14:10 UTC): context counted per agent PER SESSION (a new session starts fresh). Frontend+backend show per agent: context used/remaining, tokens, cost, tool calls; plus correct run totals (no double count). LIVE since backend 1.1.12 + frontend 1.1.32 (untested on site).
+- LIMITS RULE (Sahand 2026-11-04 14:08 UTC): tests get NO step/context/run-token limits (efficiency still matters, log it). Context is counted PER AGENT/SESSION (each model call fits that agent's window; compaction per agent), never summed over the whole workflow; a whole-run budget is a separate cost setting.
+- E2E TESTS (Sahand 2026-11-04 13:36-13:38 UTC): parallel e2e runs on nemotron for a BUG LIST only (no fixes); English only (no Persian tests); use MCP (weather, e.g. open-meteo MCP) for approximate air pressure and weather; site city = Trondheim; weather year 2027, else 2026 or 2025.
+- FUTURE WORK (Sahand 2026-11-04 13:06, off the current list): semantic RAG with embeddings; end-to-end run to verdict (needs site elevation); cited rows for economics keys without a source (discount_rate, some opex.variable; opex.fixed.pipe EUR/MW/yr refused by gemini). Not current tasks.
+- BUG THREAD "Fix UI and geomind bugs" cmsg_016VUmQoW7nUde2xdqUWA2PoXDjK2a6y8HLEnxi6Q35S5A (Sahand 2026-11-04 12:56): ONLY finds and lists bugs, changes NO repo. Nothing from it goes to any thread (coordinator included) without Sahand's explicit OK.
+- Prod env other: per-role GEOMIND_<ROLE>_MODEL=deepseek/deepseek-v4.1-flash-1017, PROVIDER=deepseek, GEOMIND_MEMORY=off (check whether to turn on). Deploy can't edit prod env or write prod data: Sahand runs those commands. Open: nemotron switch awaits Sahand.
+- GEMINI 0.6.4 RELEASED (2026-11-04 13:50 UTC, GEMINI II): main=dev=2e0862aa, wheel sha256 aaa89e1673849f16bc082b59eee834577acb950f0328501c0d5a7a1d5d1aa7b9; fixes H2S species mismatch. gemini frozen again. RULE: gemini never provides data/inputs for other packages; only bugs, units, unclear errors. Handover now gemini/.claude/notes/handover-gemini-iii-2026-11-04.md.
+- geomind BRANCHES (Sahand 2026-11-04 11:54): releases do dev->main with --ff-only so they never diverge.
+- STANDING DEPLOY OK (Sahand 2026-11-04 11:14 UTC, cmsg_016VUmQoW7nUde2xdqUWA2Po2PWsZYNd3LqJxBWHDkVRh4): deploy backend releases without waiting for his OK; relay BACKEND I deploy requests to Deploy with that msg attached.
+- RAG (checked 2026-11-04 11:30 UTC): geomind search_rag is LEXICAL (TF-IDF-like), NO embeddings. Plan: hybrid lexical+embedding (OpenRouter embeddings). ON HOLD (Sahand 11:35: "later"), do not start without his OK.
+- Hackathon deliverables (report/video/agent log) not started.
+- GEMINI II: gemini home thread cmsg_016VUmQoW7nUde2xdqUWA2PoC574fHNmuX81Wm2K6hFDXS.
+- USER RULE (Sahand 23:50 UTC, all threads): use small FRESH Claude Code sessions on the NTNU Dell for work to keep token use low; the long session only coordinates/merges/releases; handoff note after each piece (.tmp/handoff/<piece>.md).
+- SPEND 23:50 UTC 11-03: OpenRouter key 6.86/10 USD (real, from key page; tallies undercount); DeepSeek runs check key usage first, stop at 9.5. Nemotron: tools OK, ctx 1M, set CONTEXT_WINDOW=200000, ~20 rpm/1000 per day.
+- MODEL SWITCH (Sahand 2026-11-03 23:36 UTC): ALL geomind agents to use nvidia/nemotron-3.5-super-vl:free (OpenRouter); still never Claude. Prod stays DeepSeek until Sahand decides.
+- SUGGESTIONS: clickable next-step chips in chat. Contract /mnt/project-files/geomind/contract-suggestions.md.
+- COST DATA: catalogue now 171 rows (v0.4.24). Still unsourced: opex.fixed.circulation_pump, opex.fixed.ice_storage, corrosion_inhibitor (may be outdated).
+- RENAME (Sahand 20:58 UTC): in backend+geomind "documents" -> rag, "connectors" -> mcp. Frontend shows friendly names only (Knowledge, Connectors).
+- CONCEPTS: Knowledge = RAG; Connectors = MCP. Do NOT mix either with agent memory. Contract: /mnt/project-files/geomind/contract-connectors-knowledge.md.
+- GEMINI PORT TYPES: gemini 0.6.0: one Port(...) replaces Inlet/Outlet; plant.check(), plant.suggest(). geomind layout agents/<team>/<name>.py + prompts/<team>/<name>.md.
+- USER RULE (Sahand 2026-11-03 15:13 UTC, FRONTEND I): STANDING APPROVAL for frontend deploys. FRONTEND I sends deploy requests to the coordinator, who relays them to Deploy with Sahand's message cmsg_016VUmQoW7nUde2xdqUWA2PoCeMZdMtuPCJ9wReyMAnSuY attached.
+- GEOMIND II: geomind home thread "GEOMIND II" cmsg_016VUmQoW7nUde2xdqUWA2PoV8W3hKre4XKM18pLJBziqh. Status list /mnt/project-files/geomind/status-2026-11-04.md. Docs /mnt/project-files/geomind/agent-teams.md, handoff /mnt/project-files/geomind/handoff.md. Sahand: NO end-to-end tests without OK. MCP tools = list_mcp/read_mcp/call_mcp/save_mcp_table, RAG tools read_rag/search_rag.
+- USER RULE (Sahand 2026-11-03 12:11 UTC; cap 10 USD): live test cap 10 USD total. Every value not from user files needs user approval in one question, showing source, publisher, year, currency year, link.
+- FRONTEND: STOCK shadcn theme (blue primary); layout/UX only. Next-round list /mnt/project-files/frontend/next-round.md. KEEP the name "Library".
+- PRIORITY (Sahand 2026-11-03 11:39 UTC): only bugs and critical items until the whole app works end to end once.
+- QA thread "QA test everything on production" cmsg_016VUmQoW7nUde2xdqUWA2PoX15Aat3xyuvy5tqTaumLLe: report /mnt/project-files/qa/qa-prod-2026-11-03.md.
+- USER RULE: geomind's list for gemini may contain ONLY entirely new features or bugs found. APIs must not change much.
+- FRONTEND DIRECTION: REMOVE the Editor page everywhere. NO new features. Only improve UI/UX structure using existing OPEN-SOURCE components.
+- DEPLOY home thread "Deploy" cmsg_016VUmQoW7nUde2xdqUWA2Po2pCQEQaxHQFaKHikVnc4Ac (RC on NTNU Dell). Deploys only main, backend first then frontend. Rollback images geomind-backend:prev / geomind-frontend:prev.
+- USER RULE: do NOT open pull requests. Merge locally, push, delete branch.
+- USER RULE: test NOTHING on local.
+- USER WISH: semver with CHANGELOG. FOR NOW frontend AND backend stay on v1.1.x (patch bumps only).
+- PRODUCT VISION: the app is GEOTHERMAL first.
+- USER RULE: NO changes to any API already given to others (except port types; rename approved). No 5-minute reports.
+- USER RULE (ALL repos): new work on dev; main = stable. Merge dev -> main when tests pass, then deploy main.
+- USER RULE (replaced 2026-11-04 evening): no git worktrees; one clone per repo in the project root.
+- USER RULE ("always remember"): NOBODY requests anything from gemini without Sahand's permission. gemini is source of truth. Threads write a LIST for Sahand.
+- RULE: NEVER message the gemini thread directly with requests from others; give Sahand a copy-paste list [[feedback-never-message-gemini-thread]]
+- RULE units: consumers choose display units, gemini does ALL conversions: [[feedback-units-geomind-defines-gemini-converts]]
+- USER RULE: NO -e installs anywhere. Pinned released versions. Releases: geomind from main; gemini from dev.
+- USER RULE: frontend commits authored as Fatemeh Chitsaz <fatemeh.chitsaz@ntnu.no>. Past commits NOT rewritten unless Sahand approves.
+- USER RULE: WORK ON PRODUCTION (dev -> main -> prod).
+- USER RULE: the gemini thread touches ONLY the gemini repo. Coordinator must NOT relay gemini-thread findings to other threads without Sahand's explicit OK.
+- USER RULE: NO live runs / LLM token use unless Sahand OKs.
+- USER RULE ("never ever"): NEVER use any Claude model for the geomind agents.
+- MACHINES: NO ASUS. Only Sahand's MacBook and NTNU DELL (Fatemeh's; runs app, live site, gemini work).
+- Goal: SPE Europe Energy GeoHackathon Express (GEMINI digital twin). User writes Persian; reply Persian. Local time UTC+1.
+- Base repo: https://github.com/GEMINI-Digital-Twin/gemini-geothermal-suite-open ; team fork: https://github.com/swarmax/gemini-geothermal-suite-open
+- UX DIRECTION: agent-first flow starting in chat; keep manual UI. Artifact: https://claude.ai/artifact/TehS6XZQ7SUsNNdEYrFby5. Feature list doc: https://claude.ai/artifact/1knPPo4pR5Grson1sckwTe
+- Agent package geomind (import geomind as gd), org geomind-spe-geohackathon-2026 (repos geomind, frontend, backend, gemini, infrastructure).
+- USER RULE ("very important"): FROZEN BASELINE gemini 0.5.0 (b07b7ff); later changes BACKWARD COMPATIBLE (except port types 0.6.0).
+- USER RULE: same-role files in backend and frontend share names (backend wins).
+- User rules: extend GEMINI repo itself; everything GENERAL; NO default values (missing -> error; exception: port-type fields); non-plant lives in Problem; compiler separate; from_/to_ csv/json/dict naming.
+- Challenge 1 (50%): agentic AI workflow. Challenge 2 (50%): integrated heating + cooling design + agent log. Deliverables: report ≤5 pages or ≤10 slides; video ≤5 min; GitHub.
+- ORGANISER CLARIFICATIONS (2026-11-01): source 330 days, backup covers 365; well depth change allowed; multiple doublets/backup OK; return temps our choice; supply 100 C heating, 20 C cooling.
+- Team: Sahand + Claude; Fatemeh.
+- Memory notes: [[gemini-remaining-work]], [[gemini-case-decisions]], [[gemini-problem-design]], [[feedback-no-defaults]], [[gemini-choices-later]], [[project-status-handoff]], [[repo-and-code-preferences]], [[gemini-repo-findings]], [[team-and-roles]], [[persian-rtl-formatting]], [[package-structure-decisions]], [[swarmax-architecture]], [[prompt-writing-rules]], [[backend-design]], [[competition-inputs]], [[gemini-backlog-2026-10-30]], [[gemini-decisions-2026-10-31]], [[gemini-api-rules]], [[feedback-io-naming]], [[feedback-reply-format]], [[gemini-domain-folder-mapping]], [[gemini-target-structure]], [[feedback-coordinator-prompts]], [[gemini-status-2026-11-01]], [[gemini-pure-forward-update]], [[gemini-branch-rule]], [[local-layout]], [[feedback-contribution-gemini-source-of-truth]], [[gemini-cost-sources]], [[gemini-scenario-design]], [[fatemeh-frontend-backend]], [[hosting]], [[feedback-llm-model]], [[geomind-status-2026-11-03]], [[frontend-design-picks]].
+- NTNU Dell: /home/fatemec/geomind-spe-hackathon-2026 (app repos).
+- geomind needs list: /mnt/project-files/notes/geomind-gemini-needs.md. App bug list: /mnt/project-files/notes/app-bug-list.md.
+- Hosting: LIVE https://geomind.team (Dell, Cloudflare tunnel). DB backups ~/geomind-backups/. Scripts `python -m scripts.knowledge|projects`. Laptop must not sleep. Revoke Cloudflare tokens + change admin password after hackathon.
+- Old threads closed: "GEOMIND 1" cmsg_016VUmQoW7nUde2xdqUWA2Po95xGxRTiZ2eX11DUwdU9Ba, "GEMINI 1" cmsg_016VUmQoW7nUde2xdqUWA2PoNJFMsXGdENbk9rJXBgs79e.
+- Backend home thread "BACKEND I" cmsg_016VUmQoW7nUde2xdqUWA2PoBsNFgcsdpxhHdXQR3LUzwM.
+- Frontend home thread "FRONTEND I" cmsg_016VUmQoW7nUde2xdqUWA2PoLU8Zkv7qaEEXPLYmYbviQD. Frontend server .env has only VITE_API_URL (nginx does not proxy /api).
+- SERVICES how-to: /mnt/project-files/notes/run-services.md.
+- USER RULE (Sahand 2026-11-03 18:26 UTC, GEOMIND II): geomind Dell session installs gemini wheels ITSELF [[feedback-gemini-install-allowed]]

@@ -1,0 +1,19 @@
+---
+name: gemini-status-2026-11-01
+description: Verified gemini status at refactor ab9e754 (2026-11-01 11:30): what is done, what blocks the competition, priority list; full file in project notes
+metadata:
+  type: project
+---
+
+Full list: /mnt/project-files/notes/gemini-status-2026-11-01.md (all 5 examples run on ab9e754).
+Competition blockers (priority): 1 study.minimize ignores case constraints (optimised HeatingCooling/FullCooling violate cooling supply temp); 2 size+minimize worse than hand HackathonPlant (57.05 EUR/MWh vs 58-67), HackathonPlant not searchable (no size.doublets); 3 compare ranks violating/incomplete designs, SI units in table; 4 injection pump unpriced; 5 cited prices; 6 merge speed (hackathon.py 7m22s).
+Bonus: failure diagnostics, multi-objective, multi units/kind, storage/ATES/scan, multi-year, Arpagaus/lorenz sources.
+General later: bare SI in set_params/call/Stream/Fluid; 34 Parameter defaults (8 design ones); roles table lost heat_output/cold_output/plant role; synthesize; 4 analysis stubs; plants.example templates; choices; C++.
+Related: [[gemini-remaining-work]], [[gemini-case-decisions]].
+2026-11-01 11:37 Sahand: drop geomind entirely from this discussion; focus only on gemini.
+12:55-13:50 speed merged: origin/refactor 033bba3 (ff from ab9e754), numbers equal 1e-9; daily year 0.1-0.2 s eager & compiled; hackathon.py 620->66 s. Speed leftovers: study overhead (lcts frame, apply_case, structural ESP depth/pipe path retrace), 1 s budget tests flaky under load.
+13:26 Sahand: Plant stays a subclass of Module (decided, do not split). Discussing pure forward(inputs, inlets) -> (outputs, outlets) for every module (no outputs written on self; state explicit for stateful); I recommended yes, after blockers + speed merge. Monte Carlo: uncertainty declared in case.json (see gemini-case-decisions).
+13:42 Design agreed in discussion (not scheduled): pure forward(self, inputs, inlets, state)->(outputs, outlets); update(self, inputs, inlets, outlets, state, dt)->state only for 6 stateful modules; self holds only params; no None-first-step (previous_step=0); Plant implements both once. My advice: after competition delivery; now only ESP depth/pipe path numeric + remove module defaults (in study-speed prompt).
+13:50 speed MERGED+pushed: origin/refactor = 033bba3 (ff from ab9e754), no conflicts, numbers equal (36/36 at 1e-9), e2e 46/46; daily year 0.1-0.2 s eager & compiled; hackathon.py 620 -> 66 s, costs 12 -> 3.5 s, uncertainty 12.9 -> 10.1 s. origin/speed kept; speed worktrees removed (baseline.npz lost, regenerate from ab9e754 if needed). 15 one-second budget tests fail under load every full run (pass alone). Blockers local refactor 2ca1173 must merge origin/refactor before push.
+14:45 BLOCKERS DONE: refactor 4ce04e3 (on 033bba3). size gives heat pump only share peak*(Ts-Tres)/(Ts-Tr), boiler = full peak (outage backup, hard-coded policy!); minimize takes role.param vars; search starts from plant values. Hackathon (new DEA 2015-EUR prices): FullCooling 40.17 (Pareto, CO2 9.65), HeatingCooling 42.42, Hackathon 44.25 (only start feasible), HP-cooling 48.01, Absorption 60.90, HeatingPlant infeasible. 11/42 cost values sourced (DEA v0019, Eurostat), 31 placeholders; Arpagaus/lorenz not found. Issues: ESP power curve extrapolates 3.7e13 W at 3443 m, injection pump fails negative head >3000 m; Comparison values SI floats not Quantity; hackathon.py ~9 min with EVALUATIONS=20; 1 s budget tests flaky.
+20:31 feature/correctness merged: dev b1db49f7 (Quantity at set_params/call/Stream/Fluid, 45 defaults removed, allow-list 17, roles heat_output/cold_output/plant.*, ESP intake_pressure + gas fraction limits in case.json, report parts display units, validate(plant)). Ranking changed: old winner HeatingFullCoolingPlant rejected by gas limit; HeatingHeatPumpCoolingPlant LCTS 40.34 best. Leftovers listed in notes/gemini-gaps-from-geomind.md.

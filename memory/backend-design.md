@@ -1,0 +1,48 @@
+---
+name: backend-design
+description: State of the FastAPI backend design thread (proposal file, key recommendations, what is pending)
+metadata:
+  type: project
+  modified: 2026-10-30T10:45:39.833Z
+---
+
+2026-10-30 thread "Design new FastAPI backend": brief /mnt/project-files/backend/brief.md, proposal /mnt/project-files/backend/design.md (draft 1, awaiting Sahand's review). No prompt until he says «go»; then write phase B1 prompt into /mnt/project-files/phases/backend/ (keep each prompt < ~50k chars; bigger pastes got truncated).
+
+Key recommendations in draft 1:
+- plant_versions table: one immutable row per version, content = gemini Plant.to_dict() unchanged (it already holds param_history dated params and bindings). No split tables.
+- Big risk: gemini plants are handwritten classes; from_dict cannot change wiring, so B3 flowsheet = pick template + toggle units + edit params, not free drawing.
+- runs: run_events (all swarmax events, public flag), run_checkpoints (latest), run_artifacts, chats.state; runlog built by sx.runlog from rows. Insert to Postgres then publish Redis; SSE subscribe first then replay.
+- Access: owner or admin, one dependency require_project; sharing later via project_members.
+- core/jobs base Celery task in B2; jobs table + system/jobs in B3.
+- Contract change proposals incl. refresh route, run.request, SSE via fetch (EventSource has no auth header).
+Related: [[swarmax-architecture]], [[prompt-writing-rules]].
+
+2026-10-30 11:40: Sahand said «go». B1 prompt written (phases/backend/phase-1-foundations.md, ~12k chars); contracts.md bumped to version 3 (refresh route, user.active, project.owner {id,name} + plant_version, run.request/error, chat PATCH/DELETE, error codes, SSE via fetch, export zip layout). Backend must use only public `import gemini as gm` (gemini/core is being removed). Next: B2 prompt after he runs B1.
+- 11:37 contracts.md holds both: v3 (section 1, backend) and swarmax section 3 v2.1 (RunStore.load_events, internal `error` event, Callback.on_event). B2 adapters must implement load_events and use on_event for the publisher.
+- 11:45 user rule: every backend prompt starts with a 'Parallel sessions' section: other Claude sessions work on sibling repos in parallel (fine); the backend session checks git status/log + .tmp/session.lock so only it works on the backend repo; sibling repos read-only; ../infrastructure checked before writing.
+- 11:40 frontend contract asks: applied ?cursor= and validation details {fields:{...}} to contracts+B1 (pending Sahand objection). For B2 revision recommended: GET /assistant/runs?project=, GET /assistant/chat/{id}/state, model on step.started + options [{value,label}] + state.changed shape (swarmax owns), user message carries run (not placeholder assistant msg), sharing route after hackathon.
+- 11:42 contracts.md header is now file 'Version 4' (raised on every change), section 3 keeps swarmax interface version 2.2 (step.started {index, model}, options [{value,label}], state.changed {version, changes} JSON Patch subset). B1 prompt requires Version 4+.
+- 11:48 agent package renamed geomind (import geomind as gd; replaces swarmax/twinmind), contracts.md Version 6. B1 boundary test accepts swarmax or geomind; B2 uses gd once the rename prompt has run.
+- 11:51 contracts.md Version 7: B2 assistant routes added (runs?project=, chat/{id}/state, chat delete 409 while active run, user message carries run, run.project). Sahand clarified he wanted the B1 prompt (not B2) — B1 handed over with geomind naming; B2 prompt not written yet, wait for «go» after B1 runs.
+- 11:54 user: postpone the assistant (B2); start the other backend work first (B1, then B3 plant/timeseries). B1 prompt made self-contained (section 6 = its API contract inline, no dependency on ../docs/contracts.md copy).
+- 12:15 contracts.md Version 8 (geomind/gd in sections 2-3; option answers validated 422; run.error from RunResult code=stop_reason). Geomind thread proposes Swarmax stays product/infra name (pending Sahand). B2 must apply these.
+- 12:33 contracts.md Version 9, interfaces 2.3: geomind dropped checkpoints (no save/load_checkpoint, no checkpoint event); recovery/resume read load_events only. B2: no run_checkpoints table.
+- 12:45 B1 DONE (backend + infrastructure branch b1-foundations, not pushed). 134 fast tests; SQLite fast + postgres marker; plant_type allowlist = gm.plants.__all__; load_plant rewrites moved class paths; legacy import not built (DoubletHeatPlant not public); example_plant has no params. Gaps: public signup + forgot-password stub exist, password change doesn't revoke tokens, inactive-user check relies on each route using CurrentUser, FIRST_ADMIN_PASSWORD placeholder. Contract bumped: 201 creates, `unavailable` 503, refresh rotation. Recommended next prompt: B1 fixes + plant domain (time series later).
+- 12:46 gemini step 4 (not run yet): plant dicts use registry names (plant_type e.g. "DoubletHeatPlant") + "format" version; gemini exposes gm.utils.migrate_plant(old)->new. Next backend prompt (after step 4): drop load_plant path swap, validate plant_type against gm.plants.__all__, alembic data migration over plant_versions calling gm.utils.migrate_plant, old-format -> plant_invalid. Also include B1 fixes (remove public signup + forgot-password, revoke tokens on password change/deactivate, route-auth test, refuse placeholder admin password) + plant domain; time series separate. Waiting for «go».
+- 12:44 gemini step 4 will add: gm.plants.from_dict(data) (registry name), gm.plants.get(name), DoubletHeatPlant + all example/legacy plants in gm.plants, example plant with real params (example_plant() or gm.plants.example(name)), legacy import via public API. Next backend prompt: use gm.plants.from_dict, drop prefix check, build convert_legacy (legacy zip import).
+- 12:46 user rule: develop and push directly on `main` in every repo except gemini (backend, infrastructure, frontend, geomind). Next backend prompt: first merge b1-foundations into main (backend + infrastructure), then work on main, push at end. AGREED 12:47: Celery task files named tasks.py (rename jobs.py) (Celery default autodiscover name), "job" kept for the user-facing tracked record (jobs table, system/jobs).
+- 12:50 «go» → wrote phases/backend/phase-3a-plant.md (B3a): merge b1-foundations to main + push + delete merged branches (local+origin; ask on unmerged), B1 fixes, jobs.py→tasks.py, registry-name plant loading (stops if gemini step 4 not landed), core/gemini plant functions, plant/{flowsheet,parameters,bindings,catalogue} with `base` optimistic-lock rule. Plant routes added to contracts.md (v11). Next: B3b time series, then B2 assistant.
+- 12:51 contracts v12: flowsheet modules[].category, connections[].stream (frontend ask), also in B3a prompt.
+- 12:52 gemini step 4 adds Module.describe(): category per module, composites list connections (path+port, stream type, v12 names). B3a describe_plant reads it.
+- 12:55 contracts v13, interfaces 2.4 (for B2): store full event.to_dict() (not data()), rebuild with gd.event_from_dict; nested runs share root run log (root run_id + agent/parent); text.delta not saved from geomind S2 → SSE reconnect replays text from a short-lived Redis buffer (sequence ids for text deltas must still be consistent).
+- 12:56 proposed step.finished.text (frontend → geomind); if accepted, B2 Redis text buffer only for the in-progress step.
+- 12:56 ACCEPTED v14/2.5: step.finished {index, usage, text}.
+- 13:20 B3a run 1: section 0 + step 1 done and pushed to main (150 tests, migration 0005); stopped at step 2 (gemini step 4 not landed). Prompt file now has a Status line: rerun from step 2 after gemini step 4. Password change invalidates current session (frontend → sign-in). Next option meanwhile: B3b time series (independent of gemini step 4).
+- 13:42 B3a run 2 stopped again at step 2 (gemini step 4 still not landed; nothing changed). Commit 1135204 (remove old agent name) confirmed expected, noted in prompt status. gm.utils not in gemini __all__ → asked engine thread to add it with migrate_plant.
+- 13:42 migration fn is gm.plants.migrate (not gm.utils.migrate_plant); B3a updated. Engine thread proposes a small backend-needs gemini prompt right after step 3 to unblock B3a sooner.
+- 13:55 v16/2.6 (for B2): sequence gaps allowed, save_state includes compaction key (store unchanged), never pass gd.Run(agent=...). Noted in B2 draft; B3a unaffected.
+- 15:23 plant work moved to gemini step 3b (gm.plants.{migrate,from_dict,get,names,example}, gm.modules.{get,names}, Module.describe()). B3a updated to 3b + gm.plants.names(). Rerun B3a after 3b pushed.
+- 15:32 reviewed notes/gemini-public-interfaces.md for backend; sent 9 gaps to engine thread (idempotent to_dict, validate_params for catalogue, outputs.soft_sensor, frozen replay input, progress+cancel callback, unit/quantity check, thread safety, convert_legacy inputs, fixed error codes). B3a/B3b prompts should use these names once frozen.
+- 15:42 gemini plant API is now Keras-style spec (format 2: modules{id:{type,params}}, connections[{source,target,kind?}], bindings, param_history); gm.plants.from_spec/validate/spec_schema/templates/from_template/migrate/convert_legacy. B3a rewritten: store spec, free flowsheet editing (POST whole spec + validate route + palette), modules by id, plant_invalid details.problems, plant_type column -> name. contracts v17.
+- 15:40 order: B3a waits for gemini's 'freeze and document interfaces' prompt (3b merged into it).
+- 15:42 added flowsheet layout {id:{x,y}} beside spec (column, not in digest), PUT /plant/flowsheet/layout updates latest in place; contracts v18. Pending Sahand objection.
