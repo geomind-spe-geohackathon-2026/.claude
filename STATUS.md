@@ -70,6 +70,9 @@ Last updated: 2026-11-05 00:20 UTC.
 
 - Since 2026-11-05 ~00:00 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG);
   spec `notes/features/agent-tools-2026-11-05.md`; hotfix-python, hotfix-back, hotfix-front.
+- 2026-11-05 ~00:15 UTC (Sahand): SearXNG up (geomind-searxng, geomind network only), image
+  gemini-sandbox:0.6.5 built, prod backend `.env` has GEOMIND_SEARCH_URL, DOCKER_GID, ASSISTANT_SANDBOX,
+  GEOMIND_SANDBOX_* (backup `~/env.backend.before-sandbox.bak`). Worker change deploys next (hotfix-back).
 
 ## To do in development mode after the QA round
 
