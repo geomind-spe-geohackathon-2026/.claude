@@ -66,6 +66,11 @@ Last updated: 2026-11-05 00:20 UTC.
   backup `~/env.backend.before-ratelimit.bak`).
 - `~/.claude/settings.json` allows `scripts/hotfix_deploy.sh` (added by Fatemeh 2026-11-04 20:35 UTC).
 
+## Feature in progress (hotfix mode)
+
+- Since 2026-11-05 ~00:00 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG);
+  spec `notes/features/agent-tools-2026-11-05.md`; hotfix-python, hotfix-back, hotfix-front.
+
 ## To do in development mode after the QA round
 
 - Backend `requirements.txt` still pins geomind 0.4.26; production runs local wheels (geomind up to
