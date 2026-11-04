@@ -5,6 +5,7 @@ The shared memory of every Claude session on this project: one fact per file, `[
 Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../handoff/path-map.md) gives where each is now. The newest state of production is in `shared-clones-and-production.md` and the project root `documents/project/ops/`.
 
 ## Since the handoff (NTNU Dell sessions, 2026-11-04)
+- [Agent tools feature](feature-agent-tools.md) — skills folder per tool/role + calculate (sourced operands), run_python (sandbox), web_search (SearXNG); spec notes/features/
 - [Session models](feedback-session-models.md) — hotfix sessions and the coordinator on Opus; QA and every other session on Sonnet; pass model at create_session
 - [QA round 2 rules](feedback-qa-round-2.md) — agent-browser only (no Playwright), competition files only, functional flow first, OpenRouter spend no limit, gemini editable
 - [Decisions 2026-11-05](feedback-decisions-2026-11-05.md) — catalogue only sourced rows; gemini unfrozen; auto-approve in backend; features in hotfix; releases without OK; rate limit high; automatic handover
