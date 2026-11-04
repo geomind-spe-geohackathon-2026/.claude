@@ -17,7 +17,7 @@ files common.md lists.
 - S1 in progress: project "QA2 qa-func-1 S1 full case"
   (https://geomind.team/projects/a0947848-b958-4ee9-8927-56ec0a9cff03/assistant/chat), shared
   memory Off (the dialog says keep it off for a competition run), auto-approve OFF, the PDF and the
-  two CSVs attached in New project. First message sent 23:39 UTC: "We want to design a deep
+  two CSVs attached in New project. First message sent 2026-11-04 23:39 UTC: "We want to design a deep
   geothermal plant for heating and cooling. The challenge requirements and the two daily demand
   profiles for 2027 are attached. Please set up the case from these files first, then we go on to
   the design." The agent run is ACTIVE and left running (Geoscientist was listing files); its

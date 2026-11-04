@@ -21,7 +21,7 @@ Cover at least:
 
 ## Scenarios
 
-Reference values (from the PDF and the CSVs, checked 2026-11-05 by qa-func-1):
+Reference values (from the PDF and the CSVs, checked 2026-11-04 by qa-func-1):
 - Heating CSV: columns `date, heating_demand_MWth`, 365 rows 2027-01-01..2027-12-31, max 30.0 MW
   on 2027-01-28, min 2.673 MW, 111.668 GWh/year. Cooling CSV: `date, cooling_demand_MWcool`, 365
   rows, max 10.0 MW on 2027-07-19, 146 days at 0, 23.743 GWh/year.
@@ -96,7 +96,7 @@ labelled assumption in one question; never silently invented.
 
 ## Status
 
-- S1: in progress (2026-11-05 23:39 UTC). Project "QA2 qa-func-1 S1 full case"
+- S1: in progress (2026-11-04 23:39 UTC). Project "QA2 qa-func-1 S1 full case"
   (a0947848-b958-4ee9-8927-56ec0a9cff03), shared memory Off, auto-approve off, three files
   attached in New project; first message sent; run active (Geoscientist listing files). No bug yet.
 - S9 note: empty project with files attached shows chips "Build the case from my files", "Build
