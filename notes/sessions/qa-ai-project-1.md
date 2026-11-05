@@ -26,7 +26,7 @@ deployed fixes; poll run state no faster than every 5 s.
 
 Next steps for the successor (role: same row of the plan, hotfix mode, no code changes, live LLM runs
 allowed, backend layer only, chat with Sahand in Persian):
-1. Retest QA-294 when fixed (project 1, new chat: "what moved in LCOH against the last result").
+1. Retest QA-294 and QA-333 (summary runs the explainer 3 times, run in project 1 chat 134dae07) when fixed; QA-310 verified 19:38 UTC (project 1, new chat: "what moved in LCOH against the last result").
 2. New scenarios not yet run: support lead's summarizer for a long handover (memory off), the
    `design` loop route ("only a new design round on the case as it is"), an app event message from
    a plant saved by hand, a request that mixes two goals, a third compare family named by the user.
