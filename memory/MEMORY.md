@@ -117,4 +117,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [Design from the handbook, not templates](feedback-design-from-handbook-not-templates.md) — IMP-023 rejected; agents design from handbook-design; QA-122 approved
 - [Test without side effects](feedback-test-without-side-effects.md) — live UI checks intercept write requests in Playwright; never cancel, restore or delete real data to test
 - [Only the team lead writes](feedback-team-lead-only-writes.md) — IMP-025: lead splits a task into ≤4 sub-agents without file access, writes once, re-splits, reports to the project manager
-- [No tests now](feedback-no-tests-now.md) — since 16:55 UTC 2026-11-05 no session runs any test or live check until the user lifts it
+- [No QA tests now](feedback-no-tests-now.md) — since 16:55 UTC 2026-11-05 no live/browser/LLM QA tests by any session until the user lifts it; unit tests allowed
