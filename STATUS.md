@@ -9,11 +9,15 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 15:10 UTC: backend 1.1.90 (hotfix-back-III, QA-122 backend part: project_designs + plant_version). All 11 remaining QA runs cancelled by the coordinator (user order); sahand test 2 cb5a97c2 left running. IMP-025 display: one line per instance with its own step count ("Geoscientist I · Thinking · 12 steps").
+
 - 15:05 UTC (user, TOP): IMP-025 parallel agents (lead assigns tasks to instances, e.g. Geoscientist I/II/III; goal: a complete case in ~5 min). hotfix-python-IV right after QA-131; display by hotfix-front-III.
 
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 15:10 UTC: backend 1.1.90 (hotfix-back-III, QA-122 backend part: project_designs + plant_version). All 11 remaining QA runs cancelled by the coordinator (user order); sahand test 2 cb5a97c2 left running. IMP-025 display: one line per instance with its own step count ("Geoscientist I · Thinking · 12 steps").
 
 - 15:05 UTC (user, TOP): IMP-025 parallel agents (lead assigns tasks to instances, e.g. Geoscientist I/II/III; goal: a complete case in ~5 min). hotfix-python-IV right after QA-131; display by hotfix-front-III.
 
