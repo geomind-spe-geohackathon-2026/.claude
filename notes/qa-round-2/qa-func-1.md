@@ -160,3 +160,11 @@ Check in the start-to-end run, and file a bug when one fails:
 - Unfiled notes: agent claimed 'user's instruction is UTC' (old project); economics cards offer NL/NO/FR rows for a site-less case (QA-041 pattern, I leave subsidy/waste open); chemical price once used non-recommended proxy row; approval card has no edit control.
 - Old project S1 a0947848 (depth set to 3000 m, pressure question answered, run cancelled): abandoned; S5 temperature-follow, S9 chips, S7/S8 only observed.
 - Bugs this session: QA-063 (verified), QA-065 (verified), QA-061 retest verified, QA-068 (verified), QA-069, QA-070 (to retest).
+
+## Split from 2026-11-05 04:11 UTC (Sahand): three functional QA sessions
+
+functional-qa-1 (this file; session titled functional-qa-I) keeps: the case and the main
+start-to-end design loop (judging points 1, 2, 4, 5, 6: configurations, GEMINI checks,
+violations, iterations, alternatives compared, geothermal-driven cooling, capacities stated),
+in project 61134432. Economics/report/log go to functional-qa-2.md; studies, evolve, the agent
+tools and robustness to functional-qa-3.md. Read those files to avoid overlap.
