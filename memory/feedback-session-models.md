@@ -1,6 +1,6 @@
 ---
 name: feedback-session-models
-description: Only hotfix sessions and the coordinator run on Opus; QA and every other Claude Code session runs on Sonnet (Sahand, 2026-11-04 23:45-23:55 UTC)
+description: Every session runs on Opus (user, 2026-11-05, Coordinator-V); earlier Sonnet splits are superseded
 metadata:
   type: feedback
 ---
@@ -18,3 +18,7 @@ model ([[feedback-llm-model]]).
 **Change, 2026-11-05 16:50 UTC (user, Coordinator-IV's chat):** the backend and frontend hotfix
 sessions (hotfix-back-*, hotfix-front-*) run on Sonnet (claude-sonnet-5-5). hotfix-python-* and
 the coordinator stay on Opus.
+
+**Change, 2026-11-05 (user, Coordinator-V's chat, Sahand's account):** every session runs on Opus
+(claude-opus-5-5) now: coordinator, all hotfix sessions, Manual QA and any new session. Start
+with `claude --bg --remote-control ... --model claude-opus-5-5` ([[reference-start-sessions-bg-remote-control]]).
