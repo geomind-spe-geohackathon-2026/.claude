@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
+
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
 
 - 15:20 UTC (user): handbooks renamed handbook-case, handbook-design, handbook-economics, handbook-report (documents d963dee). Global Knowledge now: handbook-case 0f82fadb, handbook-design 2d8a2457, handbook-economics 634ca9c8, handbook-report 3664b76b, hackathon-2026-assumptions 8bd08430, cost-sources.csv a2c6c5f8 / .md 765d6eb4 (to be renamed economics-data). geomind mentions: hotfix-python-IV.
@@ -20,6 +22,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
 
