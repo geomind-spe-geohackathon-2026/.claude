@@ -58,8 +58,8 @@ Last updated: 2026-11-05 00:25 UTC.
   their state is in `notes/sessions/qa-paused-2026-11-04.md`. QA round 2 started 2026-11-04 23:36 UTC (briefs `notes/qa-round-2/`, agent-browser only):
   all on Sonnet since 23:45 UTC. Since 2026-11-05 00:25 UTC (Sahand, usage) only
   functional-qa-I (was qa-func-1-II) session_01J2V3UWQ5zYo1TfCiAKXF4d runs QA: one project through the whole pipeline, owning
-  qa-func-1/2/3 scenarios. qa-func-3-II archived; qa-func-2-II (session_01J2V3UYJGYnJTqhfgaSGAWw) and qa-ux
-  (session_01J2V3UYjXaURZYEzofAQh3n) finish their current scenario, then stop and are archived. (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+  qa-func-1/2/3 scenarios. qa-func-2-II, qa-func-3-II and qa-ux archived (00:20-00:40 UTC); their state is in
+  their files in `notes/qa-round-2/`. QA-031 and QA-053 retests are still open (qa-ux did not finish). (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
   qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
