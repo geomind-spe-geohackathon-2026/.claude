@@ -3,7 +3,9 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 11:22 UTC.
+Last updated: 2026-11-05 17:09 UTC.
+
+- Coordinator-V idle-thread check: session cron job a8c3dc7d, every minute (Sahand 17:08 UTC): finds idle threads, gives them work, routes new QA bugs. Session-only, expires after 7 days.
 
 - Coordinator: Coordinator-V (peer name Coordinator-V) on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). Sessions are normal interactive sessions in tmux with --remote-control (no Remote MCP on this account; background sessions could not edit the shared clones): `tmux attach -t <name>`, message by name with SendMessage.
 
