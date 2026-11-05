@@ -7,6 +7,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Coordinator: Coordinator-IV, session_01J2V3UYqrLbCNN9zst5WY8d (since 11:21 UTC; Coordinator-III archived). Mode: hotfix. Usage pause since 11:20 UTC (resetsAt 14:10 UTC).
 
+- Backend 1.1.98 (hotfix-back-IV, 15:17 UTC): QA-144 live run totals count nested runs at any depth (geomind 0.4.95, gemini 0.6.16). Not live-checked.
+
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
 - Backend 1.1.97 (2026-11-05 ~15:20 UTC, hotfix-python-IV): geomind 0.4.95 + gemini 0.6.16 LOCAL wheels (QA-128 carbon price on the plant's own CO2e only; QA-140 case lead splits into 2-4 geoscientists; Knowledge-only tools for sub-agents; QA-143; QA-121 one-sentence approval cards; IMP-019). hotfix-python-IV hands over to hotfix-python-V (note notes/sessions/hotfix-python-4.md).
