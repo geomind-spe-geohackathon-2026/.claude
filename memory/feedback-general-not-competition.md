@@ -20,3 +20,10 @@ competition files. No competition numbers, limits or worked hackathon example in
 competition fact or assumption goes in its own file (`hackathon-2026-assumptions.md`, case inputs).
 Whatever the competition needs is taught as a real, general chapter or lesson, so the same books
 solve similar problems. Do not overfit them to the hackathon.
+
+Sahand, 2026-11-05 21:40 Trondheim: help the agents much more with GENERAL knowledge in the
+handbooks (every lesson that helps them, as real general lessons), never with competition answers.
+Everything a full run needs (case -> economics -> design -> simulate -> report) that the inputs do
+not give must be in hackathon-2026-assumptions.md (known facts, organisers' answers, team
+assumptions with sources), so agents never search for missing data. Agents read Knowledge by
+section (outline first, then only the sections they need; QA-351), never whole handbooks.
