@@ -82,8 +82,8 @@ Last updated: 2026-11-05 10:05 UTC.
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
   hotfix-front-II (session_01J2V3UVLf5yhPSiTnivcPyR since 2026-11-05 09:30 UTC, successor of hotfix-front; note notes/sessions/hotfix-front-1.md; area frontend; QA-093),
   hotfix-back-II (session_01J2V3UZeNoBawJDgCJuBHr7, since 2026-11-05 09:30 UTC, successor of hotfix-back session_01J2V3UWh6RugyR1DAxrkNhH; note notes/sessions/hotfix-back-1.md; areas backend, data, infra, backend clone; QA3 seeding, QA-095, QA-092 triage),
-  hotfix-python-II (session_01J2V3UXSA2mo8MG4igf5y4n since 2026-11-04 23:52 UTC, areas geomind, gemini; local wheels; QA-090/091/094).
-  Archived 09:32 UTC by Coordinator-III: hotfix-front, hotfix-back, functional-qa-I, -2, -3 (run B cef908d9 cancelled).
+  hotfix-python-III (session_01J2V3UYxvjmxy4kZhDh7eSd since 2026-11-05 10:05 UTC, successor of hotfix-python-II; note notes/sessions/hotfix-python-2.md; areas geomind, gemini; local wheels; QA-090/091/094, QA-095 case-lead part, the user-approved geomind release).
+  Archived by Coordinator-III: hotfix-python-II (10:06 UTC), hotfix-front, hotfix-back, functional-qa-I, -2, -3 (run B cef908d9 cancelled).
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
 - QA sessions qa-1, qa-4, qa-5 paused by Sahand 2026-11-04 23:25 UTC and ARCHIVED ~23:30 UTC;
