@@ -15,10 +15,10 @@ The project root holds one clone of each repo, `.claude/` (this repo) and `docum
 Read `.claude/STATUS.md`: production, the clones, the mode rules, open
 decisions. Then ask the user the mode.
 
-## Hand over at 75 % context
+## Hand over at 300,000 tokens of context
 
 Check your context at the start of every piece of work (`get_session` of the Claude Code Remote MCP
-server, `context_usage`). At 75 %, hand your work to a fresh session named `<name>-II`, `-III` ...:
+server, `context_usage`). At 300,000 used tokens, hand your work to a fresh session named `<name>-II`, `-III` ...:
 follow `.claude/session-refresh.md` exactly. Read the coordinator's current id in `STATUS.md`
 before you message it.
 

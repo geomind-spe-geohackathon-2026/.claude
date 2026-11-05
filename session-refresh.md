@@ -1,7 +1,7 @@
 # Session refresh: hand over before the context fills
 
-Every Claude Code session of this project hands its work to a fresh session once its context
-reaches 75 %. A long session gets slow and expensive and forgets; a fresh one starts small with
+Every Claude Code session of this project hands its work to a fresh session once it has used
+300,000 tokens of context (Sahand, 2026-11-05; was 75 %). A long session gets slow and expensive and forgets; a fresh one starts small with
 only what matters.
 
 ## When
@@ -11,7 +11,7 @@ after any long tool output:
 
 - the `get_session` tool of the Claude Code Remote MCP server, with no `session_id`, returns your
   own session; `external_metadata.context_usage` has `used_tokens` and `max_tokens`;
-- at `used_tokens / max_tokens >= 0.75`, finish only the step you are in, then hand over.
+- at `used_tokens >= 300000`, finish only the step you are in, then hand over.
 
 ## How
 

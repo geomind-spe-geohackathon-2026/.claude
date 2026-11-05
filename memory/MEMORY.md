@@ -14,7 +14,7 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [QA round 2 rules](feedback-qa-round-2.md) — agent-browser only (no Playwright), competition files only, functional flow first, OpenRouter spend no limit, gemini editable
 - [Decisions 2026-11-05](feedback-decisions-2026-11-05.md) — catalogue only sourced rows; gemini unfrozen; auto-approve in backend; features in hotfix; releases without OK; rate limit high; automatic handover
 - DECISIONS (Sahand, 2026-11-04 21:40 UTC): QA-010 = the agent proposes clearly labelled engineering assumptions in one question when the user delegates and no RAG/MCP source exists, user approves (source 'agent assumption'); QA-006 = research cited catalogue rows, Sahand approves, then re-seed. Other open decisions: STATUS.md
-- [Session refresh at 75%](feedback-session-refresh.md) — every session hands over to <name>-II, -III at 75% context; .claude/session-refresh.md
+- [Session refresh at 300k tokens](feedback-session-refresh.md) — every session hands over to <name>-II, -III at 300,000 used tokens of context (was 75%); .claude/session-refresh.md
 - MODEL (Fatemeh, 2026-11-04 20:20 UTC, done): every geomind role on deepseek/deepseek-v4.1-flash-1017 with OpenRouter provider morph/fp8 (GEOMIND_PROVIDER=morph/fp8), backend 1.1.22 [[feedback-llm-model]]
 - [Write shared context at once](feedback-write-shared-context.md) — anything every session needs goes into root .claude at once: memory (rules), STATUS.md (state), QA (bugs)
 - [docs vs .claude layout](feedback-docs-vs-claude-layout.md) — people: documents/ (root, repo documents) and docs/ (repos); agents: .claude/ (root = repo .claude) and AGENTS.md
