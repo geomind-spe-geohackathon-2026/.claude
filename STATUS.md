@@ -15,6 +15,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- 17:40 UTC (user): speed of case and plant is the goal; plan documents/project/plans/speed-case-plant.md (tasks A measure offline, B case, C plant, D handbooks, E display); sessions speed-analysis-I (A) and handbook-speed-I (D) started on Sonnet.
+
 - 17:30 UTC: hotfix-python-IV ready (waits for the lock behind hotfix-back-III 1.1.96): gemini 0.6.16 QA-128 (grid electricity CO2 no longer priced, still in the co2 metric; sample carbon cost 0.71 -> 0.33 MEUR/yr) + geomind 0.4.95 (QA-140 case lead splits into 2-4 geoscientists, Knowledge-only tools for sub-agents, QA-143, QA-121, IMP-019); then hands over to hotfix-python-V (note notes/sessions/hotfix-python-4.md).
 
 - Frontend 1.1.111 (hotfix-front-V): plant version Flowsheet tab = the Plant page canvas, read-only, changed modules outlined (not live-checked).
@@ -64,6 +66,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 17:40 UTC (user): speed of case and plant is the goal; plan documents/project/plans/speed-case-plant.md (tasks A measure offline, B case, C plant, D handbooks, E display); sessions speed-analysis-I (A) and handbook-speed-I (D) started on Sonnet.
 
 - 17:30 UTC: hotfix-python-IV ready (waits for the lock behind hotfix-back-III 1.1.96): gemini 0.6.16 QA-128 (grid electricity CO2 no longer priced, still in the co2 metric; sample carbon cost 0.71 -> 0.33 MEUR/yr) + geomind 0.4.95 (QA-140 case lead splits into 2-4 geoscientists, Knowledge-only tools for sub-agents, QA-143, QA-121, IMP-019); then hands over to hotfix-python-V (note notes/sessions/hotfix-python-4.md).
 
