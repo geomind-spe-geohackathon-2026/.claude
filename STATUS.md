@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 06:33 UTC.
+Last updated: 2026-11-05 07:03 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.76 (2026-11-05 07:00 UTC, hotfix-python-II): geomind 0.4.72 + gemini 0.6.10 LOCAL wheels (QA-082 root: simulate summary no longer fails on an ESP failure group).
 
 - Backend 1.1.75 (2026-11-05 06:30 UTC, hotfix-python-II): gemini 0.6.10 + geomind 0.4.71 LOCAL wheels (QA-082 depth named first, simulate changes set plant options; QA-083 internal errors carry their cause, bare inlet names coded).
 
