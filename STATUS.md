@@ -11,6 +11,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- Backend 1.1.93 (hotfix-back-III): IMP-025 backend part 1: case/plant versions saved one at a time in event order (parallel instances could drop or misorder versions). Part 2 (per-instance `instance` field through events/socket/log) waits on the contract with hotfix-python-IV.
+
 - 15:45 UTC (user): name is data-economics.csv/.md. Knowledge: data-economics.csv 74a0d44b, .md e470a627 uploaded; cost-sources.* (a2c6c5f8, 765d6eb4) stay until hotfix-python-IV releases the rename (geomind reads knowledge/cost-sources.csv at run time), then the coordinator deletes them.
 
 - Backend 1.1.92 (14:37 UTC, hotfix-python-IV): geomind 0.4.89: QA-131 (sensitivity via gemini, values= drivers; analysis lead sets ranges with set_case; never run_python); handbook-design name. Frontend 1.1.105: QA-133/134. Backend 1.1.91: QA-136. QA-135 frontend (newest result).
@@ -28,6 +30,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- Backend 1.1.93 (hotfix-back-III): IMP-025 backend part 1: case/plant versions saved one at a time in event order (parallel instances could drop or misorder versions). Part 2 (per-instance `instance` field through events/socket/log) waits on the contract with hotfix-python-IV.
 
 - 15:45 UTC (user): name is data-economics.csv/.md. Knowledge: data-economics.csv 74a0d44b, .md e470a627 uploaded; cost-sources.* (a2c6c5f8, 765d6eb4) stay until hotfix-python-IV releases the rename (geomind reads knowledge/cost-sources.csv at run time), then the coordinator deletes them.
 
