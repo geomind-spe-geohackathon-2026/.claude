@@ -51,10 +51,29 @@ Project "QA2 functional-qa-3 studies", auto-approve ON. Status per scenario is k
   silent narrowing of the brief, no run stuck at 0 tokens (QA-070, QA-074, QA-047).
 - functional-qa-3-S12 Variations: repeat S1-S6 with other wording / a changed brief (e.g. 2 doublets fixed).
 
-## Status
+## Status (final, 2026-11-05 ~09:30 UTC, backend 1.1.79, geomind 0.4.73; stopped by the coordinator, no new run)
 
-(one line per scenario)
-- S0 (2026-11-05 ~06:10 UTC): case built after ~6 question cards; run bd7aa40e died after 68 min (QA-081, fixed 1.1.74); 'go on' resumed with case kept (S11 partly OK); run eb7b95df blocked by gemini 'internal' errors (QA-083, blocker). No design yet.
-- S10 partial: web_search used by agents; 8-word/English guard works (queries of 9-12 words and a Dutch query were refused, agent rewrote them); read_web_page got a 403 once.
-- S1-S9, S12: blocked on S0 (no stored design). S11: deploy-cut run seen once (QA-081).
+Project "QA2 functional-qa-3 studies" 932b318c-f285-4827-aefe-c8fa3327735b, chat 510ab94f-c4f7-4019-9f75-cb40229b374e.
+A design run (b01f2tbfn, started 08:27 UTC) is left as it is: it waits on a question card ("At least 100 C while
+delivering" / keep exactly 100 C / adiabatic main).
 
+- S0 setup: done with detours. Case built from the PDF and CSVs after about 8 question cards (time zone, air, return
+  temperatures, economics, requirements change, dew point margin asked 4 times, CO2 intensity, indoor temperature and
+  humidity, limits). The agents then reach a simulating plant (365 steps) meeting 6 of the 8 PDF caps; the two failing
+  caps (heating exactly 100 C at the consumer, cooling exactly 20 C on 146 zero-demand days) are a requirement-semantics
+  question the agent put to the user (good) - gemini should perhaps treat the supply caps as 'while delivering'.
+- S1-S9, S12 (studies): BLOCKED by QA-092 (agent design never reaches the project Plant; Study 'Run the design'
+  waits for 4 values, Results 'No results'). Not tested: size, find best design, test uncertainty, rank, evolve,
+  compare structures (including the coordinator's non-rank-1 / off-front Open and Save check), cancel.
+  Study UI seen: kinds Run the design / Find the best design / Test the uncertainty / Rank what matters most /
+  Find the best structure; 'size' is a checkbox on Run; the study list loads, but once 'Loading studies' hung 30+ s.
+- S8 calculate: not exercised. S9 run_python: works (sandbox, named inputs; two refused attempts: data literals and
+  non-number JSON; then ESP head/power curve estimate stored). S10 web_search: guard works but QA-087 (39 searches for one
+  value; fixed in 1.1.79, retest open).
+- S11 robustness: run bd7aa40e failed after a deploy cut, 'go on' kept the case (QA-081, fixed 1.1.74/1.1.79, retest
+  open); run 753645c0 failed with 'resume: request-1124 ... already answered' (QA-081 reopened, fixed 1.1.79, retest open);
+  run eb7b95df cancelled after gemini 'internal' loops (QA-083).
+
+Bugs filed: QA-081 (major), QA-083 (blocker), QA-087 (minor), QA-092 (major), QA-093 (minor). Also seen, not filed
+separately: the same question asked again after the user said 'unknown' (dew point 4 times; QA-079 family).
+Retests still to do: QA-081 and QA-087 on 1.1.79, QA-083 (1.1.75+).
