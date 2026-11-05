@@ -15,3 +15,9 @@ code tests that need no LLM stay allowed for the hotfix sessions.
 **How to apply:** hotfix sessions fix, run their usual offline tests, release and deploy, but do
 not verify live; Manual QA passes findings but runs nothing; successors inherit this until the
 user lifts it, then delete this file.
+
+**Lifted for the QA round (Sahand, 2026-11-05 16:47 UTC):** the nine threads in
+`documents/project/plans/qa-round-e2e-ai.md` (QA-E2E-case/economics/design/study/report-I,
+QA-AI-case/design/analysis/project-I) may run live tests, browser tests and LLM agent runs on
+geomind.team with the competition data. Every other session still runs none. Hotfix sessions: no
+heavy test writing in hotfix mode (Sahand 16:33).
