@@ -3,11 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 00:15 UTC.
+Last updated: 2026-11-05 00:20 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.57 (2026-11-05 00:12 UTC, hotfix-python-II): geomind 0.4.57 LOCAL wheel (run_python live in gemini-sandbox:0.6.5, checked from geomind-celery); 1.1.56: geomind 0.4.56 (skills folder
+- Backend 1.1.58 (2026-11-05 00:16 UTC, hotfix-python-II): geomind 0.4.58 LOCAL wheel (web_search/read_web_page over SearXNG live; calculate takes plain numbers/pi/e beside one sourced operand); 1.1.57: geomind 0.4.57 (run_python live in gemini-sandbox:0.6.5, checked from geomind-celery); 1.1.56: geomind 0.4.56 (skills folder
   `geomind/skills/<name>/SKILL.md` with roles; `calculate` tool, results in problem state `calculations`),
   gemini 0.6.5, alembic 0014. 1.1.55 gave the worker the run_python sandbox (docker socket) and SearXNG.
   Deploys resume running runs (QA-035).
@@ -70,7 +70,7 @@ Last updated: 2026-11-05 00:15 UTC.
 
 ## Feature in progress (hotfix mode)
 
-- Since 2026-11-05 ~00:00 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG);
+- Since 2026-11-05 ~00:00 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG); geomind side LIVE in 0.4.58 (00:16 UTC); left: move role-prompt how-to into skills (hotfix-python), frontend views (hotfix-front);
   spec `notes/features/agent-tools-2026-11-05.md`; hotfix-python, hotfix-back, hotfix-front.
 - 2026-11-05 ~00:15 UTC (Sahand): SearXNG up (geomind-searxng, geomind network only), image
   gemini-sandbox:0.6.5 built, prod backend `.env` has GEOMIND_SEARCH_URL, DOCKER_GID, ASSISTANT_SANDBOX,
