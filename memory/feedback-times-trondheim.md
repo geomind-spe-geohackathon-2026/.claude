@@ -11,3 +11,7 @@ UTC as before. Deploy windows at :00 and :30 UTC are the same minutes in Trondhe
 
 **Why:** he reads the chat in local time; UTC made him convert.
 **How to apply:** `TZ=Europe/Oslo date` before writing a time in chat.
+
+Repeated by Sahand 2026-11-05 18:14 Trondheim ("tell everyone to give times in Trondheim time"):
+EVERY thread and session, in every chat message, gives times in Trondheim time (write "Trondheim"
+or "CET" after it), never UTC. Many threads still wrote UTC.
