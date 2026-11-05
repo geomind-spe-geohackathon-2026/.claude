@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 14:35 UTC (user): Fatemeh QA (session_01J2V3UX7XrrTa9jKv7ZTh9a, 525k context) is under the 300k refresh rule too; asked to hand over to "Fatemeh QA-II".
+
 - 14:20 UTC: hotfix-back-II handed over to hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu (note notes/sessions/hotfix-back-2.md); QA-095 fixed; test_case_aware fixed (backend 931cac5, no deploy). handbook-others archived (guides git rm'd, documents a0854de). ALL FOUR handbooks COMPLETE (plant-design 995bd35, techno-economics a1ab0cb; handbook-economics session_01J2V3UVK9oFWcJQb2GuSbpF done, archive refused by classifier: user archives). Frontend 1.1.99 live 14:10 UTC (hotfix-front-III). Knowledge swap (upload the four handbook-*.md, re-upload hackathon-2026-assumptions; delete guides 2330c87c, daf88c29, 11f90cd2, 678e9a43) PENDING: auto-mode classifier refused scripts.replace_knowledge for the coordinator; the user runs it. Rule: Fatemeh's bugs first (memory/feedback-fatemeh-bugs-first.md).
 
 - 13:40 UTC (user): the five functional-qa sessions STAY PAUSED until the user says otherwise; every other session (hotfix, handbooks) resumed now. hotfix-python-III (context full) handed over to hotfix-python-IV session_01J2V3UZqdULpCLT7XEFdd6t (note notes/sessions/hotfix-python-3.md).
