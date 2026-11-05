@@ -15,4 +15,22 @@ prints it; drive.py newchat/send/answer/wait, polls every 15 s (QA-217: no faste
 log.py dumps /runs/{id}/log; trace.py prints every LLM and tool call with times and tokens;
 upload.py adds a case file with the base version). Run them from a scratch copy.
 
-Open for retest when fixed: QA-288, QA-310, QA-266, QA-294, QA-218, QA-283, QA-224, QA-204, QA-190, QA-189.
+State at 19:40 UTC (backend 1.1.123): rounds 1-4 done (report has 4 sections). Verified: QA-187,
+189, 190, 204, 218, 224, 227, 245, 252, 283, 288, 310 (QA-266 verified by its fixer). Open: QA-294
+(project results invisible to agents in a new chat). Duplicates: QA-188 (= QA-176), QA-265 (= QA-199).
+Idea: IMP-032.
+
+Rules from the user during this session (already in memory/ or STATUS by the coordinator): times in
+chat in Trondheim time (CET), files UTC; a bug never ends testing: file it and go on, retest only
+deployed fixes; poll run state no faster than every 5 s.
+
+Next steps for the successor (role: same row of the plan, hotfix mode, no code changes, live LLM runs
+allowed, backend layer only, chat with Sahand in Persian):
+1. Retest QA-294 when fixed (project 1, new chat: "what moved in LCOH against the last result").
+2. New scenarios not yet run: support lead's summarizer for a long handover (memory off), the
+   `design` loop route ("only a new design round on the case as it is"), an app event message from
+   a plant saved by hand, a request that mixes two goals, a third compare family named by the user.
+3. Check the comparison LCTS (33.66 EUR/MWh, HP + compression) against gemini's
+   examples/hackathon.py on the current gemini (README says 40.34, older version); report only a
+   real gap.
+4. Append each round to the report and update the SCENARIOS row.
