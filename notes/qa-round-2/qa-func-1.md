@@ -147,3 +147,8 @@ Check in the start-to-end run, and file a bug when one fails:
    peaks, 111.67/23.74 GWh).
 7. Evidence: the agent log with prompts, answers and token usage can be exported; the final
    configuration and its supporting calculations are explained.
+
+### functional-qa-I status (2026-11-05 ~00:25 UTC)
+- QA-068 (key limit) retested and verified: failed run now says "The model provider refused: key limit exceeded; an admin must raise it"; runs work. QA-065 and QA-061 retested verified in fresh project (count 1-3 present; no 'Already answered' note). QA-063 verified by hotfix-front. QA-069 filed from qa-func-3 notes. QA-070 filed (nested design_lead 'interrupted by a crash' x2, project lead shrinks scope).
+- Start-to-end run: project "QA2 functional-qa-I full run" 61134432, chat 81b51db5, run 861ef137, auto-approve ON, shared memory Off. Case step: 19-item question, my answers (UTC, generic site, labelled assumptions, Ember 209.21), economics card with NL/NO/FR rows (I left subsidy and waste disposal open). Design phase running; checklist points 1 (analysis from files: yes, asked only values the files lack) done; 2-7 pending.
+- Old project S1 (a0947848) abandoned with its depth changed to 3000 m and a pressure question open; S5 temperature-follow not checked.
