@@ -19,3 +19,6 @@ themselves ALWAYS get the highest fix priority, above everything the QA threads 
 Manual QA) and tasks (QA-150 ...) file. The coordinator files them with qa.py (reporter "Sahand" or
 "Fatemeh"), severity at least major, routes them to the hotfix thread at once, and tells it to take
 it next.
+
+Sahand, 2026-11-05 18:16 Trondheim (in Manual QA-IV's thread): bugs that Manual QA-IV (Fatemeh's QA
+session and its successors) finds have the same top tier as bugs Sahand or Fatemeh send.
