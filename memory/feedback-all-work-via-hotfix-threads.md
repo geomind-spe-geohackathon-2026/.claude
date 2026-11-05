@@ -14,3 +14,8 @@ speed, handbooks etc. Tasks use the title prefix "Task: " (e.g. QA-150 speed, QA
 
 **How to apply:** QA threads only test and report; the coordinator files tasks with qa.py and
 routes them; hotfix threads take them with `qa.py next` by severity.
+
+Exception (Sahand, 2026-11-05 16:53 UTC): handbook threads handbook-case-I, handbook-design-I and
+handbook-econ-report-I improve the handbooks (`documents/project/quality-assurance/inputs/handbook-*.md`,
+re-uploaded to Knowledge) for structure and quality so agents read them easily and extract useful
+facts, bug or no bug. Case and design first. QA-151 belongs to handbook-design-I.
