@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.99 (hotfix-back-V, 2026-11-05): `ts` on step events and run-log steps. Live.
 
+- Backend 1.1.99 (hotfix-back-V, 2026-11-05): `ts` on step.started/step.finished (stream, /events) and on every run-log step. patch_plant "internal error" (runs 753645c0, eb7b95df, 05:28-06:06 UTC) predates QA-083 (geomind 0.4.71, backend 1.1.75: internal errors carry class, message, file:line); no backend defect found, no new fix. IMP-025 code path checked on geomind 0.4.95 (events carry `instance`). qa.py next: none open for backend/data/infra.
+
 - Backend 1.1.98 (hotfix-back-IV, 15:17 UTC): QA-144 live run totals count nested runs at any depth (geomind 0.4.95, gemini 0.6.16). Not live-checked.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
