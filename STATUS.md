@@ -9,6 +9,10 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 13:40 UTC (user): the five functional-qa sessions STAY PAUSED until the user says otherwise; every other session (hotfix, handbooks) resumed now. hotfix-python-III (context full) handed over to hotfix-python-IV (note notes/sessions/hotfix-python-3.md).
+
+- Backend 1.1.88 (2026-11-05 11:30 UTC, hotfix-python-III; includes hotfix-back-II 1.1.87 QA-110/102 backend, QA-104): geomind 0.4.85 + gemini 0.6.13 LOCAL wheels (every tool in exactly one skill, IMP-014/015/016/017 part 1/018, QA-097/099/114/116/119/120, read_rag outline/section). Frontend 1.1.93-1.1.99 (11:30, hotfix-front-III: QA-115, 117, 100, 101, 110, 102).
+
 - Backend 1.1.88 (2026-11-05 11:30 UTC, hotfix-python-III; includes hotfix-back-II 1.1.87): geomind 0.4.85 + gemini 0.6.13 LOCAL wheels (tools documented only in skills, IMP-014..018, QA-097/099/114/116/119/120, read_rag by section). hotfix-python-III paused for the usage limit; handover note notes/sessions/hotfix-python-3.md (successor hotfix-python-IV on resume).
 
 - Backend 1.1.86 (2026-11-05 11:00 UTC, hotfix-python-III; includes hotfix-back-II 1.1.85 QA-106): geomind 0.4.81 + gemini 0.6.13 LOCAL wheels (QA-104, QA-105, QA-107a gemini part, IMP-012/013 evaluate_module and set_case slips, skills sent with a tool's first result).
