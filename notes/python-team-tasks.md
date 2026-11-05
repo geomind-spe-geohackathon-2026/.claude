@@ -12,3 +12,5 @@ m7 (studies and design accuracy, competition-critical): 1) QA-278 (major): in th
 m8 (speed minors): QA-157, QA-156, QA-189 (re-reads and round trips), QA-234 (the chat report prints raw floats), QA-220 geomind part (approval waits logged with duration 0), then minors QA-154, QA-155, QA-190, QA-194, QA-204 (next-step chips: geomind/tools/suggestions.py). Files: tools/stored.py, tools/gemini/results.py, tools/gemini/references.py, tools/suggestions.py, tools/knowledge_only.py, the report formatting code (find it, tell me), and their tests.
 
 Addenda: m6 must NOT delete memory rows (Sahand decides). m6 also covers QA-265 (duplicate of QA-199) and IMP-030 if it fits. m7: QA-205/209/238/240/248 are already live; add QA-263 follow-ups. m8: not QA-219/235/236/261/262 (done or with m1/m3).
+
+m4 additions (19:30): QA-279 (Norwegian prices where they differ: keep the assumptions file for every other key) and QA-280 (naming a site in an economics request must not re-survey ground and air). Rule: change only what the user named, keep the rest. These touch case-lead prompts (m2 owns prompts/case/lead.md: send lines to the lead) and economics.py.
