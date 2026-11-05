@@ -1,0 +1,189 @@
+start id stat project steps tools errs dups sim chk opt patch llm_min tool_min
+00:13 2d8a6bbf canc QA2 qa-func-1 S1 full  18 32 3 10 0 0 0 0 2.3 0.0
+     agents: {'coordinator': 1, 'project_lead': 7, 'design_lead': 6, 'process_engineer': 4}
+00:16 6d47f7c9 fail QA2 qa-func-1 S1 full  29 40 3 13 0 0 0 0 5.3 0.0
+     agents: {'coordinator': 1, 'project_lead': 4, 'case_lead': 24}
+00:29 92971ce5 canc QA2 qa-func-1 S1 full  23 32 18 0 0 0 0 0 10.3 10.2
+     agents: {'coordinator': 1, 'project_lead': 1, 'case_lead': 21}
+00:40 d833d5e2 canc QA2 qa-func-1 S1 full  13 20 6 1 0 0 0 0 2.8 2.6
+     agents: {'coordinator': 1, 'project_lead': 2, 'case_lead': 10}
+00:43 861ef137 fail QA2 functional-qa-I fu 232 376 114 143 0 0 0 38 74.4 58.0
+     agents: {'coordinator': 1, 'project_lead': 5, 'case_lead': 20, 'geoscientist': 5, 'design_lead': 68, 'process_engineer': 26, 'integration_engineer': 38, 'reservoir_engineer': 26, 'well_engineer': 20, 'energy_systems_engineer': 23}
+01:24 7dcfcf93 done sahand test 1 79 149 16 22 0 0 0 0 16.2 3.9
+     agents: {'coordinator': 1, 'project_lead': 7, 'case_lead': 53, 'geoscientist': 11, 'support_lead': 2, 'curator': 5}
+04:16 37950240 canc QA2 functional-qa-I fu 294 595 89 295 4 0 0 16 74.3 87.7
+     agents: {'coordinator': 1, 'project_lead': 7, 'comparison_driver': 15, 'design_lead': 151, 'explainer': 3, 'case_lead': 30, 'process_engineer': 17, 'integration_engineer': 5, 'well_engineer': 21, 'reservoir_engineer': 17, 'energy_systems_engineer': 27}
+04:17 6921d00e fail QA2 functional-qa-2 ec 149 292 95 109 2 0 0 30 39.8 14.1
+     agents: {'coordinator': 1, 'project_lead': 3, 'case_lead': 29, 'geoscientist': 5, 'design_lead': 38, 'process_engineer': 14, 'integration_engineer': 17, 'well_engineer': 14, 'reservoir_engineer': 14, 'energy_systems_engineer': 14}
+04:17 bd7aa40e fail QA2 functional-qa-3 st 265 458 88 186 5 0 0 34 67.3 57.7
+     agents: {'coordinator': 1, 'project_lead': 10, 'case_lead': 61, 'geoscientist': 7, 'design_lead': 106, 'process_engineer': 11, 'integration_engineer': 14, 'reservoir_engineer': 14, 'well_engineer': 13, 'energy_systems_engineer': 28}
+04:49 f59e5d2c canc QA2 functional-qa-2 ec 418 837 95 366 24 0 0 30 152.4 78.2
+     agents: {'coordinator': 1, 'project_lead': 13, 'design_lead': 242, 'case_lead': 72, 'process_engineer': 7, 'integration_engineer': 3, 'reservoir_engineer': 11, 'well_engineer': 21, 'energy_systems_engineer': 48}
+05:20 b5a578de done QA2 functional-qa-I fu 2 0 0 0 0 0 0 0 0.1 0.0
+     agents: {'coordinator': 1, 'answer': 1}
+05:28 eb7b95df canc QA2 functional-qa-3 st 169 289 44 93 5 0 0 29 35.0 52.8
+     agents: {'coordinator': 1, 'project_lead': 10, 'case_lead': 14, 'design_lead': 67, 'process_engineer': 14, 'integration_engineer': 12, 'reservoir_engineer': 5, 'well_engineer': 32, 'energy_systems_engineer': 14}
+05:31 c4f00b5c canc QA2 functional-qa-I fu 162 234 86 41 61 0 0 35 52.2 33.7
+     agents: {'coordinator': 1, 'project_lead': 9, 'case_lead': 5, 'design_lead': 144, 'well_engineer': 3}
+06:06 753645c0 fail QA2 functional-qa-3 st 230 441 74 113 7 0 0 26 86.4 39.1
+     agents: {'coordinator': 1, 'project_lead': 7, 'design_lead': 125, 'process_engineer': 5, 'integration_engineer': 3, 'case_lead': 40, 'well_engineer': 13, 'energy_systems_engineer': 36}
+06:34 004bb7f9 done QA2 functional-qa-I fu 5 5 0 0 0 0 0 0 1.9 0.0
+     agents: {'coordinator': 1, 'project_lead': 4}
+06:43 cef908d9 canc QA2 functional-qa-2 ec 621 982 122 355 19 0 0 58 199.3 255.3
+     agents: {'coordinator': 1, 'project_lead': 14, 'case_lead': 74, 'geoscientist': 4, 'design_lead': 263, 'process_engineer': 38, 'integration_engineer': 37, 'reservoir_engineer': 9, 'energy_systems_engineer': 163, 'well_engineer': 18}
+07:02 3bdd7ebb fail QA2 functional-qa-I fu 586 992 150 371 28 0 2 48 289.7 312.6
+     agents: {'coordinator': 1, 'project_lead': 5, 'design_lead': 238, 'energy_systems_engineer': 137, 'well_engineer': 9, 'process_engineer': 150, 'case_lead': 24, 'reservoir_engineer': 10, 'comparison_driver': 12}
+07:27 de266fff canc QA2 functional-qa-3 st 319 717 103 256 20 0 0 25 116.4 115.7
+     agents: {'coordinator': 1, 'project_lead': 18, 'design_lead': 178, 'case_lead': 15, 'energy_systems_engineer': 34, 'reviewer': 25, 'analysis_lead': 48}
+10:10 32a12115 done geo mind testing 360 621 84 174 9 0 3 23 101.3 94.6
+     agents: {'coordinator': 1, 'project_lead': 21, 'case_lead': 54, 'geoscientist': 6, 'design_lead': 120, 'process_engineer': 6, 'integration_engineer': 5, 'reservoir_engineer': 8, 'well_engineer': 11, 'energy_systems_engineer': 47, 'reviewer': 18, 'analysis_lead': 24, 'economist': 27, 'explainer': 5, 'support_lead': 2, 'curator': 5}
+10:31 80d261c9 done QA3 report 23 31 3 5 1 0 0 0 2.7 1.6
+     agents: {'coordinator': 1, 'analysis_lead': 13, 'economist': 9}
+10:31 aa3a2f95 done QA3 simulation 8 10 0 0 1 0 0 0 0.3 0.0
+     agents: {'coordinator': 1, 'analysis_lead': 7}
+10:31 bf0da8dd done QA3 case 32 48 5 11 0 0 0 0 4.9 1.0
+     agents: {'coordinator': 1, 'project_lead': 8, 'case_lead': 19, 'geoscientist': 4}
+10:31 e716040b canc QA3 plant 72 138 13 56 0 0 0 7 21.2 7.7
+     agents: {'coordinator': 1, 'project_lead': 6, 'design_lead': 21, 'process_engineer': 15, 'reservoir_engineer': 4, 'energy_systems_engineer': 11, 'well_engineer': 14}
+10:31 f83e7b8b done QA3 study 9 14 0 0 1 0 0 0 0.5 0.0
+     agents: {'coordinator': 1, 'analysis_lead': 8}
+10:32 cd6eaba5 done QA3 simulation 29 52 12 5 0 0 0 0 7.8 0.2
+     agents: {'coordinator': 1, 'analysis_lead': 28}
+10:33 1461ca81 canc QA3 study 60 116 29 24 7 0 0 10 21.8 2.3
+     agents: {'coordinator': 1, 'project_lead': 4, 'design_lead': 47, 'reviewer': 8}
+10:36 da7eb467 done QA3 report 29 84 28 20 1 0 0 0 7.8 0.3
+     agents: {'coordinator': 1, 'analysis_lead': 28}
+10:44 c4c75dc8 done QA3 report 27 65 6 4 0 0 0 0 4.5 0.2
+     agents: {'coordinator': 1, 'analysis_lead': 26}
+10:50 a5bbf47f done QA3 case 14 18 0 3 0 0 0 0 1.2 0.0
+     agents: {'coordinator': 1, 'project_lead': 4, 'case_lead': 9}
+10:55 5eb10fa1 canc sahand test 1 246 486 114 145 6 0 1 18 70.6 64.7
+     agents: {'coordinator': 1, 'project_lead': 4, 'design_lead': 76, 'process_engineer': 6, 'integration_engineer': 6, 'reservoir_engineer': 6, 'energy_systems_engineer': 61, 'well_engineer': 34, 'analysis_lead': 29, 'economist': 20, 'case_lead': 3}
+10:55 bac05d29 done QA3 case 12 21 0 3 0 0 0 0 0.9 0.0
+     agents: {'coordinator': 1, 'project_lead': 4, 'case_lead': 7}
+10:56 0901847a done QA3 report 39 120 44 14 0 0 0 0 12.3 1.3
+     agents: {'coordinator': 1, 'project_lead': 4, 'analysis_lead': 29, 'explainer': 5}
+10:59 1fd21dc2 done QA3 case 9 9 0 1 0 0 0 0 0.7 0.2
+     agents: {'coordinator': 1, 'project_lead': 5, 'case_lead': 3}
+11:02 9d2e34ca done QA3 case 12 14 1 1 0 0 0 0 1.5 0.0
+     agents: {'coordinator': 1, 'project_lead': 2, 'case_lead': 9}
+11:07 1a4043da done QA3 case 13 19 1 1 0 0 0 0 1.2 0.0
+     agents: {'coordinator': 1, 'project_lead': 4, 'case_lead': 8}
+11:10 cadc63aa done QA3 simulation 30 85 22 17 0 0 0 0 8.7 0.2
+     agents: {'coordinator': 1, 'analysis_lead': 29}
+11:12 11597465 canc QA3 case 8 10 4 0 0 0 0 0 0.8 0.0
+     agents: {'coordinator': 1, 'project_lead': 1, 'case_lead': 6}
+13:55 5cd1f2b8 done geo mind testing 58 67 28 6 0 0 0 0 11.4 5.3
+     agents: {'coordinator': 1, 'analysis_lead': 28, 'economist': 29}
+14:29 cb5a97c2 done sahand test 2 66 104 13 21 0 0 0 0 9.1 4.0
+     agents: {'coordinator': 1, 'project_lead': 8, 'case_lead': 34, 'geoscientist': 11, 'support_lead': 5, 'curator': 7}
+14:40 ed03d7ea canc sahand test 2 160 264 16 138 0 0 0 27 38.6 18.3
+     agents: {'coordinator': 1, 'project_lead': 1, 'design_lead': 64, 'process_engineer': 8, 'reservoir_engineer': 22, 'integration_engineer': 23, 'well_engineer': 13, 'energy_systems_engineer': 28}
+14:52 9696f5d4 done QA-TEST manual-qa IMP- 28 44 6 5 0 0 0 0 3.5 0.3
+     agents: {'coordinator': 1, 'project_lead': 6, 'case_lead': 19, 'geoscientist': 2}
+15:17 c801850b canc sahand test 2 54 74 6 7 0 0 0 8 7.7 9.8
+     agents: {'coordinator': 1, 'project_lead': 2, 'design_lead': 36, 'integration_engineer': 15}
+
+TOOLS calls/errors:
+  read_stored                   1505 err  229 (15%)
+  read_case                     1099 err   31 (3%)
+  describe_module                895 err    5 (1%)
+  read_result                    794 err   52 (7%)
+  read_plant                     752 err  118 (16%)
+  patch_plant                    462 err  239 (52%)
+  evaluate_module                377 err  305 (81%)
+  search_rag                     356 err    0 (0%)
+  finish                         261 err    2 (1%)
+  update_state                   242 err   33 (14%)
+  simulate                       201 err  113 (56%)
+  read_profile                   186 err    0 (0%)
+  calculate                      180 err  134 (74%)
+  web_search                     145 err   39 (27%)
+  read_skill                     129 err    0 (0%)
+  read_rag                       121 err    4 (3%)
+  list_plants                    118 err    1 (1%)
+  build_plant                    116 err   71 (61%)
+  set_case                        97 err   37 (38%)
+  check_results                   84 err    6 (7%)
+  describe_case                   80 err    1 (1%)
+  run_python                      79 err   57 (72%)
+  list_profiles                   59 err    0 (0%)
+  design_lead                     57 err   12 (21%)
+  energy_systems_engineer         51 err   12 (24%)
+  ask_user                        45 err    0 (0%)
+  list_files                      43 err    0 (0%)
+  case_lead                       41 err    7 (17%)
+  case_changes                    39 err    0 (0%)
+  process_engineer                34 err    2 (6%)
+  read_web_page                   32 err    3 (9%)
+  merge_designs                   29 err    5 (17%)
+  fill_parts                      26 err    0 (0%)
+  compute_kpis                    25 err    1 (4%)
+  write_lesson                    24 err    0 (0%)
+  list_modules                    23 err    0 (0%)
+  list_studies                    22 err    0 (0%)
+  integration_engineer            20 err    1 (5%)
+  size_plant                      18 err    3 (17%)
+  ask_economics                   15 err    2 (13%)
+  read_study                      14 err    0 (0%)
+  search_memory                   14 err    0 (0%)
+  accept_case                     12 err    0 (0%)
+  geoscientist                    10 err    0 (0%)
+  well_engineer                    9 err    0 (0%)
+  reviewer                         7 err    1 (14%)
+  estimate_costs                   6 err    0 (0%)
+  optimize                         6 err    4 (67%)
+  family_design_lead               6 err    1 (17%)
+  set_ranges                       5 err    1 (20%)
+  run_study                        5 err    2 (40%)
+  analysis_lead                    4 err    0 (0%)
+  economist                        4 err    0 (0%)
+  explainer                        3 err    0 (0%)
+  support_lead                     3 err    0 (0%)
+  curator                          3 err    0 (0%)
+  compare                          3 err    2 (67%)
+  sensitivity                      2 err    2 (100%)
+  sample_uncertainty               2 err    2 (100%)
+  comparison                       2 err    1 (50%)
+  read_memory                      2 err    0 (0%)
+  reservoir_engineer               1 err    0 (0%)
+
+TOP ERRORS:
+   305 evaluate_module: true
+   239 patch_plant: true
+   229 read_stored: true
+   134 calculate: true
+   118 read_plant: true
+   113 simulate: true
+    71 build_plant: true
+    57 run_python: true
+    52 read_result: true
+    39 web_search: true
+    37 set_case: true
+    33 update_state: true
+    31 read_case: true
+    12 design_lead: true
+    12 energy_systems_engineer: true
+     7 case_lead: true
+     6 check_results: true
+     5 describe_module: true
+     5 merge_designs: true
+     4 read_rag: true
+     4 optimize: true
+     3 size_plant: true
+     3 read_web_page: true
+     2 process_engineer: true
+     2 sensitivity: true
+     2 run_study: true
+     2 sample_uncertainty: true
+     2 finish: true
+     2 compare: true
+     2 ask_economics: true
+     1 set_ranges: true
+     1 describe_case: true
+     1 reviewer: true
+     1 comparison: true
+     1 family_design_lead: true
+     1 integration_engineer: true
+     1 list_plants: true
+     1 compute_kpis: true
