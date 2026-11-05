@@ -44,5 +44,6 @@ against the PDF caps and CSVs (peak heating 30.0 MW on 28 Jan; heating 111.67 GW
   run JSON.
 
 Status:
-- Project: QA2 functional-qa-2 economics (aa8023ca-33b3-4e5a-a7ea-5afad6ed4c1e). Run 1 (6921d00e) FAILED: QA-078 blocker (calculate state C1 duplicate), QA-079 major (questions asked 3x). Next: send "go on" in the chat to see if the design completes; then S1-S6.
-- S1: blocked by QA-078 (run 1 failed). S2-S6: not started
+- Bugs so far: QA-078 blocker (calculate C1; fixed 0.4.68, retest pending), QA-079 major (questions asked again: real in geomind, run B request-426/461 and UTC twice), QA-084 (subsidy kept), QA-085 (NL rows unlabelled), QA-086 (continue every 30 steps). QA-084 and QA-085 are OK in run B (region asked, no subsidy, heat 93.5115 honoured): to write Retest after the economics results.
+- Run A (project economics, 6921d00e failed; f59e5d2c cancelled by me, old code). Run B: project "QA2 functional-qa-2 economics B" (df514ce2-1d5b-4681-a7e6-5592cc5eac30), run cef908d9, started 06:43 UTC on backend 1.1.75; 2 h later: plant v2, no results yet, design loop (13.8M tokens). Note: run-B economics.json carries no per-value sources (about.sources of run A is gone) and the chiller 0 EUR/MWh is not labelled as assumption: check the Case page, file if the UI shows no source.
+- S1-S6: waiting for results (S1 partly: questions/sources; S2-S6 not started)
