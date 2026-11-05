@@ -126,3 +126,7 @@ tokens of context (rule: hand over at 300k, `.claude/session-refresh.md`).
   dataTableClass); every table in the app uses it (QA-096, QA-108).
 - Drop zone: `src/shared/attach/drop-zone.tsx`. Days strip: `src/shared/charts/days-strip.tsx`.
 - Favicons are in `static/` (the build's publicDir; `public/` is dev only, for MSW).
+
+## Deploy result
+
+11:01 UTC: frontend 1.1.92 live, bundle index-BnoB2Kcd.js. QA-103/108/111/113 set fixed; verify them live first.
