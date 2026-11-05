@@ -15,6 +15,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- 17:02 UTC: QA-140 (major, geomind; Manual QA-II): parallel case stage did not split (case lead called geoscientist once); case still complete in 3 min 45 s. To hotfix-python-IV.
+
 - 16:55 UTC (user, clarified 17:00): NO QA TESTS by any session (live checks, browser, LLM runs) until the user lifts it; unit tests allowed (memory/feedback-no-tests-now.md); timed case run withdrawn.
 
 - 16:50 UTC (user): hotfix-back and hotfix-front move to Sonnet: hotfix-back-III and hotfix-front-IV hand over to Sonnet successors (hotfix-back-IV, hotfix-front-V).
@@ -52,6 +54,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 17:02 UTC: QA-140 (major, geomind; Manual QA-II): parallel case stage did not split (case lead called geoscientist once); case still complete in 3 min 45 s. To hotfix-python-IV.
 
 - 16:55 UTC (user, clarified 17:00): NO QA TESTS by any session (live checks, browser, LLM runs) until the user lifts it; unit tests allowed (memory/feedback-no-tests-now.md); timed case run withdrawn.
 
