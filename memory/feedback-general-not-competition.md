@@ -1,6 +1,6 @@
 ---
 name: feedback-general-not-competition
-description: Sahand (2026-10-31): gemini and geomind must be fully general; the hackathon inputs are only one sample problem, never baked into code
+description: Sahand (2026-10-31, 2026-11-05): gemini, geomind and the Knowledge handbooks must be fully general; the hackathon is only one sample problem, never baked into code or handbooks
 metadata:
   type: feedback
 ---
