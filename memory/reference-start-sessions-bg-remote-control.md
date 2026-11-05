@@ -1,6 +1,6 @@
 ---
 name: reference-start-sessions-bg-remote-control
-description: On Sahand's account there is no Remote MCP; start sessions on the Dell as normal interactive claude in tmux with --remote-control (not --bg)
+description: Every session runs in the NTNU Dell environment (the `claude remote-control` bridge on the Dell) in ~/geomind-spe-hackathon-2026; never --bg, never plain Remote Control sessions
 metadata:
   type: reference
 ---
@@ -26,3 +26,11 @@ STATUS.md. Recurring coordinator tasks: CronCreate (session-only, expire after 7
 clones (it wants a worktree). Start every session as a normal interactive session in tmux:
 `tmux new-session -d -s '<title>' -x 220 -y 50 -c ~/geomind-spe-hackathon-2026 "claude --remote-control '<title>' -n '<title>' --model claude-opus-5-5 --permission-mode auto '<first prompt>'"`
 (add `--resume <sessionId>` to keep a session's context). Watch with `tmux capture-pane -p -t '<title>'`.
+
+**Change, 2026-11-05 (user, "save this"): every session is started IN THE NTNU DELL ENVIRONMENT**
+(the self-hosted bridge: the `claude remote-control` process running on the Dell), working folder
+`~/geomind-spe-hackathon-2026`, not as a Remote-Control-enabled local/tmux session and not `--bg`.
+Start it from claude.ai/code (New, environment "NTNU Dell", folder ~/geomind-spe-hackathon-2026) or
+with `claude --environment <ccpool_... id of the NTNU Dell environment>` from that folder. Opus,
+hotfix mode, no branch, no worktree ([[feedback-no-branches-no-worktrees-hotfix]],
+[[feedback-session-models]]). The tmux method above is only a stopgap.
