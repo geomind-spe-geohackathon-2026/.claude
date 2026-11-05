@@ -22,3 +22,7 @@ Rules:
 
 **Why:** one hotfix thread per area could not keep up with the QA threads (~70 bugs in an hour).
 **How to apply:** route bugs to the team lead of the area; the lead does the rest.
+
+Sizing (Sahand approved 2026-11-05 18:38 Trondheim): members only where the queue needs them. Now:
+python team = lead + 3 members; back and front = lead alone. Add members to a team when its open
+queue passes ~8 bugs; drop idle members.
