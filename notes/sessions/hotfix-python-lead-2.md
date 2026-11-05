@@ -12,6 +12,11 @@ Deploy: this session's `scripts/hotfix_deploy.sh` call is blocked by the permiss
 ask the coordinator to have back-lead deploy (its deploy carries geomind/gemini HEAD). Production
 Knowledge uploads and production DB reads are also blocked: they go to Sahand.
 
+## Update 21:42 Trondheim
+- LIVE deploy 62: backend 1.1.130, geomind 0.4.135, gemini 0.6.34. All python bugs to QA-349 fixed and live; QA-324 (minor) held until the report numbers are final.
+- New team rules (Sahand 20:52): members commit/push their own fixes, pull bugs with `qa.py next --area X --peek` then `qa.py claim`, areas as set in this thread (see feedback-hotfix-teams.md).
+- In progress: m2 read_knowledge contents-first / sections only (Sahand top priority; QA id pending).
+
 ## State at handover
 - LIVE (deploy 36): backend 1.1.118, geomind 0.4.130, gemini 0.6.26 (later deploys up to backend
   1.1.123/1.1.124 may carry more; check STATUS.md).
