@@ -44,4 +44,5 @@ against the PDF caps and CSVs (peak heating 30.0 MW on 28 Jan; heating 111.67 GW
   run JSON.
 
 Status:
-- S1-S6: not started
+- Project: QA2 functional-qa-2 economics (aa8023ca-33b3-4e5a-a7ea-5afad6ed4c1e). Run 1 (6921d00e) FAILED: QA-078 blocker (calculate state C1 duplicate), QA-079 major (questions asked 3x). Next: send "go on" in the chat to see if the design completes; then S1-S6.
+- S1: blocked by QA-078 (run 1 failed). S2-S6: not started
