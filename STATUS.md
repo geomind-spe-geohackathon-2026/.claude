@@ -121,6 +121,13 @@ Last updated: 2026-11-05 09:18 UTC.
 
 ## Open decisions (waiting for Sahand)
 
+- SUBMISSION DEADLINE (organisers, Discord #technical-q-and-a, 2026-11-04): Thursday 2026-11-05 23:59 CET
+  = 22:59 UTC. A pull request is enough (to GEMINI's development branch); for the gemini bugs we fixed,
+  explain what and where in it, no separate PR. Sahand decides what goes in. Organiser rules found by
+  Fatemeh's QA session: return temperatures are the team's choice within the constraints (QA-094); grid CO2
+  reference 0.3 kg/kWh (QA-095); 330 d is the doublet's availability, the full system must meet the demand
+  all 365 days (QA-091); depth may change; gas is CO2+CH4, several handling options allowed.
+
 Decided 2026-11-04 21:40 UTC: QA-010 option A (agent proposes labelled assumptions in one question,
 user approves; hotfix-python), QA-006 option A (research cited rows, Sahand approves, then re-seed;
 hotfix-back writes proposed rows to evidence/QA-006/).
