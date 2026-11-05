@@ -19,3 +19,9 @@ Knowledge ids in `STATUS.md`.
 **Why:** the user's choice: one shared place for these values, not a copy per project.
 **How to apply:** never add assumptions or guide files to a project's files, a seed script or a
 QA brief; agents find them through Knowledge search (and ask approval with the source).
+
+Section titles are a contract (python-lead, 2026-11-05): geomind's case lead prompt cannot name the
+file or its section numbers (a test forbids competition names in the package), so it asks for the
+assumptions document's case, tolerance and economics sections by title. Keep the words "Case
+values", "tolerances", "Economics" and "design values" in the titles of hackathon-2026-assumptions.md
+(now §3, §4, §5, §6).
