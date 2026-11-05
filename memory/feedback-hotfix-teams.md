@@ -24,7 +24,7 @@ Rules:
 **How to apply:** route bugs to the team lead of the area; the lead does the rest.
 
 Sizing (Sahand approved 2026-11-05 18:38 Trondheim): members only where the queue needs them. Now:
-python team = lead + 8 members (Sahand 2026-11-05 19:26 Trondheim, queue ~48); back and front = lead alone. Add members to a team when its open
+python team = lead + 8 members (Sahand 2026-11-05 19:26 Trondheim, queue ~48); back and front = lead + 2 members each (Sahand 19:28 Trondheim); every lead only assigns, collects, commits, pushes, deploys. Add members to a team when its open
 queue passes ~8 bugs; drop idle members.
 
 Lead does no fix work (Sahand, 2026-11-05 19:26 Trondheim): a team lead never works on a bug or
