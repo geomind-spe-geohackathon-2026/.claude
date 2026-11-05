@@ -32,8 +32,9 @@ Rules in force (new this session; most are in `memory/`):
 
 ## State at handover
 
-Production: backend 1.1.95 (geomind 0.4.91, gemini 0.6.15) was live at 14:55. A deploy of
-geomind 0.4.95 + gemini 0.6.16 was waiting on the lock (hotfix-back-III held it since 14:53 for
+Production: backend 1.1.97 (geomind 0.4.95, gemini 0.6.16) LIVE since ~15:20 UTC (deployed by
+hotfix-python-IV; QA-128, 140, 143, 121 set fixed). The notes below on a pending deploy are
+history. Earlier: a deploy of geomind 0.4.95 + gemini 0.6.16 was waiting on the lock (hotfix-back-III held it since 14:53 for
 QA-135 / backend 1.1.96). CHECK: health version and `docker exec geomind-celery` versions. If
 0.4.95/0.6.16 are not live, deploy them: take the lock, `git pull` backend, replace both wheels
 in `backend/.tmp/hotfix-wheels/` (build from ../geomind and ../gemini), bump backend patch
@@ -72,6 +73,25 @@ Released this session:
 - Backend tests that fail since geomind 0.4.89 (from hotfix-back-III): 
   `test_a_run_that_cannot_start_fails_with_geomind_message` ('geomind_refused' vs 'error') and
   `test_events_replay_and_end_at_the_root_run_finished` (replay ids): look at them.
+
+## Next steps, in order (Coordinator-IV, ~15:20 UTC; replaces the list below where they differ)
+
+The user's goal: case and plant much faster AND correct. Plan:
+`documents/project/plans/speed-case-plant.md`. Work it in this order:
+1. B2: case lead plan step: map the case's fields to at most 4 groups, brief each geoscientist
+   with the input passages for its group and the handbook-case section.
+2. B3: one set_case, one approval card with sources, one question card.
+3. B4: the 6 refusals of the QA-140 run 9696f5d4 (no_case x2, update_state list form, set_case
+   files-only, set_case date without time zone).
+4. B5/C4: IMP-027 budgets (wall-clock and rounds per sub-agent, set by the lead).
+5. C1: IMP-025 plant stage: the design lead splits modules into at most 4 groups and builds the
+   plant in one write.
+6. C2: size, simulate, check, optimize in one go; failures re-split with gemini's message and the
+   handbook-design chapter 11 table.
+7. C3: schema and skill fixes from speed-analysis-I's top 10 (they come via the coordinator).
+8. Then read_file rename, QA-122 geomind part, IMP-028, IMP-026.
+Also read why three design_lead sessions and "Reservoir engineer I" ended failed in run ed03d7ea
+("sahand test 2", QA-144 notes). Offline unit tests allowed; no live runs.
 
 ## Next steps, in order (user order via Coordinator-IV)
 

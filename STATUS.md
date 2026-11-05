@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- Backend 1.1.97 (2026-11-05 ~15:20 UTC, hotfix-python-IV): geomind 0.4.95 + gemini 0.6.16 LOCAL wheels (QA-128 carbon price on the plant's own CO2e only; QA-140 case lead splits into 2-4 geoscientists; Knowledge-only tools for sub-agents; QA-143; QA-121 one-sentence approval cards; IMP-019). hotfix-python-IV hands over to hotfix-python-V (note notes/sessions/hotfix-python-4.md).
+
 - Backend 1.1.95 (2026-11-05 ~14:55 UTC, hotfix-python-IV): geomind 0.4.91 + gemini 0.6.15 LOCAL wheels. 0.4.88 QA-131 (sensitivity values=); 0.4.89 handbook-design.md; 0.4.90/0.4.91 IMP-025 case stage (Team list briefs, max 4, `instance` on events, geoscientists read no file), cost catalogue renamed knowledge/data-economics.csv/.md (Coordinator may now delete cost-sources.* a2c6c5f8, 765d6eb4).
 
 - Backend 1.1.94 (2026-11-05 ~16:00 UTC, hotfix-back-III; geomind 0.4.89 + gemini 0.6.15 local wheels until hotfix-python-IV ships 0.4.90): 1.1.93 assistant case/plant versions saved one at a time in event order; 1.1.94 IMP-025 contract: live text/usage/tool problems keyed by run_id, `instance` passed through stream, /events, buffered text.delta (+session) and AgentSession.instance.
