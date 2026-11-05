@@ -5,6 +5,7 @@ it changes, change it here at once (one line, with the UTC time), before you go 
 
 Last updated: 2026-11-05 20:50 UTC.
 
+- 2026-11-05 ~22:25 CET Trondheim (handbook-economics-II): QA-358 read_rag/search_rag -> read_knowledge/search_knowledge in handbook-economics, -report, -studies. Global Knowledge: handbook-economics 45f1a2ce (replaces dfb44449), handbook-report 5462feed (replaces cdc56ee4), handbook-studies d1bacc04 (replaces ffe88e67).
 - 2026-11-05 21:35 UTC (handbook-case-II): handbook-case names read_knowledge/search_knowledge only (QA-358; documents c46f6f9). Global Knowledge: handbook-case 8c2b10b4 (was 9d22da22).
 - 2026-11-05 21:30 UTC (handbook-case-II): handbook-case ch 17 (17.1 modal verbs and traceability, 17.2 limit to requirement, 17.3 tolerances, 17.4 ask or Knowledge, 17.5 units, 17.6 time); 6.5/6.9: `over: sum` of a power adds step values (gemini roles.py), an energy cap is `over: mean` (documents aaac05e). Global Knowledge: handbook-case 9d22da22 (was 4503d4f8).
 - 2026-11-05 21:10 UTC (assumptions thread): hackathon-2026-assumptions.md rewritten as a reference (documents 0c91bcb: 12 sections; new 10 notes on site/network/utility values, 11 prices against the catalogue, 11.4 HICP conversion, 12 questions earlier runs asked; values unchanged, ask_economics parsing checked). Global Knowledge: hackathon-2026-assumptions bcc0482b (was 2b89c39b). hackathon-2026-brief.md marked NOT FOR KNOWLEDGE (solved results; documents 51a5b6b).
