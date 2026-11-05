@@ -113,3 +113,12 @@ labelled assumption in one question; never silently invented.
   reference. Requirements card (flow 300/50, cooling 40, pump 0.7, reinjection 1, 330 d, 100/20 C)
   matches; no 1-3 doublets entry seen yet. Approval card has only Approve / Deny / Reason: no edit control.
 - To do: file the "invented user instruction" bug, check doublets, edit test, S2.
+
+### Status lines (qa-func-1-II, 2026-11-05 ~00:25 UTC)
+- S1 done: case built from the 3 files in one chat; questions clear (time zone, air, delegated assumptions, economics). Run continued into design.
+- S2 done: Case page demand 365 pts, peaks 30 MW Jan 28 / 10 MW Jul 19, 111.7 / 23.7 GWh; site, fluid, constraints match the PDF; supply 100/20 C. Bugs: QA-063 (dissolved gas shown x100 in the form), QA-065 (no 1-3 doublets rule though the design lead says the case has it). Notes: agent claimed 'the user's instruction is that the times are UTC' (never said); asked time zone though the Time tab says no offset = UTC; chemical price took proxy row (2.908) not the recommended (1.942); economics proposed Dutch subsidy/heat cap for a site-less case (QA-041 pattern; I removed them by 'change some').
+- S3 done: reject with reason -> new proposal (OK); edit via 'change some' -> 8 C stored (OK); approval card has no edit control, only Approve/Deny/Reason; assumptions come labelled in one question (QA-010 OK), economics rows carry source/publisher/year.
+- S5 partly: 'reservoir is at 3000 m TVD' -> set_case changed only reference_depth (+ note 'depth FIXED by the user', not said); agent then asked about pressure (did not change it silently) - OK; temperature follow not yet seen.
+- S6 done: cancel then 'go on' -> reused stored case, no re-asked questions, steps collapsed into 'Worked through 125 steps'. Chat shows 'This run ended without an answer' for cancelled runs.
+- S7: backend deployed 1.1.53 -> 1.1.54 (and 1.1.56) during S1; run resumed; one case_lead step 'interrupted by a crash'.
+- Order now (coordinator 2026-11-05): one project through case -> design -> economics/report; qa-func-2 and qa-func-3 files for their scenarios.
