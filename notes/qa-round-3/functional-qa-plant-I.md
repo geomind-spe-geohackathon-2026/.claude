@@ -45,3 +45,5 @@ One request at a time in the QA3 plant chat (case already set; no case redo).
 ## Status
 
 - 2026-11-05: scenarios written; waiting for the coordinator to send the QA3 plant project id.
+- 2026-11-05 11:10 UTC PAUSED by coordinator. Project c45a5382-af55-43fc-9340-dd1ab1245533, chat 6732957b-7035-481a-bc31-7f4abcda2a76 (browser session functional-qa-plant-I, logged in).
+  S1 in progress (backend 1.1.84 at start, 1.1.86 now): explanation-only request; agent asked "Build plant" repeatedly after two denials -> QA-116 (major). I then approved to continue; the run is still going (130 steps, retrying build/patch after validator refusals, no text answer yet; plant proposed with 1 doublet). Resume: check the chat's run state, answer any approval, wait for the text answer, then S2-S9. Not yet done: S2-S9.
