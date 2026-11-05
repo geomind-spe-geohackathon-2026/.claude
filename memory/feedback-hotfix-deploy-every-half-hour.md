@@ -18,3 +18,7 @@ with the deploy as well.
 **Why:** fixes should reach production quickly; holding them slowed the round.
 **How to apply:** never tell a hotfix session to hold a ready deploy; a running agent run resumes
 after a deploy (QA-035).
+
+**Override, 2026-11-05 14:55 UTC (user, Coordinator-IV's chat):** until the user says to go back to
+the half-hour windows, deploy every finished fix AT ONCE, no waiting for :00/:30. One deploy at a
+time via `/tmp/geomind-backend.lock` still holds.
