@@ -6,6 +6,7 @@ functional-qa-study-I). Check every number against the PDF and CSVs.
 
 ## Scenarios
 
+All actions are chat requests like a user would write them (answer the agents' questions and approvals in the chat); tabs only check what the chat produced, and a step the chat cannot do is filed as a gap.
 Project "QA3 study" (case + plant + simulation results seeded). One run at a time, short requests, no evolve.
 Reference numbers (CSVs): heating peak 30.0 MWth (28 Jan), 111.67 GWh/yr; cooling peak 10.0 MWcool (19 Jul), 23.74 GWh/yr. PDF caps: 1-3 doublets, 50-300 m3/h per doublet, brine cooling <= 40 K, pump efficiency 70 %, supply 100 C heating / 20 C cooling.
 
@@ -15,7 +16,7 @@ Reference numbers (CSVs): heating peak 30.0 MWth (28 Jan), 111.67 GWh/yr; coolin
 - functional-qa-study-I-S4 Sample (uncertainty) study. Goal: "sample reservoir permeability 100-300 mD and 20 % demand uncertainty, 20 samples, show P10/P50/P90 of delivered heat". Correct: sample count 20, P10<=P50<=P90, ranges as asked, no run beyond the asked count.
 - functional-qa-study-I-S5 Sensitivity study. Goal: "which inputs matter most for delivered heat: depth, flow, supply temperature, heat pump COP". Correct: one-at-a-time or ranked result, sign and size of effects match physics (more flow and depth give more heat; delivered heat capped by demand), ranking explained.
 - functional-qa-study-I-S6 Bad requests. Goal: ask outside the caps (4 doublets, 400 m3/h, 60 K cooling) and an evolve/structure search. Correct: the agent refuses or clarifies with the PDF limits and states evolve is not available; nothing silently clamped.
-- functional-qa-study-I-S7 Study management. Goal: stop/resume a study, restart after a deploy, reopen a finished study in the UI. Correct: statuses true, results survive, no duplicate runs, Runs and logs match the chat.
+- functional-qa-study-I-S7 Study management. Goal: ask in the chat to stop and then continue a running study, restart after a deploy, ask the chat for the finished study's results again; then check the Runs tab only to compare. Correct: statuses true, results survive, no duplicate runs, Runs and logs match the chat.
 - functional-qa-study-I-S8 Follow-up. Goal: after S2 change the case (e.g. new supply temperature) and ask for the next step. Correct: the agent warns that the study is outdated (case_changed_after_study) and suggests rerunning.
 
 ## Status
