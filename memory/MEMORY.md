@@ -113,3 +113,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [Economics from Knowledge documents](feedback-economics-from-knowledge-documents.md) — case lead cites any sourced Knowledge document in ask_economics; assumptions doc first; unknown keys open
 - [Tools documented only in skills](feedback-tools-documented-in-skills.md) — one skill per tool holds all usage; descriptions one line; skills guaranteed loaded; refusals < 25 %
 - [gemini changes allowed](feedback-gemini-changes-allowed.md) — since 2026-11-05 11:00 UTC no separate permission for gemini changes; API freeze stays; commit says what/why
+- [Fatemeh's bugs first](feedback-fatemeh-bugs-first.md) — bugs Fatemeh reports go to the top of every hotfix queue, any severity
