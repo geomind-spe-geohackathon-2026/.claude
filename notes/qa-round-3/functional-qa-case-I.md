@@ -51,3 +51,9 @@ Chat 37fb7886 in "QA3 case", backend 1.1.84 / geomind 0.4.80, 2026-11-05 10:30-1
 - S7 Page vs chat: PASS for demand and values; version numbers differ (QA-114).
 - S8 Check / what is missing: PASS in chat ("complete enough for a plant"), open items listed in plain words.
 - Gap: the agent also sets the whole economics file during case set-up (one extra question, values from Knowledge); noted, not a bug.
+
+## Variations (2026-11-05 ~11:10 UTC, paused by the coordinator)
+
+- V1 depth 3000 m + return 55 C by chat: values changed, nothing else; QA-119 (reservoir pressure not re-derived or flagged).
+- V2 reject the proposed economics, give own numbers: stopped at the Set case approval card (chat 37fb7886, NOT approved, run left waiting); QA-120 (discount_rate sent as 8 with no unit). On resume: deny or approve with "discount rate 0.08", then check the stored economics and the list of values without a source.
+- Not done: V3 a user with no files, case from the PDF only (needs a new project from the coordinator); retest QA-114, QA-118 when shipped.
