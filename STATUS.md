@@ -9,9 +9,13 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 15:05 UTC (user, TOP): IMP-025 parallel agents (lead assigns tasks to instances, e.g. Geoscientist I/II/III; goal: a complete case in ~5 min). hotfix-python-IV right after QA-131; display by hotfix-front-III.
+
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 15:05 UTC (user, TOP): IMP-025 parallel agents (lead assigns tasks to instances, e.g. Geoscientist I/II/III; goal: a complete case in ~5 min). hotfix-python-IV right after QA-131; display by hotfix-front-III.
 
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 (QA-129 doublets searchable on a free plant, QA-130 doublet flow capped at pump nominal_flow, QA-132 not a breach (ESP intake volume with free gas), QA-125 result summaries, QA-123, QA-124; QA-128 filed). 15:00 UTC (user): rename tool read_rag to read_file (hotfix-python-IV, after QA-131). QA run 11597465 cancelled by the coordinator. QA-133/134/135 to hotfix-front-III; QA-136 to hotfix-back-III; QA-121 to hotfix-python-IV.
 
