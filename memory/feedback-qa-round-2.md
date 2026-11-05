@@ -23,3 +23,7 @@ Sahand, 2026-11-04 ~23:50 UTC, to Coordinator-II:
 
 **Why:** little time; the agentic pipeline end to end is what the jury scores.
 **How to apply:** QA instructions in `notes/qa-round-2/`; never script Playwright for QA.
+
+Sahand, 2026-11-05 ~00:45 UTC: the top priority of QA is one start-to-end design run exactly as
+the challenge PDF's section 1 asks (interpret demand, generate configurations, run GEMINI checks,
+detect violations, iterate, explain every major decision); economics and report come after.

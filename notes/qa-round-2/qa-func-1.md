@@ -122,3 +122,12 @@ labelled assumption in one question; never silently invented.
 - S6 done: cancel then 'go on' -> reused stored case, no re-asked questions, steps collapsed into 'Worked through 125 steps'. Chat shows 'This run ended without an answer' for cancelled runs.
 - S7: backend deployed 1.1.53 -> 1.1.54 (and 1.1.56) during S1; run resumed; one case_lead step 'interrupted by a crash'.
 - Order now (coordinator 2026-11-05): one project through case -> design -> economics/report; qa-func-2 and qa-func-3 files for their scenarios.
+
+## PRIORITY (Sahand, 2026-11-05 ~00:45 UTC)
+
+The most important test is ONE start-to-end design run exactly as the challenge PDF asks
+(section 1): interpret the demand profiles, generate system configurations, run engineering
+checks with GEMINI, detect violations of every hard cap, iteratively improve the design, and
+explain every major engineering decision, to a final feasible, explained design. For each step
+record: did it happen, was it correct against the PDF and CSVs, was the decision explained.
+Economics and the report come after, as far as time allows.
