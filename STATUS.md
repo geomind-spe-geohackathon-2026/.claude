@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- Backend 1.1.88 (2026-11-05 11:30 UTC, hotfix-python-III; includes hotfix-back-II 1.1.87): geomind 0.4.85 + gemini 0.6.13 LOCAL wheels (tools documented only in skills, IMP-014..018, QA-097/099/114/116/119/120, read_rag by section). hotfix-python-III paused for the usage limit; handover note notes/sessions/hotfix-python-3.md (successor hotfix-python-IV on resume).
+
 - Backend 1.1.86 (2026-11-05 11:00 UTC, hotfix-python-III; includes hotfix-back-II 1.1.85 QA-106): geomind 0.4.81 + gemini 0.6.13 LOCAL wheels (QA-104, QA-105, QA-107a gemini part, IMP-012/013 evaluate_module and set_case slips, skills sent with a tool's first result).
 
 - Backend 1.1.84 (2026-11-05 10:30 UTC, hotfix-python-III): geomind 0.4.80 + gemini 0.6.12 LOCAL wheels (QA-090 stop rule, QA-091 supply temperatures running + heat/cold delivered, QA-094 return temperatures a design choice, QA-095 row co2-grid-organisers-2026 shipped (Knowledge re-upload of cost-sources.csv/.md still for Sahand), economics from an assumptions document in Knowledge first).
