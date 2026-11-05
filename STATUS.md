@@ -9,9 +9,11 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
 - 14:40 UTC (user-approved, coordinator): global Knowledge now holds the four handbooks: handbook-case-definition 2355088c, handbook-engineering-reporting bc8b41e4, handbook-plant-design 61619cce, handbook-techno-economics b019b649; hackathon-2026-assumptions.md re-uploaded c3510844 (was b3ba8363); the four hackathon-2026-*-guide entries deleted; cost-sources.csv a2c6c5f8 / .md 765d6eb4 unchanged.
 
-- 14:30 UTC: Fatemeh QA handed over to Fatemeh QA-II session_01J2V3UYeTzFtZEuQJvkuadd (note notes/sessions/fatemeh-qa-1.md); send Fatemeh findings there. functional-qa-simulation-I closed and archived (QA-125, QA-132; QA-132 with QA-130 to hotfix-python-IV). QA-107 with QA-126 to hotfix-front-III.
+- 14:30 UTC: Fatemeh QA handed over to Fatemeh QA-II session_01J2V3UYeTzFtZEuQJvkuadd (note notes/sessions/manual-qa-1.md); send Fatemeh findings there. functional-qa-simulation-I closed and archived (QA-125, QA-132; QA-132 with QA-130 to hotfix-python-IV). QA-107 with QA-126 to hotfix-front-III.
 
 - 14:25 UTC: functional-qa-report-I closed and archived (filed QA-099, 122, 123, 124; S2, S6-S11 untested). User: archive each QA session once it reports stopped.
 

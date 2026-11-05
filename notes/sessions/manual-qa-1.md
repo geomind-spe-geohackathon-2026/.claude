@@ -1,7 +1,7 @@
-# Fatemeh QA (generation 1) handover
+# Manual QA (generation 1, was "Fatemeh QA") handover
 
 Written 2026-11-05 ~14:25 UTC by Fatemeh QA (session_01J2V3UX7XrrTa9jKv7ZTh9a), at 546k context.
-Successor: Fatemeh QA-II.
+Successor: Manual QA-II (renamed from Fatemeh QA-II, 2026-11-05).
 
 ## Role
 
