@@ -28,7 +28,7 @@ There are no secrets in this pack. Env variables are listed by name only (sectio
   - Return temperatures are our choice.
   - Supply is 100 °C for heating and 20 °C for cooling.
 - **Team:** Sahand (owner, GitHub `SahandNZ`), Fatemeh Chitsaz (frontend/backend; the NTNU Dell is hers), and Claude.
-- **Upstream base:** https://github.com/GEMINI-Digital-Twin/gemini-geothermal-suite-open. The team fork is https://github.com/swarmax/gemini-geothermal-suite-open.
+- **Upstream base:** https://github.com/GEMINI-Digital-Twin/gemini-geothermal-suite-open. The team's first fork, on an old personal GitHub account, is no longer used.
 
 ## 3. Repos (GitHub org `geomind-spe-geohackathon-2026`)
 

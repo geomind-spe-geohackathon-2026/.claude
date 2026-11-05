@@ -14,7 +14,7 @@ Studied gemini-geothermal-suite-open on 2026-10-27.
 - Templates (heat pump "carnot" 70%, CHP, heat demand, electric boiler) have no code.
 - Example doublet: 80°C, 220 bar, top 1800 m, PI 21 / II 20 m3/h/bar, ESP 82–178 m3/h; dataset ~150 m3/h, 80→20°C, ~10.9 MW.
 - Missing for Challenge 2: HX, demand profiles, heat pump, absorption chiller, storage, aux boiler, economics, CO2.
-- User's prior design ("Swarmax", from ChatGPT) overstated GEMINI coverage; plan keeps Swarmax architecture, MVP core first.
+- User's prior design (ChatGPT notes, now documents/project/design/geomind-system-design-notes.md) overstated GEMINI coverage; plan keeps that architecture, MVP core first.
 - Plan doc: https://claude.ai/artifact/SSfh6RdLGiQwcKx1Wabn4g
 - Open: push target repo, deadline, site/demand case, LLM choice.
 - Task inputs (scenario/demand) are released 2026-10-29; team starts input-independent work before that.

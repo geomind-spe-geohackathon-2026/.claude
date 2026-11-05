@@ -9,7 +9,7 @@ The handoff memory names files as `/mnt/project-files/...` (the old claude.ai pr
 | `/mnt/project-files/backend-i.md` | `backend/.claude/notes/backend-i.md` |
 | `/mnt/project-files/benchmark/plan.md` | `documents/project/plans/benchmark.md` (project root) |
 | `/mnt/project-files/bugs/bug-list-2026-11-04.md` | `documents/project/bugs/bug-list-2026-11-04.md` (project root) |
-| `/mnt/project-files/context/swarmax_system_design_notes.md` | `documents/project/design/swarmax-system-design-notes.md` (project root) |
+| `/mnt/project-files/context/geomind_system_design_notes.md` | `documents/project/design/geomind-system-design-notes.md` (project root) |
 | `/mnt/project-files/frontend/brief.md` | `frontend/.claude/notes/brief.md` |
 | `/mnt/project-files/frontend/connectors-knowledge-api.md` | `frontend/docs/api/connectors-knowledge.md` |
 | `/mnt/project-files/frontend/design.md` | `frontend/docs/design/design.md` |

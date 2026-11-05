@@ -12,7 +12,7 @@ UPDATE 13:54: gemini step 3b (small, before step 4) delivers registry, describe(
 Use gm.plants.* names, never gm.utils.migrate_plant (old name the S2 run reported).
 contracts v16 / section 3 v2.6: stored sequence gaps, `compaction` key in saved state, `gd.Run(agent=...)` testing only.
 Live OpenRouter run still needs a key in geomind's own env (not backend/.env).
-Related: [[swarmax-architecture]], [[native-engine-plan]].
+Related: [[geomind-architecture]], [[native-engine-plan]].
 Exact 3b names (engine thread, 13:55): gm.plants.{migrate, from_dict, get, names, example}; gm.modules.{get, names} (registry has category); Module.describe() -> category + connections; units km, mm, in, kPa, MPa, rpm accepted. Stable through step 4. Write S2b against these.
 15:30 gemini public interfaces being frozen (notes/gemini-public-interfaces.md); geomind review sent to gemini thread: notes/gemini-public-interfaces-geomind-review.md (JSON-only returns, evaluate shape, from_template, gm.profiles demand year, describe with values, Results slices/bytes, check_module report, modules.register/load_file, economics Assumptions, kpi.names, checks.run_all).
 15:38 S2b plan: gemini D0 Keras-style plant API (gm.Plant add/connect; JSON spec format 2; gm.plants.from_spec, validate (paths + did-you-mean), spec_schema). geomind gets tool build_plant(spec) with input_schema = gm.plants.spec_schema(); validate errors returned as tool results so the model fixes the spec. S2b tools: list_modules, describe_module, evaluate_module, build_plant, read_plant, simulate (+ read_result, search_documents). Prompt only on «go».

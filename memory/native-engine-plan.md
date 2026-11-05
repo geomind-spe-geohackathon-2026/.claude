@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 
-Thread "Discuss GEMINI native C++ engine". Repo swarmax/gemini, branch `refactor` (local crust-team/gemini). Design source: /mnt/project-files/prompts/native-engine-design.md.
+Thread "Discuss GEMINI native C++ engine". Repo gemini on an old personal GitHub account, branch `refactor` (local crust-team/gemini). Design source: /mnt/project-files/prompts/native-engine-design.md.
 Done + pushed (GitHub refactor 58360ea, 2026-10-30 18:28): engine steps 1-3 (traced graph, one runner, parity suite) and interface freeze (prompts/gemini-interfaces-freeze[-full].md; API_VERSION 1, .claude/docs/api.md). Step 3b obsolete.
 Freeze gaps: HeatingSubstation/CoolingSubstation/ATESPlant handwritten; state connections raise NotImplementedYet until scan; no module declares capex (economics null); no demand data in gm.profiles; injectivity/calibrate_pump/erosion later.
 
