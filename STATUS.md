@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 00:20 UTC.
+Last updated: 2026-11-05 00:25 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.61 (2026-11-05 00:22 UTC, hotfix-python-II): geomind 0.4.60 LOCAL wheel (QA-065 doublet-count requirement, QA-061 no internal note on question cards).
 
 - Backend 1.1.58 (2026-11-05 00:16 UTC, hotfix-python-II): geomind 0.4.58 LOCAL wheel (web_search/read_web_page over SearXNG live; calculate takes plain numbers/pi/e beside one sourced operand); 1.1.57: geomind 0.4.57 (run_python live in gemini-sandbox:0.6.5, checked from geomind-celery); 1.1.56: geomind 0.4.56 (skills folder
   `geomind/skills/<name>/SKILL.md` with roles; `calculate` tool, results in problem state `calculations`),
