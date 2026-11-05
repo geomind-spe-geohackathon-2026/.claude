@@ -7,6 +7,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Coordinator: Coordinator-V, local session ntnu09811-sprightly-conway on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). Sessions are local background sessions (`claude --bg`, no Remote MCP on this account): `claude logs <id>`, `claude attach <id>`, message by name with SendMessage.
 
+- Frontend 1.1.113 (hotfix-front-VI, 2026-11-05): plan E2 stage timer per agent line from server `ts`. Live, not live-checked.
+
 - Backend 1.1.99 (hotfix-back-V, 2026-11-05): `ts` on step events and run-log steps. Live.
 
 - Backend 1.1.99 (hotfix-back-V, 2026-11-05): `ts` on step.started/step.finished (stream, /events) and on every run-log step. patch_plant "internal error" (runs 753645c0, eb7b95df, 05:28-06:06 UTC) predates QA-083 (geomind 0.4.71, backend 1.1.75: internal errors carry class, message, file:line); no backend defect found, no new fix. IMP-025 code path checked on geomind 0.4.95 (events carry `instance`). qa.py next: none open for backend/data/infra.
