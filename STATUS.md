@@ -17,6 +17,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- 18:00 UTC: QA-145 (Fatemeh, major: design run 70 min, 0 simulate, 27 hand patches, 107/231 re-reads) to hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY, top, together with plan C1/C2.
+
 - 17:45 UTC: backend 1.1.96 (hotfix-back-III): QA-135 option C (last plain simulate of a run -> one result). hotfix-back-III handed over to hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet; note notes/sessions/hotfix-back-3.md; QA-144 first). speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc, handbook-speed-I session_01J2V3UVChMTZnWLvYMM8WzZ.
 
 - 17:40 UTC (user): speed of case and plant is the goal; plan documents/project/plans/speed-case-plant.md (tasks A measure offline, B case, C plant, D handbooks, E display); sessions speed-analysis-I (A) and handbook-speed-I (D) started on Sonnet.
@@ -70,6 +72,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 18:00 UTC: QA-145 (Fatemeh, major: design run 70 min, 0 simulate, 27 hand patches, 107/231 re-reads) to hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY, top, together with plan C1/C2.
 
 - 17:45 UTC: backend 1.1.96 (hotfix-back-III): QA-135 option C (last plain simulate of a run -> one result). hotfix-back-III handed over to hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet; note notes/sessions/hotfix-back-3.md; QA-144 first). speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc, handbook-speed-I session_01J2V3UVChMTZnWLvYMM8WzZ.
 
