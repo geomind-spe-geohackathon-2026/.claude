@@ -100,8 +100,12 @@ tokens of context (rule: hand over at 300k, `.claude/session-refresh.md`).
 2. QA-102 (Overview Activity links), split agreed: backend gives "Saved plant/case version N"
    activity rows link id "N" (new rows only). Frontend: design/plant and design/case with link id N
    open History on version N; design/study/<id> opens the study; sentence-case actor.
-3. QA-109 (minor, Report Agent log empty by default: pick the run that made the result).
-4. QA-100, QA-101 (cosmetic: Runs and logs section titles; Overview Recent chats layout).
+3. QA-115 (minor, user via coordinator, filed and claimed for you): schema-form groups
+   (Case, Plant, Economics ... in `src/shared/forms`) collapsed by default; a group with a validation
+   error or missing required value opens or shows a marker; keep open/closed state while on the
+   page. The coordinator asked for it in the next window.
+4. QA-109 (minor, Report Agent log empty by default: pick the run that made the result).
+5. QA-100, QA-101 (cosmetic: Runs and logs section titles; Overview Recent chats layout).
 
 ## Useful facts about this code
 
