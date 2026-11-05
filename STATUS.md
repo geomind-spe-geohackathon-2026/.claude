@@ -3,11 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 09:15 UTC.
+Last updated: 2026-11-05 09:18 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- RELEASED, NOT DEPLOYED (hotfix-python-II, held by the coordinator until functional-qa-I's run in chat cb8b9b2d reaches its final comparison, latest 10:30 UTC): geomind 0.4.77 (QA-079, QA-084, QA-085, QA-086, QA-088 full runs in agent study records: shape sent to the coordinator for hotfix-back) and gemini 0.6.11 (request 35). Prod still runs backend 1.1.78 / geomind 0.4.73 / gemini 0.6.10.
+- RELEASED, NOT DEPLOYED (hotfix-python-II, held by the coordinator until functional-qa-I's run in chat cb8b9b2d reaches its final comparison, latest 10:30 UTC): geomind 0.4.78 (QA-074 constant g, QA-079, QA-084, QA-085, QA-086, QA-088 full runs in agent study records, shape agreed with hotfix-back) and gemini 0.6.12 (request 35, m/s2 kg/m2 units). Prod still runs backend 1.1.78 / geomind 0.4.73 / gemini 0.6.10.
 
 - Backend 1.1.78 (2026-11-05 07:30 UTC, hotfix-python-II): geomind 0.4.73 + gemini 0.6.10 LOCAL wheels (QA-081 gd.errors.AlreadyAnsweredError, backend must treat it as no-op; QA-087 six web searches per agent and run).
 
