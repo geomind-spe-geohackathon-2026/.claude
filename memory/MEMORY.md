@@ -108,4 +108,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - USER RULE (Sahand 2026-11-03 18:26 UTC, GEOMIND II): geomind Dell session installs gemini wheels ITSELF [[feedback-gemini-install-allowed]]
 - [Coordinator: no submission work](feedback-coordinator-no-submission.md) — coordinator leaves deadline/submission alone; does only what the user asks
 - [Hotfix deploys every half hour](feedback-hotfix-deploy-every-half-hour.md) — hotfix sessions release and deploy everything ready at each :00/:30 UTC; no holds, no separate release approval
-- [Assumptions only in Knowledge](feedback-assumptions-in-knowledge-only.md) — never upload assumptions.md or the hackathon guides into a project's inputs
+- [Assumptions only in Knowledge](feedback-assumptions-in-knowledge-only.md) — never upload hackathon-2026-assumptions.md or the hackathon-2026 guides into a project's inputs

@@ -7,6 +7,8 @@ Last updated: 2026-11-05 10:05 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 10:55 UTC (hackathon-guides): documents 07085fc: `documents/project/quality-assurance/inputs/` holds hackathon-2026-assumptions.md (renamed from assumptions.md; the rename itself landed in debeb20) and hackathon-2026-case-guide.md, -design-guide.md, -analysis-guide.md, -report-guide.md. Global Knowledge upload PENDING: the auto-mode classifier refused `scripts.replace_knowledge`; the user runs it (command in the report to Coordinator-III), then deletes the old global entry assumptions.md (eb95027a). New Knowledge ids: (pending). Never in a project's files.
+
 - Backend 1.1.83 (2026-11-05 10:00 UTC, hotfix-python-II; includes hotfix-back-II's 1.1.80-1.1.82, QA-088 and QA-092): geomind 0.4.78 + gemini 0.6.12 LOCAL wheels (QA-074, 079, 084, 085, 086, 088 full runs, request 35).
 
 - 09:55 UTC: the user approved a geomind release (QA-091, QA-094, QA-095 row); hotfix-python-II releases and deploys at the next window. assumptions.md (documents/project/quality-assurance/inputs/, b2846fd) is in the global Knowledge (eb95027a); NOT in any project's inputs (user, 10:00 UTC).
