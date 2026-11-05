@@ -56,3 +56,11 @@ model name anywhere, and stage-crossing gaps are bugs.
 ## Status
 
 - 2026-11-05: scenarios written; waiting for the QA3 report project id from the coordinator.
+
+- 2026-11-05 11:17 UTC PAUSED by coordinator. Tested on backend 1.1.84 in the QA3 report chat (project 91b202b6-6236-45e7-8860-a58437d6eb98), scratch in /tmp/functional-qa-report-I (ask.sh, wait.sh).
+  - S1 done: numbers consistent (capex/opex sums, payback, lcoh/lcoc); QA-099 (15 digits, 365.25-day basis, source only "economics.json").
+  - S3 done: all 8 requirements pass; QA-124 (no values for brine cooling, running time, reinjection).
+  - S4 done: peaks 30 MW (28 Jan) and 10 MW (19 Jul), 111667.68 / 23742.528 MWh match CSVs; supply 100 C and 20 C held; QA-123 (HX "no use" contradicted later).
+  - S5 done (run finished, no alternatives shown): QA-122 (agent sees 1 plant and no studies although the project has 2 plants and 4 studies).
+  - Chat 4 turns used; next: S2 what-if, S6 gaps, S7 sensitivity, S8 report, S9 log export, S10, S11. Approvals ("Run python") must be clicked in the chat; Compare alternatives chip is available.
+  - Observation: each answer needs 65-117 agent steps with 6-44 retries.
