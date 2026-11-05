@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- Backend 1.1.94 (2026-11-05 ~16:00 UTC, hotfix-back-III; geomind 0.4.89 + gemini 0.6.15 local wheels until hotfix-python-IV ships 0.4.90): 1.1.93 assistant case/plant versions saved one at a time in event order; 1.1.94 IMP-025 contract: live text/usage/tool problems keyed by run_id, `instance` passed through stream, /events, buffered text.delta (+session) and AgentSession.instance.
+
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
 - 16:05 UTC (user): IMP-025 design rule: only team leads read/write project files; ≤4 sub-agents per task, no file access, return results; lead writes once, re-splits, reports to the project manager (memory/feedback-team-lead-only-writes.md).
