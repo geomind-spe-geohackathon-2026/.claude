@@ -34,3 +34,7 @@ allowed, backend layer only, chat with Sahand in Persian):
    examples/hackathon.py on the current gemini (README says 40.34, older version); report only a
    real gap.
 4. Append each round to the report and update the SCENARIOS row.
+
+## QA-AI-project-II (2026-11-05, closed early by Sahand)
+No QA run was made. Only work: backend `.env` and `.env.dev` reordered to match their `.example` files
+(same 92 keys and values, no key changed). QA-294 stays open and the "next steps" above still stand.
