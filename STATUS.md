@@ -11,6 +11,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
 
+- Frontend 1.1.104 (2026-11-05 14:27 UTC, hotfix-front-III): QA-127+109 (report opens on best feasible result + its run log), QA-126+107 (Days covered: geothermal only / topped up / backup only), QA-118 (no rounding in approval cards), IMP-024 (Run again on studies).
+
 - 14:55 UTC (user): DEPLOY AT ONCE: every finished fix goes out immediately (no :00/:30 windows) until the user says otherwise; lock still holds.
 
 - 14:50 UTC (user): rename cost-sources.csv/.md to economics-data.csv/.md (hotfix-python-IV, after Fatemeh's bugs); the coordinator then swaps them in Knowledge (delete a2c6c5f8, 765d6eb4).
