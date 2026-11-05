@@ -131,3 +131,19 @@ checks with GEMINI, detect violations of every hard cap, iteratively improve the
 explain every major engineering decision, to a final feasible, explained design. For each step
 record: did it happen, was it correct against the PDF and CSVs, was the decision explained.
 Economics and the report come after, as far as time allows.
+
+## Judging checklist (organisers' slides, `memory/competition-judging-criteria.md`)
+
+Check in the start-to-end run, and file a bug when one fails:
+1. Analysis: the agents read the problem themselves (PDF, CSVs) without the user filling values.
+2. GEMINI: they configure and run GEMINI models (check, simulate), not only talk.
+3. Gaps: they name a missing modelling capability and fill it with an explained extra
+   calculation (calculate, run_python) or a sourced value (web_search), saying why it fits.
+4. Alternatives: at least two configurations compared, with the reason for the final one.
+5. Integrated design: geothermal for direct heating AND, where possible, for cooling (e.g. an
+   absorption/sorption chiller on geothermal heat), plus heat pumps, chillers, storage or backup
+   as needed; each sized.
+6. Results: the realised heating and cooling capacities and energies are stated (vs 30/10 MW
+   peaks, 111.67/23.74 GWh).
+7. Evidence: the agent log with prompts, answers and token usage can be exported; the final
+   configuration and its supporting calculations are explained.
