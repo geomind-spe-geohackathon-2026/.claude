@@ -27,3 +27,5 @@ Project id 7a852d89-dfe5-423c-980a-a4ca231353bc. Browser session `functional-qa-
 - S2 in progress, stopped: chat "Now run a sizing study ..." in the first chat; ~20 approval cards (QA-121). Agent found study/sized2 = 3 doublets x 300 m3/h feasible; a pending "Set ranges" card (design/ranged3 -> ranged_2d, doublets 1-2) is waiting for my approval. On resume: approve it, wait for the final answer, check it against 30 MW peak and caps.
 - S3-S8 not started.
 - Side task for the coordinator (LCTS rerun in SPE GeoHackathon 2026): failed at creation, 'plant has no doublet' for plant v3; reported, moved to hotfix-back-II.
+
+Round closed (Coordinator-IV, 2026-11-05 ~14:30 UTC): run 1461ca81 (S2, at the "Set ranges"/"Patch plant" card) cancelled via the chat's icon button "Cancel run" (status cancelled). Filed: QA-121, QA-135. S3-S8 not run. Note: clicking "Cancel run" through agent-browser ref clicks twice had no visible effect; an aria-label click worked (not filed, unsure if a UI bug). Rerun action for studies is already an improvement proposal.
