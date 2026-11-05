@@ -63,3 +63,8 @@ CH4 (gas for a boiler or CHP). 330 operating days of the doublet; backup covers 
 (one line per scenario; updated while testing)
 - Setup: project "QA2 qa-func-2 base" (4b318ee0-b410-4e37-8cf6-c835bc76d8c2) created with the PDF and CSVs; first request drafted, not sent. S1-S8 not started.
 - S1 (qa-func-2-II, 2026-11-05): request sent in chat 75095c2d; agent asked ONE list of 14 case values (time zone, air, return temps/pressures, indoor, grid limits, sand, N2/H2S); I answered with labelled assumptions; run continues. Note: Auto-approve toggle does nothing in a brand-new chat before the first message (works after) - to check/report.
+- STOPPED 2026-11-05 on coordinator's order (usage). Where: project "QA2 qa-func-2 base" 4b318ee0-b410-4e37-8cf6-c835bc76d8c2, chat 75095c2d-85ce-43b1-a872-a8726c992dc2, run left as is (status "needs your input", auto-approve ON). S1 in progress, S2-S8 not started.
+  Case step so far: agent asked 14 values in one list; I gave labelled assumptions (Oslo, air 8 C, RH 0.75, 100 m, returns 60/26 C, 6 bar, indoor 24 C/0.5, dew margin 2 K, import 5 MW, N2 1 / H2S 0.1 mol%). Agent then refused to scale CH4/CO2 itself (asked me for the numbers; I gave 79.12/19.78), then asked approval for sand 10 g/m3 (I clicked "approve all"; the next screen after 7 min still showed that same question card, so the click may not have registered or the card is stale: check first). Possible finding not filed: the agent will not compute a simple scaling and asks the user, and the long chain of questions (about 40 min before any design) conflicts with "ask once".
+  Filed: QA-067 (Auto-approve toggle does nothing in a new chat).
+  Next: check the chat, answer the open card if still open, continue S1.
+
