@@ -77,7 +77,8 @@ Last updated: 2026-11-05 01:05 UTC.
 
 ## Feature in progress (hotfix mode)
 
-- Since 2026-11-05 ~00:00 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG); geomind side LIVE in 0.4.58 (00:16 UTC); left: move role-prompt how-to into skills (hotfix-python), frontend views (hotfix-front);
+- DONE 2026-11-05 01:02 UTC: skills folder + calculate, run_python, web_search/read_web_page (SearXNG) live
+  (geomind 0.4.58-0.4.61), chat views live (frontend 1.1.67), sometimes-needed how-to moved into skills;
   spec `notes/features/agent-tools-2026-11-05.md`; hotfix-python, hotfix-back, hotfix-front.
 - 2026-11-05 ~00:15 UTC (Sahand): SearXNG up (geomind-searxng, geomind network only), image
   gemini-sandbox:0.6.5 built, prod backend `.env` has GEOMIND_SEARCH_URL, DOCKER_GID, ASSISTANT_SANDBOX,
