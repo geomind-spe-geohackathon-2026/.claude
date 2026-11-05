@@ -34,8 +34,8 @@ Standing rules added this session (in `memory/`):
 ## State at handover
 
 Production after the 11:30 deploy (check health and `STATUS.md`): backend 1.1.88, geomind
-0.4.83, gemini 0.6.13 (local wheels). If 11:30 did not go out, the prepared commit is backend
-main a5ef7db, wheels in `backend/.tmp/hotfix-wheels/`.
+0.4.85, gemini 0.6.13 (local wheels). If 11:30 did not go out, the prepared commit is backend
+main a02a06f, wheels in `backend/.tmp/hotfix-wheels/`.
 
 Released this session: geomind 0.4.79 to 0.4.83, gemini 0.6.13.
 - 0.4.79/0.4.80: QA-090 (stop rule), QA-091 (supply temperatures `running`, heat/cold delivered),
@@ -48,13 +48,16 @@ Released this session: geomind 0.4.79 to 0.4.83, gemini 0.6.13.
   ask_user/ask_economics descriptions carry their skill section (`tool_section`); IMP-014,
   IMP-015 (`with_repeat_note`), IMP-018 (`dry_precheck` for build/patch/merge), QA-116 (a denied
   tool is not asked again in the request: `session.py::earlier_denial`).
+- 0.4.84: read_rag by section (`outline=true`, `section=`), knowledge hits carry `section`
+  (`tools/sections.py`; user request for handbooks handbook-plant-design.md etc.).
+- 0.4.85: QA-119 (`moved_reference_depth` check), QA-120 (`refuse_percents`).
 - 0.4.83: IMP-016 (`drivers.py::stuck_requirements`, 3 rounds), IMP-017 part 1 (a passed design
   with ranges is optimised once: `optimise_task`), QA-097, QA-099, QA-114.
 - gemini 0.6.13: unmet_share with failed steps is undecided with the failed steps named
   (verdict `_share`); ElectricBoiler heat is backup in daily_coverage.
 
 Bugs: QA-090, 091, 094, 104, 105 set fixed. After the 11:30 deploy set fixed with notes and write
-their Fix sections: QA-097, QA-099, QA-114, QA-116 (claimed `fixing` by hotfix-python).
+their Fix sections (written): QA-097, QA-099, QA-114, QA-116, QA-119, QA-120 (claimed `fixing` by hotfix-python).
 IMPROVEMENTS.md: IMP-012 to IMP-018 marked done. IMP-019 (one-value choice such as
 `params.control.dispatch` = least_cost filled by the tool) waits for the user (no-default rule).
 
