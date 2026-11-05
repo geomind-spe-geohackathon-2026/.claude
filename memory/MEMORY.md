@@ -121,3 +121,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [Force stop and account handover](feedback-force-stop-account-handover.md) — on the user's word 'force stop' run account-handover.md: all sessions stop and write notes; reopen on Sahand's account
 - [Start sessions in the NTNU Dell environment](reference-start-sessions-bg-remote-control.md) — every session in the NTNU Dell environment, folder ~/geomind-spe-hackathon-2026; never --bg or plain Remote Control
 - [No branches, no worktrees in hotfix](feedback-no-branches-no-worktrees-hotfix.md) — work only on the default branch in the shared clone; never a new branch or worktree
+- [All work via hotfix threads](feedback-all-work-via-hotfix-threads.md) — every item is a qa.py bug or task; hotfix threads handle it; no special worker threads
