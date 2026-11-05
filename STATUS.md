@@ -13,6 +13,8 @@ Last updated: 2026-11-05 02:03 UTC.
 
 - Backend 1.1.64 (2026-11-05 01:06 UTC, hotfix-python-II): geomind 0.4.62 LOCAL wheel (QA-069: set_case returns plants_need).
 
+- Backend 1.1.69 (2026-11-05 02:00 UTC): geomind 0.4.65 (QA-071 English web_search), gemini 0.6.6
+  (gm.study.structure_plant), structures view endpoints (1.1.66-1.1.68). Frontend 1.1.71 (Compare structures).
 - Backend 1.1.63 (2026-11-05 01:02 UTC, hotfix-python-II): geomind 0.4.61 LOCAL wheel (skills connectors, economics, report, comparing-designs; prompt-to-skills step done as agreed: only sometimes-needed how-to moved).
 
 - Backend 1.1.61 (2026-11-05 00:22 UTC, hotfix-python-II): geomind 0.4.60 LOCAL wheel (QA-065 doublet-count requirement, QA-061 no internal note on question cards).
@@ -38,10 +40,8 @@ Last updated: 2026-11-05 02:03 UTC.
 - Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
-- Usage-window check: send_later trig_01WoLkJYCYGh5rb2TYjixe3Q in Coordinator-II, next 2026-11-05 04:11 UTC
-  (resetsAt + 1 min); pauses and resumes per `memory/feedback-usage-limit-pause.md`.
-- Usage pause: 2026-11-05 01:50 UTC (allowed_warning), sessions hotfix-front, hotfix-back, hotfix-python-II,
-  functional-qa-I; only already-built 02:00 deploys allowed; resume after 04:10 UTC.
+- Usage-window check: send_later trig_0126TX1w332d5ebR56C9JZqo in Coordinator-II, next 2026-11-05 09:13 UTC
+  (estimated resetsAt + 1 min; move it when resetsAt is known). Last pause 01:50-04:12 UTC, resumed; pauses and resumes per `memory/feedback-usage-limit-pause.md`.
 
 ## How we work now
 
@@ -72,7 +72,11 @@ Last updated: 2026-11-05 02:03 UTC.
   all on Sonnet since 23:45 UTC. Since 2026-11-05 00:25 UTC (Sahand, usage) only
   functional-qa-I (was qa-func-1-II) session_01J2V3UWQ5zYo1TfCiAKXF4d runs QA: one project through the whole pipeline, owning
   qa-func-1/2/3 scenarios. qa-func-2-II, qa-func-3-II and qa-ux archived (00:20-00:40 UTC); their state is in
-  their files in `notes/qa-round-2/`. QA-031 and QA-053 retests are still open (qa-ux did not finish). (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+  their files in `notes/qa-round-2/`. QA-031 and QA-053 retests are still open (qa-ux did not finish).
+  Since 2026-11-05 04:12 UTC three functional QA sessions (Sonnet, competition files only):
+  functional-qa-I session_01J2V3UWQ5zYo1TfCiAKXF4d (case + start-to-end design loop),
+  functional-qa-2 session_01J2V3UYx2foVYxpZKRTvMhq (economics, verdict, explainer, report, agent log),
+  functional-qa-3 session_01J2V3UVgJnF99ApUaSbM43F (studies, evolve, compare structures, agent tools, robustness). (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
   qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
