@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 14:17 UTC usage check: five-hour window reset; now seven_day allowed_warning (resetsAt 2026-11-11 23:00 UTC). Hotfix sessions work through it (user, 13:40 UTC); QA sessions stay paused by the user's word, not by usage. No further usage check scheduled.
+
 - 14:45 UTC (Fatemeh): QA-129, QA-130, QA-131 routed to hotfix-python-IV, top of queue. hotfix-back-III idle (QA-126/118 are frontend-only; QA-122 backend part waits for the user).
 
 - 14:35 UTC (user): Fatemeh QA (session_01J2V3UX7XrrTa9jKv7ZTh9a, 525k context) is under the 300k refresh rule too; asked to hand over to "Fatemeh QA-II".
@@ -86,7 +88,7 @@ Last updated: 2026-11-05 11:22 UTC.
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
 - Release summaries to the user (Persian, what to test) after every deploy window: scheduled tasks trig_01DPzkqZPcFQx6PsQ8e53i52 (:07) and trig_01KxsFUkVb8Vo5beKrQiX3xS (:37) in Coordinator-IV; a successor recreates them.
-- Usage-window check: send_later trig_01PDidq5qh4bL1zp9ZzQVTik in Coordinator-IV, next 2026-11-05 14:11 UTC
+- Usage-window check: trig_01PDidq5qh4bL1zp9ZzQVTik fired 14:17 UTC; none pending (seven-day warning until 2026-11-11 23:00 UTC)
   (resetsAt 14:10 UTC + 1 min). Last pause 01:50-04:12 UTC, resumed; pauses and resumes per `memory/feedback-usage-limit-pause.md`.
 
 ## How we work now
