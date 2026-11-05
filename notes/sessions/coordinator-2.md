@@ -67,3 +67,17 @@ coordinator on Opus; agent-browser only for QA; competition inputs only; three a
 skills folder; calculate: power exponent, constants (not sourced), plain numbers need one
 sourced operand; QA round 3 per stage on seeded projects, no evolve study for now; handover at
 300k tokens.
+
+## URGENT (09:58 UTC, from Fatemeh's QA session, organisers on Discord; also in STATUS.md)
+
+- DEADLINE: TODAY Thursday 2026-11-05 23:59 CET = 22:59 UTC. Submission: a pull request to the
+  GEMINI development branch; explain our gemini fixes (what, where) in that PR. Deliverables not
+  started: report (max 5 pages or 10 slides), video (max 5 min), agent log with prompts, answers,
+  tokens. Sahand decides what goes in; ask him at once and plan the afternoon around it.
+- QA-094 (major, geomind): return temperatures are the team's design choice (organisers); our
+  prompts (prompts/design/energy.md:65) say a missing return temperature is a case change. Route
+  to hotfix-python: treat network return temperatures as a design freedom with a recorded reason.
+- QA-095 (major, data): organisers' reference grid factor 0.3 kg/kWh; Knowledge has only Ember EU
+  209.21 g/kWh. Route to hotfix-back: add the organisers' row (cited: Discord answer) and recommend it.
+- 330 days is the geothermal source's availability; the whole system must supply 365 days
+  (matches heat/cold delivered; added to QA-091).
