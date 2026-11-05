@@ -24,5 +24,10 @@ the next one at the new resetsAt + 1 minute. At every piece of work the coordina
 the check at once (a send_later belongs to the session that made it): note its trigger id in
 STATUS.md.
 
+To avoid a sudden stop mid-step (Sahand: try hard to prevent it; if it happens anyway, fine):
+every session checks its own `rate_limit_info` at the start of each step and pauses itself the
+same way when the status is not `allowed`, telling the coordinator; every session commits and
+pushes in small pieces. New sessions get this rule in their first prompt.
+
 **Why:** a hard stop mid-edit leaves shared clones dirty and runs half done.
 **How to apply:** check `rate_limit_info` at each piece of work; act at once when it changes.
