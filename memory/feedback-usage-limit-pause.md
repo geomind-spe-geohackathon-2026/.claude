@@ -29,5 +29,8 @@ every session checks its own `rate_limit_info` at the start of each step and pau
 same way when the status is not `allowed`, telling the coordinator; every session commits and
 pushes in small pieces. New sessions get this rule in their first prompt.
 
+A `resetsAt` in the past means that window has ended, even when `status` still reads
+`allowed_warning`: the field refreshes only after the session's next model call (seen 04:12 UTC).
+
 **Why:** a hard stop mid-edit leaves shared clones dirty and runs half done.
 **How to apply:** check `rate_limit_info` at each piece of work; act at once when it changes.
