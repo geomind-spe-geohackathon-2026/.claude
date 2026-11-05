@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
+
 - 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
