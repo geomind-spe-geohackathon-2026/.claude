@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 01:33 UTC.
+Last updated: 2026-11-05 02:03 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.69 (2026-11-05 02:00 UTC, hotfix-python-II): geomind 0.4.65 + gemini 0.6.6 LOCAL wheels (QA-071 English-only short web queries; gm.study.structure_plant for the evolve structures view). Sandbox image stays gemini-sandbox:0.6.5. hotfix-python-II paused for the usage limit until the coordinator's go (after 04:10 UTC).
 
 - Backend 1.1.65 (2026-11-05 01:30 UTC, hotfix-python-II): geomind 0.4.64 LOCAL wheel (QA-047 findings in problem state; QA-070 nested agents rerun after a restart).
 
