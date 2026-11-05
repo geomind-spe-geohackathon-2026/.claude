@@ -46,6 +46,14 @@ time; short requests; no earlier stage redone (a gap is reported, not repaired).
 - **S8 (variation): cooling-heavy and heating-only checks.** Steps: ask for the result for the
   summer only (Jun-Aug) and for the winter peak week. Correct: sums match the CSV for that window.
 
+## Method (user rule, memory/feedback-qa-through-chat.md)
+
+Every action is a chat request written like a user (S1 "simulate the plant for the whole year",
+S5 "change to 2 doublets and simulate again", S8 "give me the summer result"); I answer the agents'
+questions and approvals in the chat. Tabs (Results, Runs and logs, plant view) are used only to
+check what the chat produced (S2, S7); a step the chat cannot do is filed as a gap bug. No form is
+used for an action in any scenario.
+
 ## Status
 
-- Scenarios written 2026-11-05 ~10:00 UTC; waiting for the project id from the coordinator.
+- Scenarios written 2026-11-05 ~10:00 UTC; waiting for the coordinator's "go" with the project id (Knowledge guides first).
