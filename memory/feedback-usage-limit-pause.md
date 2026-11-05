@@ -16,5 +16,13 @@ Limits: only the coordinator's own `rate_limit_info` is visible (status and rese
 nothing weekly); while the limit is hit no session, the coordinator included, can run a turn, so
 polling every 5 minutes is not possible: the reset timer is the way back.
 
+Standing cycle (Sahand, 2026-11-05 ~00:55 UTC): this repeats every 5-hour window until the whole
+project works stably. The coordinator keeps exactly one pending `send_later` "usage-window check"
+at the current resetsAt + 1 minute; each firing resumes paused sessions if allowed and schedules
+the next one at the new resetsAt + 1 minute. At every piece of work the coordinator checks
+`rate_limit_info`; when resetsAt has moved, it moves the check. A successor coordinator recreates
+the check at once (a send_later belongs to the session that made it): note its trigger id in
+STATUS.md.
+
 **Why:** a hard stop mid-edit leaves shared clones dirty and runs half done.
 **How to apply:** check `rate_limit_info` at each piece of work; act at once when it changes.

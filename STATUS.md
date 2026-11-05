@@ -30,6 +30,9 @@ Last updated: 2026-11-05 00:25 UTC.
 - Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
+- Usage-window check: send_later trig_01WoLkJYCYGh5rb2TYjixe3Q in Coordinator-II, next 2026-11-05 04:11 UTC
+  (resetsAt + 1 min); pauses and resumes per `memory/feedback-usage-limit-pause.md`. No usage pause now.
+
 ## How we work now
 
 - Mode: ask the user at the start of every session (development, production, hotfix);
