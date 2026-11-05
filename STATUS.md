@@ -19,8 +19,10 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- Backend 1.1.98 (hotfix-back-IV): QA-144 run totals count nested runs at any depth (not live-checked). handbook-speed-I done and archived.
+
 - 18:10 UTC: handbook-case (ch 0 case checklist) and handbook-design (ch 0 design path) re-uploaded: handbook-case 1a064236, handbook-design 6d617b90. Account handover plan ready: .claude/account-handover.md (run only on the user's word "force stop").
-- Running sessions: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); handbook-speed-I session_01J2V3UVChMTZnWLvYMM8WzZ (Sonnet, done); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
+- Running sessions: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
 
 - 18:00 UTC: QA-145 (Fatemeh, major: design run 70 min, 0 simulate, 27 hand patches, 107/231 re-reads) to hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY, top, together with plan C1/C2.
 
@@ -78,8 +80,10 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
 
+- Backend 1.1.98 (hotfix-back-IV): QA-144 run totals count nested runs at any depth (not live-checked). handbook-speed-I done and archived.
+
 - 18:10 UTC: handbook-case (ch 0 case checklist) and handbook-design (ch 0 design path) re-uploaded: handbook-case 1a064236, handbook-design 6d617b90. Account handover plan ready: .claude/account-handover.md (run only on the user's word "force stop").
-- Running sessions: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); handbook-speed-I session_01J2V3UVChMTZnWLvYMM8WzZ (Sonnet, done); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
+- Running sessions: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
 
 - 18:00 UTC: QA-145 (Fatemeh, major: design run 70 min, 0 simulate, 27 hand patches, 107/231 re-reads) to hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY, top, together with plan C1/C2.
 
