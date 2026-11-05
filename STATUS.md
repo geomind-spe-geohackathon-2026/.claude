@@ -7,7 +7,7 @@ Last updated: 2026-11-05 09:30 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- 09:55 UTC: the user approved a geomind release (QA-091, QA-094, QA-095 row); hotfix-python-II releases and deploys at the next window. assumptions.md (documents/project/quality-assurance/inputs/, b2846fd) is in the global Knowledge (eb95027a) and seeded with the competition files in every QA3 project (backend 14a2d35).
+- 09:55 UTC: the user approved a geomind release (QA-091, QA-094, QA-095 row); hotfix-python-II releases and deploys at the next window. assumptions.md (documents/project/quality-assurance/inputs/, b2846fd) is in the global Knowledge (eb95027a); NOT in any project's inputs (user, 10:00 UTC).
 
 - 09:40 UTC (hotfix-back-II): QA-092 fixed in backend 1.1.82 (9da4bbf; plant-changing tools and simulate on a stored design save the next plant version; a plain simulate still writes no Results row), goes out with hotfix-python-II's held batch. QA-095 row co2-grid-organisers-2026 (300 g/kWh) on geomind main 3a5027d: live only after a geomind release (Sahand's word) and a Knowledge re-seed by Sahand. QA3 seed runs after the batch deploy.
 
