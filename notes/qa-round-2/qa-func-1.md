@@ -168,3 +168,9 @@ start-to-end design loop (judging points 1, 2, 4, 5, 6: configurations, GEMINI c
 violations, iterations, alternatives compared, geothermal-driven cooling, capacities stated),
 in project 61134432. Economics/report/log go to functional-qa-2.md; studies, evolve, the agent
 tools and robustness to functional-qa-3.md. Read those files to avoid overlap.
+
+### functional-qa-I status (2026-11-05 ~05:20 UTC, backend 1.1.72)
+- Filed: QA-072, 073, 074 (from notes), QA-076 (first loop failed, 66 min, no plant; final chat text added), QA-077 (blocker: chat 81b51db5 stuck 'waiting'), QA-080 (blocker: simulate refuses the case, flow range must be ONE rule with min+max).
+- New chat cb8b9b2d in project 61134432 (full brief, auto-approve on): on 1.1.72 the design team built and sized Family A (free plant, electric boiler, compression chiller) and Family B (HeatingAbsorptionCoolingPlant, geothermal-driven cooling considered: judging point 5 attempted), size_plant ran; simulate blocked by QA-080; run cancelled at 05:20 to save usage.
+- Notes: the user's 'no grid gas' answer was honoured only after the case lead asked for gas composition in the new chat (the previous chat's answer was not carried over; minor); case lead wrote O2/C2H6/C3H8 = 0 mol% (zeros nobody gave); 'You answered' lines repeat after each resume (cosmetic).
+- Waiting for QA-080 fix, then resend 'go on' in chat cb8b9b2d (new chat if needed); old chat 81b51db5 is stuck (QA-077).
