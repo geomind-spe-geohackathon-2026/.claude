@@ -14,3 +14,7 @@ model ([[feedback-llm-model]]).
 **Why:** usage runs out fast; fixing code needs the strongest model, testing and coordinating less.
 **How to apply:** every `create_session` names the model; see [[feedback-qa-round-2]],
 [[feedback-session-refresh]].
+
+**Change, 2026-11-05 16:50 UTC (user, Coordinator-IV's chat):** the backend and frontend hotfix
+sessions (hotfix-back-*, hotfix-front-*) run on Sonnet (claude-sonnet-5-5). hotfix-python-* and
+the coordinator stay on Opus.

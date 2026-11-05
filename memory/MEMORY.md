@@ -10,7 +10,7 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [Usage limit pause](feedback-usage-limit-pause.md) — near the Claude usage limit all sessions finish their step and pause; resume after each reset; standing cycle until the project is stable
 - [Times in Trondheim time](feedback-times-trondheim.md) — in chat with Sahand give times in Europe/Oslo (CET, UTC+1); files stay UTC
 - [Agent tools feature](feature-agent-tools.md) — skills folder per tool/role + calculate (sourced operands), run_python (sandbox), web_search (SearXNG); spec notes/features/
-- [Session models](feedback-session-models.md) — hotfix sessions and the coordinator on Opus; QA and every other session on Sonnet; pass model at create_session
+- [Session models](feedback-session-models.md) — hotfix sessions and the coordinator on Opus; QA and every other session on Sonnet; pass model at create_session  (16:50 UTC: hotfix-back and hotfix-front on Sonnet)
 - [QA round 2 rules](feedback-qa-round-2.md) — agent-browser only (no Playwright), competition files only, functional flow first, OpenRouter spend no limit, gemini editable
 - [Decisions 2026-11-05](feedback-decisions-2026-11-05.md) — catalogue only sourced rows; gemini unfrozen; auto-approve in backend; features in hotfix; releases without OK; rate limit high; automatic handover
 - DECISIONS (Sahand, 2026-11-04 21:40 UTC): QA-010 = the agent proposes clearly labelled engineering assumptions in one question when the user delegates and no RAG/MCP source exists, user approves (source 'agent assumption'); QA-006 = research cited catalogue rows, Sahand approves, then re-seed. Other open decisions: STATUS.md
