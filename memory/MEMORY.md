@@ -5,6 +5,7 @@ The shared memory of every Claude session on this project: one fact per file, `[
 Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../handoff/path-map.md) gives where each is now. The newest state of production is in `shared-clones-and-production.md` and the project root `documents/project/ops/`.
 
 ## Since the handoff (NTNU Dell sessions, 2026-11-04)
+- [Commit often](feedback-commit-often.md) — every session: one change per commit, messages with what, why and ids, push at once, so any change can be reverted
 - [Judging criteria](competition-judging-criteria.md) — organisers' slides: Challenge 1 agentic workflow, Challenge 2 integrated heating+cooling (50/50), bonus, deliverables, evidence (prompts, answers, tokens)
 - [Usage limit pause](feedback-usage-limit-pause.md) — near the Claude usage limit all sessions finish their step and pause; resume after each reset; standing cycle until the project is stable
 - [Times in Trondheim time](feedback-times-trondheim.md) — in chat with Sahand give times in Europe/Oslo (CET, UTC+1); files stay UTC

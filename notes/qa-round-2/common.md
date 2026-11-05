@@ -71,3 +71,8 @@ Then test, keep a one-line status per scenario in that file, and add new scenari
 - At 75 % context, hand over as `.claude/session-refresh.md` says (to `<your-name>-II`, same model).
 - When your scenarios are all done and their bugs retested, run them once more with variations,
   report, and wait for the coordinator.
+
+## Commits (Sahand, 2026-11-05)
+
+Commit and push as often as you can, one change per commit, with a message that says what and
+why and names the ids (scenario, bug): `memory/feedback-commit-often.md`.
