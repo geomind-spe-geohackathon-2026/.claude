@@ -87,9 +87,19 @@ tokens of context (rule: hand over at 300k, `.claude/session-refresh.md`).
 
 1. QA-110 (major, Case History: open a version read-only, diff to the previous one with paths,
    values and sources, Restore like the plant's, a real note, "Saved by" the assistant) is shared
-   with hotfix-back-II (session_01J2V3UZeNoBawJDgCJuBHr7): agree the split with it first (it does
-   note/author/endpoints; frontend does the view, diff and Restore). QA-110 first.
-2. QA-102 (minor, Overview Activity links), shared with hotfix-back-II: agree the split.
+   with hotfix-back-II (session_01J2V3UZeNoBawJDgCJuBHr7). SPLIT AGREED (10:58 UTC), backend lands
+   at 11:30: (a) GET /design/case/versions/{number} -> same Case body as GET /design/case for that
+   version; (b) POST /design/case/versions/{number}/restore body {"base": <latest number>} -> 201
+   Case, new version "Restored version N", 409 on a stale base; (c) assistant notes name the
+   changed paths; (d) case and plant version objects get "by": "assistant" | "user".
+   Frontend (you): a history row opens that version read-only (a); compare with the version before
+   (diff the two contents client-side: paths, old/new values, sources); Restore (b) like the
+   plant's; Saved by shows "Assistant" when by = assistant. Add the endpoints to
+   `src/shared/api/pending.ts` (no gen:api). QA-110 first; hotfix-back-II claims the bug for the
+   backend part, you write your part under your name in Fix.
+2. QA-102 (Overview Activity links), split agreed: backend gives "Saved plant/case version N"
+   activity rows link id "N" (new rows only). Frontend: design/plant and design/case with link id N
+   open History on version N; design/study/<id> opens the study; sentence-case actor.
 3. QA-109 (minor, Report Agent log empty by default: pick the run that made the result).
 4. QA-100, QA-101 (cosmetic: Runs and logs section titles; Overview Recent chats layout).
 
