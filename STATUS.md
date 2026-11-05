@@ -17,6 +17,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.83 (2026-11-05 10:00 UTC, hotfix-python-II; includes hotfix-back-II's 1.1.80-1.1.82, QA-088 and QA-092): geomind 0.4.78 + gemini 0.6.12 LOCAL wheels (QA-074, 079, 084, 085, 086, 088 full runs, request 35).
 
+- 11:26 UTC (Fatemeh): QA-127 + QA-109 (report default result and agent log) routed to hotfix-front-III, first after resume in one deploy; then QA-126 (Days covered backup class).
+
 - 11:23 UTC: handbook-case-definition.md and handbook-engineering-reporting.md COMPLETE (documents b3b2199; unverified items marked); handbook-others left: git rm hackathon-2026-*-guide.md + links. handbook-plant-design ch 1-11 done (documents fd81b3a; left ch 12, appendices A-D); handbook-techno-economics ch 1-15 (d53f06e).
 
 - 11:15 UTC (user): QA round 3 PAUSED (all five sessions finish their step and wait for the coordinator's resume). Handbooks replacing the hackathon-2026-*-guide files (general, book-like, read by section): handbook-plant-design (session_01J2V3UVax4NELQZ9gqGQ4t8), handbook-case-definition + handbook-engineering-reporting (session_01J2V3UVwPdMpj4qHKCUrfrf), handbook-techno-economics (session_01J2V3UVK9oFWcJQb2GuSbpF); hotfix-python-III adds read_rag outline/section. Knowledge upload by the coordinator when done; hackathon-2026-assumptions.md keeps its name.
