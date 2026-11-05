@@ -37,7 +37,9 @@ Last updated: 2026-11-05 01:33 UTC.
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
 - Usage-window check: send_later trig_01WoLkJYCYGh5rb2TYjixe3Q in Coordinator-II, next 2026-11-05 04:11 UTC
-  (resetsAt + 1 min); pauses and resumes per `memory/feedback-usage-limit-pause.md`. No usage pause now.
+  (resetsAt + 1 min); pauses and resumes per `memory/feedback-usage-limit-pause.md`.
+- Usage pause: 2026-11-05 01:50 UTC (allowed_warning), sessions hotfix-front, hotfix-back, hotfix-python-II,
+  functional-qa-I; only already-built 02:00 deploys allowed; resume after 04:10 UTC.
 
 ## How we work now
 
