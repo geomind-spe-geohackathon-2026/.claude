@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 14:25 UTC: functional-qa-report-I closed and archived (filed QA-099, 122, 123, 124; S2, S6-S11 untested). User: archive each QA session once it reports stopped.
+
 - 14:20 UTC (user): IMP-023 REJECTED (no sample-plant templates; design from handbook-plant-design, memory/feedback-design-from-handbook-not-templates.md); QA-122 APPROVED. QA sessions: cancel every QA run, complete their reports, then close (functional-qa-* stop for now).
 
 - 14:17 UTC usage check: five-hour window reset; now seven_day allowed_warning (resetsAt 2026-11-11 23:00 UTC). Hotfix sessions work through it (user, 13:40 UTC); QA sessions stay paused by the user's word, not by usage. No further usage check scheduled.
