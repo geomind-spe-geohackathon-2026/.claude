@@ -1,6 +1,6 @@
 ---
 name: feedback-assumptions-in-knowledge-only
-description: hackathon-2026-assumptions.md (was assumptions.md) and the four hackathon-2026-*-guide.md files live only in the global Knowledge, never uploaded into a project's inputs (2026-11-05)
+description: hackathon-2026-assumptions.md (was assumptions.md) and the four general handbooks (handbook-*.md, which replaced the hackathon-2026 guides) live only in the global Knowledge, never uploaded into a project's inputs (2026-11-05)
 metadata:
   type: feedback
 ---
@@ -11,7 +11,9 @@ eb95027a, uploaded 09:52 UTC); projects get only the three competition files. Th
 not upload it. The same holds for the planned hackathon guides (case, design, analysis, report).
 
 Renamed 2026-11-05 by hackathon-guides: `documents/project/quality-assurance/inputs/hackathon-2026-assumptions.md`,
-next to `hackathon-2026-case-guide.md`, `-design-guide.md`, `-analysis-guide.md`, `-report-guide.md`;
+next to the general handbooks `handbook-case-definition.md`, `handbook-plant-design.md`,
+`handbook-techno-economics.md` and `handbook-engineering-reporting.md` (they replaced the four
+`hackathon-2026-*-guide.md` files on 2026-11-05; the hackathon is their worked-example chapter);
 Knowledge ids in `STATUS.md`.
 
 **Why:** the user's choice: one shared place for these values, not a copy per project.

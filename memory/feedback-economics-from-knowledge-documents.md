@@ -17,5 +17,6 @@ not hackathon-specific.
 recommendations made the economics differ from gemini's sample and its rankings.
 
 **How to apply:** geomind 0.4.80 `prompts/case/lead.md` (economics section, per-energy rule);
-the guide `documents/project/quality-assurance/inputs/hackathon-2026-case-guide.md` must agree
+the handbook `documents/project/quality-assurance/inputs/handbook-case-definition.md` (chapter 12,
+the hackathon example) must agree
 with the prompt.
