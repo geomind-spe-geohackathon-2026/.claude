@@ -3,7 +3,7 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 09:18 UTC.
+Last updated: 2026-11-05 09:30 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -50,7 +50,7 @@ Last updated: 2026-11-05 09:18 UTC.
 - Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
-- Usage-window check: send_later trig_01UdS66pQWurr2D3ms9rgFSe in Coordinator-II, next 2026-11-05 14:11 UTC
+- Usage-window check: send_later trig_01BA7egki6ZQA6XkYPzLAysF in Coordinator-III, next 2026-11-05 14:11 UTC
   (resetsAt 14:10 UTC + 1 min). Last pause 01:50-04:12 UTC, resumed; pauses and resumes per `memory/feedback-usage-limit-pause.md`.
 
 ## How we work now
@@ -68,8 +68,9 @@ Last updated: 2026-11-05 09:18 UTC.
 - Hotfix sessions resumed 2026-11-04 20:25 UTC (paused 20:10-20:25). Deploy windows at :00 and :30 UTC
   only (a blocker may go at once); every deploy still ends running agent runs until QA-035.
 
-- Coordinator: Coordinator-II, session_01J2V3UXD6UT73meeapsG2MS (since 2026-11-05 00:20 UTC; opens and
-  closes the sessions, sends reports). Generation 1 (session_01J2V3UXGweG4JrR4wkEWtg9) archived;
+- Coordinator: Coordinator-III, session_01J2V3UWsUm5z442CiXM5MZU (since 2026-11-05 09:30 UTC; opens and
+  closes the sessions, sends reports). Coordinator-II (session_01J2V3UXD6UT73meeapsG2MS) archived; its
+  handover note is `notes/sessions/coordinator-2.md`. Generation 1 (session_01J2V3UXGweG4JrR4wkEWtg9) archived;
   its handover note is `notes/sessions/coordinator-1.md`.
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
   hotfix-front (session_01J2V3UYxh6obK4VSajGwZvk, area frontend, frontend clone),
