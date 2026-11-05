@@ -12,13 +12,15 @@ One doublet at 300 m3/h, dT 40 K gives roughly 13-14 MWth.
 
 ## Scenarios
 
+Chat first (user rule, feedback-qa-through-chat): every action below is a chat request like a user's; answer agent questions and approvals in the chat. Tabs only verify what the chat produced; if the chat cannot do a step, file that gap as a bug.
+
 One request at a time in the QA3 plant chat (case already set; no case redo).
 
-- plant-I-S1 Configurations offered. Ask: "Which plant configurations can cover this heating and
+- plant-I-S1 Configurations offered. Chat: "Which plant configurations can cover this heating and
   cooling demand?" Correct: families named (geothermal only, + heat pump, + gas boiler/CHP on the
   co-produced gas, + chillers/absorption for cooling), each tied to the case; the 87 C vs 100 C gap
   (lift needed) is recognised; no value invented.
-- plant-I-S2 Sizing, heating. Ask for a sized plant for the heating peak. Correct: doublet count
+- plant-I-S2 Sizing, heating. Chat: ask for a sized plant for the heating peak. Correct: doublet count
   1-3, flow 50-300 m3/h each, brine return <= 40 C; geothermal heat <= ~13-14 MWth per doublet at
   300 m3/h; backup/lift sized for the 30 MW peak and the 35 non-operating days; numbers reproduce
   by hand.
@@ -37,7 +39,7 @@ One request at a time in the QA3 plant chat (case already set; no case redo).
   asks once, or proposes a sourced/labelled value for approval; never a silent default.
 - plant-I-S8 Compare alternatives. Ask for two plant variants compared on capacity and key
   checks, plus a recommendation. Correct: table consistent with S2/S3 numbers; token use visible.
-- plant-I-S9 Plant view/UI. Parts, connections, sizes in the plant page match chat statements;
+- plant-I-S9 Verify in the plant tab (read-only check of what the chat built; no editing in forms). Parts, connections, sizes in the plant page match chat statements;
   units correct (m3/h, MWth, C); no console errors.
 
 ## Status
