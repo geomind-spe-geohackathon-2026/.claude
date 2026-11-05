@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 01:08 UTC.
+Last updated: 2026-11-05 01:33 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.65 (2026-11-05 01:30 UTC, hotfix-python-II): geomind 0.4.64 LOCAL wheel (QA-047 findings in problem state; QA-070 nested agents rerun after a restart).
 
 - Backend 1.1.64 (2026-11-05 01:06 UTC, hotfix-python-II): geomind 0.4.62 LOCAL wheel (QA-069: set_case returns plants_need).
 
