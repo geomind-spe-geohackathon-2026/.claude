@@ -3,7 +3,9 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 20:50 UTC.
+Last updated: 2026-11-05 21:48 UTC.
+
+- 21:48 UTC (Sahand): import real past designs into geomind experience memory (runs that passed gemini's check and gemini's own study results; origin = real run id or gemini study; nothing invented); GEOMIND_MEMORY to be turned on in prod at the next batch deploy.
 
 - 2026-11-05 22:00 UTC (handbook-case-II round 3): handbook-case ch 18 cooling demand, 19 subsurface data, 20 produced fluid (gas, corrosion, scaling), 21 inputs as uncertain values, 22 worked example II (hourly), 23 worked example III (no files), 24 reviewing a case; 15.2 corrected to gemini CoolingGrid (latent taken when supply <= dew point - margin); 16.1 DST row count fixed; Appendix C split C.1-C.3, 39 external references (documents fffd4ce). Global Knowledge: handbook-case 7745c30a (was 8c2b10b4).
 - 2026-11-05 ~22:55 CET Trondheim (handbook-economics-II, round 3): handbook-economics Global Knowledge 72710daf (replaces 45f1a2ce); documents 3cebb66. New ch 20 subsurface economics (depth, flow, doublet count, exploration risk), 21 load duration and screening curves, 22 heat pumps vs boilers (COP, cost and CO2 break-even), 23 cooling economics (compression, absorption, free cooling), 24 thermal and ice storage; outline table lists 0-24.
