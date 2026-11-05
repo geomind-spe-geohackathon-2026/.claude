@@ -12,6 +12,10 @@ Reference facts (competition files, `memory/competition-inputs.md`): heat 365 da
 supply 100 C heating / 20 C cooling. Judging: `memory/competition-judging-criteria.md` (agent log with
 prompts, answers, tokens; explained extra calculations; realised heating/cooling capacities; techno-economics).
 
+Rule (memory/feedback-qa-through-chat.md): every action is a chat request, written like a user; I answer
+the agents' questions and approvals in the chat. Tabs (Results, Economics, Runs and logs, Report) only
+verify what the chat produced, or when the chat truly cannot do a step; then that is filed as a gap bug.
+
 Common to all: log in with the admin account (agent-browser, session functional-qa-report-I), open
 "QA3 report", one short request at a time, read the numbers in the UI and compare with the run JSON
 (Runs and logs). Wrong numbers, unsourced assumptions, defaults the user never approved, a Claude
@@ -21,8 +25,8 @@ model name anywhere, and stage-crossing gaps are bugs.
   cold) and payback of the finished run. Correct: every cost item has a source or a labelled,
   user-approved assumption; totals equal the sum of items; units consistent (EUR, EUR/MWh); energy
   basis matches the CSVs (111.67 GWh heat, 23.74 GWh cool, minus any unmet demand shown by the run).
-- S2 Economics what-if: change one assumption (electricity price, then discount rate) and ask for
-  the new LCOH. Correct: only that figure moves, direction makes sense, the change is recorded.
+- S2 Economics what-if: in the chat, ask to change one assumption (electricity price, then discount
+  rate) and give the new LCOH; no form edits. Correct: only that figure moves, direction makes sense, the change is recorded.
 - S3 Verdict: ask "does the design meet the requirements?". Correct: each hard cap is listed with
   its value and pass/fail (1-3 doublets, 50-300 m3/h per active doublet, brine cooling <= 40 K, pump
   eff 70 %, supply 100 C / 20 C); verdict agrees with the simulation violations; any unmet-demand
@@ -36,10 +40,12 @@ model name anywhere, and stage-crossing gaps are bugs.
   missing models named, calculate/run_python/web_search results shown with sources, explained why appropriate.
 - S7 Uncertainty/bonus: ask for a short sensitivity or uncertainty statement on the economics.
   Correct: ranges come from a real study; no fabricated percentiles.
-- S8 Report: generate the technical report (max 5 pages target). Correct: opens/downloads, sections
+- S8 Report: ask in the chat "write the report" (max 5 pages target); the chat must deliver or link it.
+  If only a tab can produce it, file that gap. Correct: opens/downloads, sections
   cover assessment, design, capacities, economics, agent architecture; every number equals the chat
   and run JSON; figures render; no placeholders, no secrets, English.
-- S9 Agent log export: export the interaction log. Correct: contains prompts, answers and token
+- S9 Agent log export: ask in the chat for the interaction log (prompts, answers, tokens); the chat
+  must deliver or link it. If only a tab button can export, file that gap. Correct: contains prompts, answers and token
   counts per agent and in total; totals match the Runs view; model is deepseek (never Claude); file
   opens, valid format, no secrets.
 - S10 Re-ask consistency: ask the same economics question twice and after a page reload. Correct:
