@@ -11,6 +11,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- Backend 1.1.92 (14:37 UTC, hotfix-python-IV): geomind 0.4.89: QA-131 (sensitivity via gemini, values= drivers; analysis lead sets ranges with set_case; never run_python); handbook-design name. Frontend 1.1.105: QA-133/134. Backend 1.1.91: QA-136. QA-135 frontend (newest result).
+
 - 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
@@ -24,6 +26,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- Backend 1.1.92 (14:37 UTC, hotfix-python-IV): geomind 0.4.89: QA-131 (sensitivity via gemini, values= drivers; analysis lead sets ranges with set_case; never run_python); handbook-design name. Frontend 1.1.105: QA-133/134. Backend 1.1.91: QA-136. QA-135 frontend (newest result).
 
 - 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
