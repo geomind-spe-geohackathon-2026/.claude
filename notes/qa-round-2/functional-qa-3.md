@@ -54,5 +54,7 @@ Project "QA2 functional-qa-3 studies", auto-approve ON. Status per scenario is k
 ## Status
 
 (one line per scenario)
-- S0 .. S12: not started
+- S0 (2026-11-05 ~06:10 UTC): case built after ~6 question cards; run bd7aa40e died after 68 min (QA-081, fixed 1.1.74); 'go on' resumed with case kept (S11 partly OK); run eb7b95df blocked by gemini 'internal' errors (QA-083, blocker). No design yet.
+- S10 partial: web_search used by agents; 8-word/English guard works (queries of 9-12 words and a Dutch query were refused, agent rewrote them); read_web_page got a 403 once.
+- S1-S9, S12: blocked on S0 (no stored design). S11: deploy-cut run seen once (QA-081).
 
