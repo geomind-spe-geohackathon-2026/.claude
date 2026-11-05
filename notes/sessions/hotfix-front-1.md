@@ -73,6 +73,10 @@ tokens of context (rule: hand over at 300k, `.claude/session-refresh.md`).
    open, no wrapped labels; set QA-089 verified or open.
 3. Notes on QA-088 and QA-074 ("frontend part deployed, 1.1.78 / 1.1.79"), keeping status and fixer.
 4. One line to the coordinator (id from STATUS.md), then `qa.py next --area frontend --fixer hotfix-front-II`.
+5. Coordinator-III asks you to take QA-093 (minor: New project, Create closes the dialog silently
+   when the Create button is below the fold): claim it (`qa.py claim QA-093 --fixer hotfix-front-II`).
+   Related: QA-066 (1.1.63) made dialogs scroll inside (`src/components/ui/dialog.tsx`); the
+   create flow is `src/domains/workspace/projects/new-project-dialog.tsx`.
 
 ## Useful facts about this code
 
