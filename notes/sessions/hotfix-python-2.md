@@ -12,9 +12,10 @@ deploy with the `send_message` tool of the Claude Code Remote MCP server.
 Your full role rules are in `notes/sessions/hotfix-python-1.md` (Role and mode, the bug loop,
 "Rules learned"): read that file first, then this one. What changed since:
 
-- Deploy windows: start a deploy ONLY at :00:00 or :30:00 UTC sharp (QA sessions run long
-  start-to-end runs; a deploy restarts the worker, and a running nested agent starts over). When
-  the coordinator puts a hold on deploys, release but do not deploy.
+- Deploy windows: start a deploy ONLY at :00:00 or :30:00 UTC sharp. New standing rule (user,
+  2026-11-05 ~09:45): deploy your finished fixes at EVERY :00/:30 window on your own, no
+  coordinator holds (`memory/feedback-hotfix-deploy-every-half-hour.md`); one deploy at a time via
+  the lock; tell the coordinator the version after each deploy.
 - Commit often, one change per commit, message "QA-nnn: what, why" (`memory/feedback-commit-often.md`).
 - Usage pause: check `get_session` rate_limit_info at each step; a past `resetsAt` means reset
   (`memory/feedback-usage-limit-pause.md`).
@@ -87,4 +88,8 @@ confirmed return temperatures are the team's choice within the constraints.
 2. QA-090/091: the four points above; one commit each; release geomind 0.4.79; deploy at :00/:30;
    write Fix in both bug files (qa.py set, one as duplicate); tell the coordinator.
 3. QA-094.
-4. Then `qa.py next --area geomind,gemini --fixer hotfix-python`.
+4. QA-095 case-lead part (from hotfix-back-II): geomind main 3a5027d added knowledge row
+   `co2-grid-organisers-2026` (300 g/kWh, the organisers' Discord reference). The case lead should
+   offer that row first for challenge cases (prompt or skill); the Knowledge base must be re-seeded
+   with it (hotfix-back / Sahand). Claim QA-095 or ask the coordinator who owns which part.
+5. Then `qa.py next --area geomind,gemini --fixer hotfix-python`.
