@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
+
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
 
 - Frontend 1.1.104 (2026-11-05 14:27 UTC, hotfix-front-III): QA-127+109 (report opens on best feasible result + its run log), QA-126+107 (Days covered: geothermal only / topped up / backup only), QA-118 (no rounding in approval cards), IMP-024 (Run again on studies).
