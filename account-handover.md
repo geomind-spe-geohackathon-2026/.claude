@@ -28,11 +28,16 @@ where the same sessions are opened again from what is written in this folder.
    usage check) with `delete_trigger`; their ids are in `STATUS.md`.
 4. Write the coordinator's own note `.claude/notes/sessions/coordinator-<n>.md` (role, rules, every
    session and its note, open decisions, deploy and QA rules in force).
-5. Fill the table in Phase 2 below (one row per session to reopen, with its note path), update
+5. Check that NOTHING is left only on this machine or account: in every clone (`.claude`,
+   `documents`, `backend`, `frontend`, `geomind`, `gemini`, `infrastructure`) run `git status
+   --short` (must be empty) and `git log --oneline @{u}..HEAD` (must be empty) on its branch, and
+   list `wip/*` branches pushed by the sessions. Anything left: commit by path and push, or ask the
+   session that owns it. Sahand's account reads only what is on GitHub and in these clones.
+6. Fill the table in Phase 2 below (one row per session to reopen, with its note path), update
    `STATUS.md` ("Account handover: stopped at <UTC>; reopen on Sahand's account per
    account-handover.md"), commit, push.
-6. Tell the user in Persian: done, which notes, what Sahand pastes (Phase 2).
-7. Do not archive the stopped sessions; the user decides.
+7. Tell the user in Persian: done, which notes, what Sahand pastes (Phase 2).
+8. Do not archive the stopped sessions; the user decides.
 
 ## Phase 2: reopen on Sahand's account (Sahand, or his first coordinator)
 
