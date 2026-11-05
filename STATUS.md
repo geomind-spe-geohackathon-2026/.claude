@@ -73,7 +73,7 @@ Last updated: 2026-11-05 09:18 UTC.
   its handover note is `notes/sessions/coordinator-1.md`.
 - Hotfix sessions (who fixes what: `documents/project/quality-assurance/README.md`):
   hotfix-front (session_01J2V3UYxh6obK4VSajGwZvk, area frontend, frontend clone),
-  hotfix-back (session_01J2V3UWh6RugyR1DAxrkNhH, areas backend, data, infra, backend clone),
+  hotfix-back-II (session_01J2V3UZeNoBawJDgCJuBHr7, since 2026-11-05 09:30 UTC, successor of hotfix-back session_01J2V3UWh6RugyR1DAxrkNhH; note notes/sessions/hotfix-back-1.md; areas backend, data, infra, backend clone),
   hotfix-python-II (session_01J2V3UXSA2mo8MG4igf5y4n since 2026-11-04 23:52 UTC, areas geomind, gemini; local wheels).
   They claim with `qa.py next`, take `/tmp/geomind-backend.lock` before editing the backend, and
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
