@@ -87,3 +87,9 @@ Findings so far (2026-11-05, 42 runs, 00:13-15:17 UTC):
 
 - Log findings checked against live code (geomind 0.4.96, gemini 0.6.16) and filed: QA-147 (read_stored/calculate cannot read dotted keys like d0.esp, geomind), QA-148 (gemini reader.py TypeError on a mapping in inlets; chiller condenser loop has no tear first guess; needs Sahand's OK), QA-149 (evaluate_module 81 % refused). Sent to Coordinator-V. Not refiled (already fixed): control.dispatch IMP-019, failed_before QA-143, QA-145, m/s2.
 - Run 32a12115 summary for the report thread: documents/project/quality-assurance/reports/run-32a12115-complete-design.md (a99fad8); sent to Coordinator-V to forward.
+
+## Manual QA-IV, 2026-11-05 evening (times CET, Sahand's rule)
+
+- Report live run (agent): run bfcec811-c5ad-496e-a829-6ec44de3251c, project 0b986dd6-8f95-4383-9d15-5e589ff122c9, started 18:37 CET; QA-IV answers its cards by hand (Sahand: no auto-approve, answer for the best showcase). Tools: scratchpad liverun/answer.py, watch.py, show.py (copy from this note if the scratchpad is gone: answer = POST /assistant/runs/{id}/answer {request, answer:{approved,reason}|{text}}). First run d4ab496f cancelled (15 plants, no study).
+- No-agent results for the report: clean project 8d5d21e0-ecb0-4894-9cfd-bdd61f670ac7 (gemini 0.6.26): evolve 29.55 EUR/MWh 8.54 kt; absorption plant 28.61; sensitivity, sample (27/50 feasible), run. Older projects 4678c5c6 (has 2 failed studies) and abf7ce3a (cancelled) are superseded. Write-up: documents/project/quality-assurance/reports/no-agent-showcase-gemini-0.6.17.md.
+- Bugs filed this evening: QA-182/183/184, 201 (task, team size 8), 212 (reopened), 238/239/240, 244 (reopened), 254 (verified), 264 (verified), 267 (verified), 281, 282, 287 (blocker).
