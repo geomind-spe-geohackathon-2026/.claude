@@ -30,3 +30,16 @@ queue passes ~8 bugs; drop idle members.
 Lead does no fix work (Sahand, 2026-11-05 19:26 Trondheim): a team lead never works on a bug or
 task itself. It only claims, splits, assigns, reviews, commits, pushes, deploys and updates qa.py.
 Every bug, even a blocker, goes to a member.
+
+CHANGE (Sahand approved 2026-11-05 20:52 Trondheim), replaces "members never commit" and
+"lead assigns every task":
+1. Members commit and push their OWN fixes: `git add <their files>` by path only, one commit per
+   bug, `git pull --rebase` then push. Still no deploy by members. The lead keeps a table
+   member -> bug -> files (in its checklist) so no two members own the same file.
+2. Members pull their next bug themselves: `qa.py next --area <area> --fixer <member name>` and take
+   it only if its files are inside their own area (python: m-case/economics, m-design, m-gemini,
+   m-studies ... as the lead set); otherwise leave it and take the next. They tell the lead in one line.
+3. Triage: blockers and majors first, especially anything that changes the numbers or the
+   competition answer; minor and cosmetic bugs wait until the major queue is empty.
+The lead: assigns areas, resolves file conflicts, deploys in batches (~every 10 min), sets
+qa.py fixed with the deployed version, and asks QA threads to retest right after each deploy.
