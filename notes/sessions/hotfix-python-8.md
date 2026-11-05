@@ -1,4 +1,16 @@
-# hotfix-python-VIII / hotfix-python-lead state (2026-11-05 ~19:00 Trondheim)
+# hotfix-python-VIII / hotfix-python-lead state
+
+## Update 19:30 Trondheim (newest; supersedes the rest)
+
+Sahand's rule: the lead does NO fixing at all; it assigns, collects reports, stages by path,
+commits, pushes, deploys (backend scripts/hotfix_deploy.sh: builds from git HEAD, dirty member
+files don't block, only a dirty backend clone does) and sets qa.py status. Deploy in batches
+about every 10 min. Team = 8 members; task list in `.claude/notes/python-team-tasks.md`.
+Peers: m1 = -44, m2 = -a4, m3 = -39, m5 = -d9; m4/m6/m7/m8 among -69, -8d, -62 and one more
+(-7e is NOT a member: bug tracker). Live: geomind 0.4.123, gemini 0.6.21 (backend 1.1.115).
+Pending Sahand: deleting the wrong memory rows (QA-199) from the production DB; do not delete.
+
+# Older state (2026-11-05 ~19:00 Trondheim)
 
 Role since 18:38: **hotfix-python-lead** (`memory/feedback-hotfix-teams.md`). Peer name of this
 session: geomind-spe-hackathon-2026-52. Members (Dell peers; SendMessage by name):
