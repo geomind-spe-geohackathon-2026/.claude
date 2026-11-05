@@ -67,7 +67,16 @@ The new coordinator then:
 
 | Old title | Old id | New title | Model | Tags | Note |
 |---|---|---|---|---|---|
-| (filled at force stop) | | | | | |
+| Coordinator-IV | session_01J2V3UYqrLbCNN9zst5WY8d | Coordinator-V (start FIRST) | claude-opus-5-5 | coordinator, geomind-qa | notes/sessions/coordinator-4.md |
+| hotfix-python-V | session_01J2V3UWw2qHaxMQh8g5F2JY | hotfix-python-VI | claude-opus-5-5 | geomind-qa, hotfix | notes/sessions/hotfix-python-5.md |
+| hotfix-back-IV | session_01J2V3UWBvFYRd3VG1pYpCXZ | hotfix-back-V | claude-sonnet-5-5 | geomind-qa, hotfix | notes/sessions/hotfix-back-4.md |
+| hotfix-front-V | session_01J2V3UVNQkaiH9cMvNv911G | hotfix-front-VI | claude-sonnet-5-5 | geomind-qa, hotfix | notes/sessions/hotfix-front-5.md |
+| speed-analysis-I | session_01J2V3UVU2bDHYyBSSYgbNCc | speed-analysis-II (start when a baseline re-run is due) | claude-sonnet-5-5 | geomind-qa, speed | notes/sessions/speed-analysis-1.md |
+| Manual QA-II | session_01J2V3UYeTzFtZEuQJvkuadd | Manual QA-III (only if Fatemeh wants it on this account) | claude-opus-5-5 | remote-control-app | notes/sessions/manual-qa-2.md |
+
+If a note in this table is missing when you start, the old session did not finish its handover:
+read its transcript is not possible from the new account, so read `STATUS.md` and the bug files
+for its state and tell the user.
 
 Models by rule (`memory/feedback-session-models.md`): coordinator and hotfix-python on Opus
 (`claude-opus-5-5`); hotfix-back, hotfix-front, analysis, handbook and QA sessions on Sonnet

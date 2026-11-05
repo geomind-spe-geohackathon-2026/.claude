@@ -19,6 +19,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- 18:45 UTC: ACCOUNT HANDOVER started (user, usage 90 %): every session finishes its step, writes its note, stops; no successors on this account. Coordinator scheduled tasks deleted. Reopen on Sahand's account per account-handover.md (table filled; coordinator note notes/sessions/coordinator-4.md). Frontend 1.1.112 (QA-146 unnamed line).
+
 - 18:30 UTC: speed baseline done (documents/project/plans/speed-case-plant-baseline.md, 6711075): 41 runs, 17% refused; plant ~78 active min/run, 1 of 17 done; top 10 causes to hotfix-python-V; step ts + patch_plant internal error to hotfix-back-IV. Unnamed "· Thinking" line in chat to hotfix-front-V.
 
 - Backend 1.1.98 (hotfix-back-IV): QA-144 run totals count nested runs at any depth (not live-checked). handbook-speed-I done and archived.
@@ -81,6 +83,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- 18:45 UTC: ACCOUNT HANDOVER started (user, usage 90 %): every session finishes its step, writes its note, stops; no successors on this account. Coordinator scheduled tasks deleted. Reopen on Sahand's account per account-handover.md (table filled; coordinator note notes/sessions/coordinator-4.md). Frontend 1.1.112 (QA-146 unnamed line).
 
 - 18:30 UTC: speed baseline done (documents/project/plans/speed-case-plant-baseline.md, 6711075): 41 runs, 17% refused; plant ~78 active min/run, 1 of 17 done; top 10 causes to hotfix-python-V; step ts + patch_plant internal error to hotfix-back-IV. Unnamed "· Thinking" line in chat to hotfix-front-V.
 
