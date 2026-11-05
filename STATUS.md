@@ -9,6 +9,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
+- 14:20 UTC: hotfix-back-II handed over to hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu (note notes/sessions/hotfix-back-2.md); QA-095 fixed; test_case_aware fixed (backend 931cac5, no deploy). handbook-others archived (guides git rm'd, documents a0854de). Knowledge swap (upload handbook-case-definition, handbook-engineering-reporting, re-upload hackathon-2026-assumptions; delete guides 2330c87c, 678e9a43) PENDING: auto-mode classifier refused scripts.replace_knowledge for the coordinator; the user runs it. Rule: Fatemeh's bugs first (memory/feedback-fatemeh-bugs-first.md).
+
 - 13:40 UTC (user): the five functional-qa sessions STAY PAUSED until the user says otherwise; every other session (hotfix, handbooks) resumed now. hotfix-python-III (context full) handed over to hotfix-python-IV session_01J2V3UZqdULpCLT7XEFdd6t (note notes/sessions/hotfix-python-3.md).
 
 - Backend 1.1.88 (2026-11-05 11:30 UTC, hotfix-python-III; includes hotfix-back-II 1.1.87 QA-110/102 backend, QA-104): geomind 0.4.85 + gemini 0.6.13 LOCAL wheels (every tool in exactly one skill, IMP-014/015/016/017 part 1/018, QA-097/099/114/116/119/120, read_rag outline/section). Frontend 1.1.93-1.1.99 (11:30, hotfix-front-III: QA-115, 117, 100, 101, 110, 102).
