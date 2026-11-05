@@ -3,7 +3,9 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 21:48 UTC.
+Last updated: 2026-11-05 21:55 UTC.
+
+- 21:55 UTC (Sahand): wind-down. Only the best-runs memory seed (python m3) + its import and GEOMIND_MEMORY on remain; every other hotfix thread finishes its task in hand and stops. Coordinator-V idle-check cron stopped.
 
 - 21:48 UTC (Sahand): import real past designs into geomind experience memory (runs that passed gemini's check and gemini's own study results; origin = real run id or gemini study; nothing invented); GEOMIND_MEMORY to be turned on in prod at the next batch deploy.
 
