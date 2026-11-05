@@ -7,7 +7,7 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Coordinator: Coordinator-V (peer name Coordinator-V) on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). Sessions are normal interactive sessions in tmux with --remote-control (no Remote MCP on this account; background sessions could not edit the shared clones): `tmux attach -t <name>`, message by name with SendMessage.
 
-- Backend 1.1.101 (hotfix-python-VII, 2026-11-05): geomind 0.4.97 (0763b4b, tag v0.4.97) + gemini 0.6.16 local wheels. QA-122 geomind part fixed (agents see project plant versions and studies). 1.1.100 / 0.4.96: QA-145 fixed (engineers propose, lead builds once, one patch_plant). Neither live-retested. Next for hotfix-python-VII: speed baseline top 10.
+- Backend 1.1.103 (hotfix-python-VII, 2026-11-05 ~17:00 UTC): geomind 0.4.98 + gemini 0.6.17 local wheels. 1.1.103 gemini 0.6.17 QA-148/QA-149; 1.1.102 geomind 0.4.98 QA-147; 1.1.101 geomind 0.4.97 QA-122; 1.1.100 geomind 0.4.96 QA-145. None live-retested. Live-run blockers cleared. Next for hotfix-python-VII: QA-150 (speed, B2-B5).
 
 - Frontend 1.1.113 (hotfix-front-VI, 2026-11-05): plan E2 stage timer per agent line from server `ts`. Live, not live-checked.
 
