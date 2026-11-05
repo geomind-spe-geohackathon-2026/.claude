@@ -106,3 +106,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - Frontend home thread "FRONTEND I" cmsg_016VUmQoW7nUde2xdqUWA2PoLU8Zkv7qaEEXPLYmYbviQD. Frontend server .env has only VITE_API_URL (nginx does not proxy /api).
 - SERVICES how-to: /mnt/project-files/notes/run-services.md.
 - USER RULE (Sahand 2026-11-03 18:26 UTC, GEOMIND II): geomind Dell session installs gemini wheels ITSELF [[feedback-gemini-install-allowed]]
+- [Coordinator: no submission work](feedback-coordinator-no-submission.md) — coordinator leaves deadline/submission alone; does only what the user asks
