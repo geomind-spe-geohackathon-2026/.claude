@@ -45,8 +45,10 @@ Project for all clicking: "QA2 qa-ux flow". Evidence in `/tmp/qa-ux/`, bugs thro
 ## Status
 
 (one line per scenario, updated while testing)
-- S1 partial: login, projects list, new-project dialog (validation on blank shared memory OK), chat page. Project "QA2 qa-ux flow" (4cfeab2d-...). At 1280x577 the New project dialog is cut off at top (recheck).
+- S1 done (login, projects list, new project dialog, nav links, project sub-pages; Design link /design/case?chat=...). 
 - S2 done: attach 3 files (chips ready, names truncated), Enter sends.
-- S3 in progress: streaming OK; tool rows jargon ("Search rag 1+ matches" repeated, "Describe case 2+ keys").
-- S4 in progress: set_case approval card -> QA-057 (JSON indentation lost).
-- S5-S11: not started
+- S3 done: streaming OK; tool rows vague ("Search rag 1+ matches" x15). QA-062 (chat opens at top while a card waits).
+- S4 done: approval card QA-057, no decision trace QA-058, question card single-line input QA-059, leaked note QA-061; chips (approve all/change some/stop) work.
+- S5 partial: empty states of Plant/Study/Results fine (QA-064 cosmetic); deploy-window bare 404 QA-060. Not yet: provider error, cancel, offline.
+- S6 partial: Case demand chart matches the CSV (cooling peak 10 MW 19 Jul, 23.7 GWh, 365 points).
+- S7-S11: not started (functional projects have no plant/results yet; waiting). Own run still asks questions (case v3).
