@@ -3,15 +3,16 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 09:30 UTC.
+Last updated: 2026-11-05 10:05 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.83 (2026-11-05 10:00 UTC, hotfix-python-II; includes hotfix-back-II's 1.1.80-1.1.82, QA-088 and QA-092): geomind 0.4.78 + gemini 0.6.12 LOCAL wheels (QA-074, 079, 084, 085, 086, 088 full runs, request 35).
 
 - 09:55 UTC: the user approved a geomind release (QA-091, QA-094, QA-095 row); hotfix-python-II releases and deploys at the next window. assumptions.md (documents/project/quality-assurance/inputs/, b2846fd) is in the global Knowledge (eb95027a); NOT in any project's inputs (user, 10:00 UTC).
 
 - 09:40 UTC (hotfix-back-II): QA-092 fixed in backend 1.1.82 (9da4bbf; plant-changing tools and simulate on a stored design save the next plant version; a plain simulate still writes no Results row), goes out with hotfix-python-II's held batch. QA-095 row co2-grid-organisers-2026 (300 g/kWh) on geomind main 3a5027d: live only after a geomind release (Sahand's word) and a Knowledge re-seed by Sahand. QA3 seed runs after the batch deploy.
 
-- RELEASED, NOT DEPLOYED (hotfix-python-II, deploys 10:00 UTC; no more holds: hotfix sessions deploy at every :00/:30 UTC, user 09:45 UTC): geomind 0.4.78 (QA-074 constant g, QA-079, QA-084, QA-085, QA-086, QA-088 full runs in agent study records, shape agreed with hotfix-back) and gemini 0.6.12 (request 35, m/s2 kg/m2 units). Prod still runs backend 1.1.78 / geomind 0.4.73 / gemini 0.6.10.
 
 - Backend 1.1.78 (2026-11-05 07:30 UTC, hotfix-python-II): geomind 0.4.73 + gemini 0.6.10 LOCAL wheels (QA-081 gd.errors.AlreadyAnsweredError, backend must treat it as no-op; QA-087 six web searches per agent and run).
 

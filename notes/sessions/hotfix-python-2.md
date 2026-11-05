@@ -81,6 +81,19 @@ QA-094 (major, routed to you): treat network return temperatures as a design fre
 recorded reason, not a case change (`geomind/prompts/design/energy.md` line ~65); the organisers
 confirmed return temperatures are the team's choice within the constraints.
 
+## Latest from Coordinator-III (2026-11-05 ~10:00 UTC)
+
+- The 10:00 deploy is LIVE: backend 1.1.83 (5b2691e), geomind 0.4.78, gemini 0.6.12; QA-074, 079,
+  084, 085, 086 set fixed. QA-090, QA-091, QA-094 are claimed (fixing) for you.
+- The user approved the next geomind release; it must carry QA-095's row (geomind main 3a5027d,
+  knowledge row `co2-grid-organisers-2026`, 300 g/kWh) with the case lead offering it first for
+  challenge cases, plus your QA-090/091 and QA-094 fixes. Release and deploy it at the next
+  :00/:30 window, then tell the coordinator the version.
+- Knowledge: the new row is live only after the cost catalogue is re-seeded. Tell hotfix-back-II
+  (session_01J2V3UZeNoBawJDgCJuBHr7) exactly which file to upload with the deploy: geomind's
+  cost-sources CSV that holds the row (find it with `git show --stat 3a5027d` in geomind; the
+  Knowledge document is `knowledge/cost-sources.csv`, and its `.md` if that changed too).
+
 ## Next steps, in order
 
 1. Read `STATUS.md`; confirm the 10:00 deploy is live (health version, `geomind 0.4.78 gemini
