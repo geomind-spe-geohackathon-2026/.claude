@@ -40,4 +40,14 @@ surface 12 C, 250 barg, 200 mD; brine 1030 kg/m3, 0.40 mPa.s; GLR 0.8 Nm3/m3, ga
 
 ## Status
 
-S1-S8: not started (waiting for the project id).
+Chat 37fb7886 in "QA3 case", backend 1.1.84 / geomind 0.4.80, 2026-11-05 10:30-11:05 UTC.
+
+- S1 Case from files: PASS. Case page demand = CSVs (peak 30 MW 28 Jan, 10 MW 19 Jul, 111.7 / 23.7 GWh, means 12.75 / 2.71).
+- S2 Reservoir and fluid: PASS (2500 m, 100 m, 30 C/km, 12 C, 250 bar(g), 200 mD, 1030, 0.40, GLR 0.8, 80/20 mol%; temperature at depth not set, derived).
+- S3 Requirements: PASS (8 requirements, each with PDF page). Tolerances 1 % unmet and reinjection band came from the Knowledge assumptions, labelled.
+- S4 Missing values: PASS after one confirmation question (16 values, each with source); "I do not know" answers kept as flagged assumptions. Found QA-112 (verified), QA-118 (open, minor).
+- S5 Change by chat: PASS (95 C changes only that field, recorded as deviation from PDF; revert to 100 C exact). QA-114 (agent names case version 16, app shows 6).
+- S6 Odd input (4 doublets, 400 m3/h): PASS, agent refuses with PDF page and offers keep / deliberate deviation.
+- S7 Page vs chat: PASS for demand and values; version numbers differ (QA-114).
+- S8 Check / what is missing: PASS in chat ("complete enough for a plant"), open items listed in plain words.
+- Gap: the agent also sets the whole economics file during case set-up (one extra question, values from Knowledge); noted, not a bug.
