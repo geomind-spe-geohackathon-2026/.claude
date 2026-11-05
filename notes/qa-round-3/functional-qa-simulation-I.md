@@ -57,3 +57,4 @@ used for an action in any scenario.
 ## Status
 
 - Scenarios written 2026-11-05 ~10:00 UTC; waiting for the coordinator's "go" with the project id (Knowledge guides first).
+- 2026-11-05 11:20 UTC (PAUSED by coordinator): project ef87f914-3aaa-4f58-be60-2d54c7687511, one chat. S1 done: totals equal the CSV sums (heat 111,667.68 MWh, cold 23,742.528 MWh, unmet none, 0 failed steps). S2 mostly done: peaks 30.0 MW 2027-01-28 and 10.0 MW 2027-07-19 right; geothermal 34,837.7 MWh vs boiler 76,829.96 MWh; active-days count not delivered (QA-125). S3 (constraints, question sent 12:10 chat time) was running at 65 steps when paused; read its answer first on resume. S4-S8 not started. Bugs: QA-125.
