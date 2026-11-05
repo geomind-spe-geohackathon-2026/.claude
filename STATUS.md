@@ -5,7 +5,7 @@ it changes, change it here at once (one line, with the UTC time), before you go 
 
 Last updated: 2026-11-05 11:22 UTC.
 
-- Coordinator: Coordinator-IV, session_01J2V3UYqrLbCNN9zst5WY8d (since 11:21 UTC; Coordinator-III archived). Mode: hotfix. Usage pause since 11:20 UTC (resetsAt 14:10 UTC).
+- Coordinator: Coordinator-V, local session geomind-spe-hackathon-2026-e9 on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). BLOCKED: this session has no Claude Code Remote MCP (create_session/list_environments), so the other five sessions are not started yet; waiting for the user.
 
 - Backend 1.1.98 (hotfix-back-IV, 15:17 UTC): QA-144 live run totals count nested runs at any depth (geomind 0.4.95, gemini 0.6.16). Not live-checked.
 
