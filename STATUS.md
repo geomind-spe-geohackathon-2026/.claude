@@ -61,6 +61,7 @@ Last updated: 2026-11-05 10:31 UTC.
 - Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
+- Release summaries to the user (Persian, what to test) after every deploy window: scheduled tasks trig_015qxocTTCBVkm3VzwXg6CRb (:07) and trig_01JW2gL9h8TXZxp7bjMyvaiH (:37) in Coordinator-III; a successor recreates them.
 - Usage-window check: send_later trig_01BA7egki6ZQA6XkYPzLAysF in Coordinator-III, next 2026-11-05 14:11 UTC
   (resetsAt 14:10 UTC + 1 min). Last pause 01:50-04:12 UTC, resumed; pauses and resumes per `memory/feedback-usage-limit-pause.md`.
 
