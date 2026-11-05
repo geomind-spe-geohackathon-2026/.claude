@@ -27,3 +27,9 @@ Everything a full run needs (case -> economics -> design -> simulate -> report) 
 not give must be in hackathon-2026-assumptions.md (known facts, organisers' answers, team
 assumptions with sources), so agents never search for missing data. Agents read Knowledge by
 section (outline first, then only the sections they need; QA-351), never whole handbooks.
+
+Sahand, 2026-11-05 22:01 Trondheim: write each handbook as a real reference book for its field,
+with full detail in every section (theory and equations with units, step-by-step procedure,
+typical values with cited sources, worked examples on invented numbers, decision tables, common
+mistakes, result checks, mapping to gemini modules and geomind tools). Take the time it needs.
+The assumptions file must be complete for a full run end to end.
