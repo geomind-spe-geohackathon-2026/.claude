@@ -77,4 +77,8 @@ IMPROVEMENTS.md: IMP-012 to IMP-018 marked done. IMP-019 (one-value choice such 
 4. Queued by the coordinator (minor, geomind, not yet claimed): QA-123 (a capacities read says
    the heat exchanger is unused), QA-124 (the verdict gives no values for brine cooling, running
    time and reinjection though the result rows carry them). QA-122 waits for the user.
+   QA-125 (major): a results question ("how many days are the doublets active?") took 50+ steps
+   and 8+ run_python approvals with no answer: a stored-result read (days running per doublet,
+   peaks, totals) must be one read call (reading-results skill, a summary field such as
+   operating days per module); run_python only when no read gives it.
 5. `qa.py next --area geomind,gemini --fixer hotfix-python`.
