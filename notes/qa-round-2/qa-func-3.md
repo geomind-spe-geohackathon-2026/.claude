@@ -54,4 +54,10 @@ pump efficiency 70 %, 330 operating days, supply 100 C heating / 20 C cooling.
 
 ## Status
 
-- S1: running (chat 63c70b89-4c1e-496b-b908-2f9220c73457, sent 2026-11-05 ~01:00 UTC). Note: Auto-approve toggle does not switch on before the first message is sent (aria-pressed stays false); works inside the chat. Not yet reported (qa-ux area).
+- S1: IN PROGRESS, stopped 2026-11-05 ~02:10 UTC by the coordinator (usage). Project 2cc9eadb-9175-4375-881e-1e63624d024a, chat 63c70b89-4c1e-496b-b908-2f9220c73457, run left running (Design lead / geoscientist phase; case stored and accepted, economics approved). No bug filed yet.
+- S2-S9: not started. Economics card seen in S1: ask_economics answered complete in one question (sourced rows with publisher/year; open: subsidy.cap, subsidy.capacity, per_energy of the 3 chillers, as expected). Heat price is an NL row, cold price a NO row (mixed countries; possible QA-041 follow-up, not filed).
+- Findings NOT yet filed (no evidence files saved):
+  1. Auto-approve toggle does not switch on (aria-pressed stays false) before the first message of a new project chat; works inside the chat after sending. Minor, frontend.
+  2. Case lead reported the case complete and accepted while site.air.pressure was unset; the design stage then blocked and asked the user again (air pressure/elevation). Minor/major, geomind (case completeness check).
+  3. agent-browser `find text ... click` reported Done but did not click an answer option; use refs (tool quirk, not a bug).
+- Tips: the competition PDF cannot be read here (no pdftotext/pypdf); gemini/examples/hackathon_2026/README.md summarises the inputs. Background watcher b3weiiuwq may still poll the page; harmless.
