@@ -1,0 +1,8 @@
+Check: ready
+Draws: 20
+lcts  mean    50.24  p5    40.18  p95    66.46 EUR/MWh
+co2   mean    16.53  p5    12.74  p95    18.90 kt
+
+real	0m2.211s
+user	0m7.894s
+sys	0m0.405s
