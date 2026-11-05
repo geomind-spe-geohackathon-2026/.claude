@@ -12,6 +12,7 @@ Last updated: 2026-11-05 11:22 UTC.
 - DEPLOY FREEZE (coordinator, 2026-11-05 17:00 UTC): no prod deploy or container restart (backend, celery, anything) until Manual QA-IV reports the live design run finished. Commit and push only. (The 1.1.104 deploy at ~17:00 restarted geomind-celery mid-run.)
 - Backend 1.1.104 (hotfix-back-VI, 2026-11-05 ~17:20 UTC, tag v1.1.104, bc46663): hotfix deploy builds gemini (dev HEAD) and geomind (main HEAD) from the local clones into the image; no wheels, no GitHub release. Runs geomind 0.4.98, gemini 0.6.17.
 - Backend 1.1.103 (hotfix-python-VII, 2026-11-05 ~17:00 UTC): geomind 0.4.98 + gemini 0.6.17 local wheels. 1.1.103 gemini 0.6.17 QA-148/QA-149; 1.1.102 geomind 0.4.98 QA-147; 1.1.101 geomind 0.4.97 QA-122; 1.1.100 geomind 0.4.96 QA-145. None live-retested. Live-run blockers cleared. Next for hotfix-python-VII: QA-150 (speed, B2-B5).
+- geomind 0.4.99 (hotfix-python-VII, 163c82b, tag v0.4.99) PUSHED, NOT DEPLOYED (deploy freeze during the live run): QA-152 project plants as design/<name> or design/v<N>; QA-158 case lead time_zone prompt. The next backend hotfix-mode deploy ships it.
 
 - Frontend 1.1.113 (hotfix-front-VI, 2026-11-05): plan E2 stage timer per agent line from server `ts`. Live, not live-checked.
 
