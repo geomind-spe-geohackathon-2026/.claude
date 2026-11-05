@@ -13,7 +13,7 @@ Last updated: 2026-11-05 10:31 UTC.
 
 - Backend 1.1.83 (2026-11-05 10:00 UTC, hotfix-python-II; includes hotfix-back-II's 1.1.80-1.1.82, QA-088 and QA-092): geomind 0.4.78 + gemini 0.6.12 LOCAL wheels (QA-074, 079, 084, 085, 086, 088 full runs, request 35).
 
-- 10:30 UTC (Coordinator-III, user-approved): global Knowledge now holds hackathon-2026-assumptions.md ad184278, -case-guide 2330c87c, -design-guide daf88c29, -analysis-guide 11f90cd2, -report-guide 678e9a43, cost-sources.csv a2c6c5f8 and cost-sources.md 765d6eb4 (with the QA-095 organisers' row); old assumptions.md eb95027a deleted. All ready. QA3 testing released.
+- 10:30 UTC (Coordinator-III, user-approved): global Knowledge now holds hackathon-2026-assumptions.md b3ba8363 (QA-112 fix, 11:05 UTC; was ad184278), -case-guide 2330c87c, -design-guide daf88c29, -analysis-guide 11f90cd2, -report-guide 678e9a43, cost-sources.csv a2c6c5f8 and cost-sources.md 765d6eb4 (with the QA-095 organisers' row); old assumptions.md eb95027a deleted. All ready. QA3 testing released.
 
 - 09:55 UTC: the user approved a geomind release (QA-091, QA-094, QA-095 row); hotfix-python-II releases and deploys at the next window. assumptions.md (documents/project/quality-assurance/inputs/, b2846fd) is in the global Knowledge (eb95027a); NOT in any project's inputs (user, 10:00 UTC).
 
