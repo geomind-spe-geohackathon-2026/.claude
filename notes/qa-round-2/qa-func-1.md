@@ -174,3 +174,8 @@ tools and robustness to functional-qa-3.md. Read those files to avoid overlap.
 - New chat cb8b9b2d in project 61134432 (full brief, auto-approve on): on 1.1.72 the design team built and sized Family A (free plant, electric boiler, compression chiller) and Family B (HeatingAbsorptionCoolingPlant, geothermal-driven cooling considered: judging point 5 attempted), size_plant ran; simulate blocked by QA-080; run cancelled at 05:20 to save usage.
 - Notes: the user's 'no grid gas' answer was honoured only after the case lead asked for gas composition in the new chat (the previous chat's answer was not carried over; minor); case lead wrote O2/C2H6/C3H8 = 0 mol% (zeros nobody gave); 'You answered' lines repeat after each resume (cosmetic).
 - Waiting for QA-080 fix, then resend 'go on' in chat cb8b9b2d (new chat if needed); old chat 81b51db5 is stuck (QA-077).
+
+### functional-qa-I status (2026-11-05 ~06:32 UTC, backend 1.1.74)
+- QA-080 retest PASSED (1.1.73: flow-range error gone). QA-077 retest written (passes via Cancel run, then message accepted). QA-076: design team now builds+sizes both families (compression, absorption); no whole-year simulation yet.
+- QA-082 (blocker, fixing): simulate on a free-plant doublet: 'd0.gradient ... empty takes it from the case' still missing_value; design lead spent ~100 steps on route variants (changes= route works for leaves, then ESP curves, dispatch 'least_cost'). Run c4f00b5c cancelled at 06:31 to save tokens; project 61134432 chat cb8b9b2d keeps designs A_sized, a_start_2, b_nogas, absorption plant B.
+- Next: when QA-082 is live, 'go on' in chat cb8b9b2d; check simulation, capacities (30/10 MW, 111.67/23.74 GWh), comparison of 2 families, explanation.
