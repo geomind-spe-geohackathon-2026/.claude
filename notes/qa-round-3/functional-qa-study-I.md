@@ -21,4 +21,9 @@ Reference numbers (CSVs): heating peak 30.0 MWth (28 Jan), 111.67 GWh/yr; coolin
 
 ## Status
 
-(one line per scenario; none run yet, waiting for the project id)
+Project id 7a852d89-dfe5-423c-980a-a4ca231353bc. Browser session `functional-qa-study-I` (logged in). Paused by the coordinator at 11:17 UTC.
+
+- S1 done (backend 1.1.84): chat run, heat 111,667.68 MWh, cold 23,742.53 MWh delivered = CSV demand, 365 steps, 0 failed. Notes: Overview keeps Study and Results "Out of date" after the run (seeded state too; not filed yet, check whether by design, QA-092); KPI "cop 12.2" is heat/electricity, not a COP; gas_bought 65,189 MWh < boiler_heat 76,830 MWh (co-produced gas?) unverified.
+- S2 in progress, stopped: chat "Now run a sizing study ..." in the first chat; ~20 approval cards (QA-121). Agent found study/sized2 = 3 doublets x 300 m3/h feasible; a pending "Set ranges" card (design/ranged3 -> ranged_2d, doublets 1-2) is waiting for my approval. On resume: approve it, wait for the final answer, check it against 30 MW peak and caps.
+- S3-S8 not started.
+- Side task for the coordinator (LCTS rerun in SPE GeoHackathon 2026): failed at creation, 'plant has no doublet' for plant v3; reported, moved to hotfix-back-II.
