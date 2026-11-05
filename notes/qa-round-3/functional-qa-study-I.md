@@ -6,6 +6,18 @@ functional-qa-study-I). Check every number against the PDF and CSVs.
 
 ## Scenarios
 
-(write them here before you test)
+Project "QA3 study" (case + plant + simulation results seeded). One run at a time, short requests, no evolve.
+Reference numbers (CSVs): heating peak 30.0 MWth (28 Jan), 111.67 GWh/yr; cooling peak 10.0 MWcool (19 Jul), 23.74 GWh/yr. PDF caps: 1-3 doublets, 50-300 m3/h per doublet, brine cooling <= 40 K, pump efficiency 70 %, supply 100 C heating / 20 C cooling.
+
+- functional-qa-study-I-S1 Plain study run. Goal: ask "run a study of the current plant over the year". Correct: the agent states which study kind and which plant version it uses, the run finishes, realised heating/cooling per day never exceeds the CSV demand, annual totals <= 111.67 / 23.74 GWh, hard caps respected, tokens shown in the agent log.
+- functional-qa-study-I-S2 Size study. Goal: "size the doublet count and flow rate to cover the heating demand". Correct: doublets in 1..3, flow per doublet in 50..300 m3/h, brine cooling <= 40 K; peak 30 MWth covered or the shortfall named; result differs from the seed and says why; plant gets a new version.
+- functional-qa-study-I-S3 Minimize study. Goal: "minimize the cost (or gas use) while meeting at least 95 % of the heat demand". Correct: objective and constraint echoed back, optimiser history/iterations visible, final value better than or equal to the start, constraint satisfied; a missing cost value is asked or sourced, never defaulted.
+- functional-qa-study-I-S4 Sample (uncertainty) study. Goal: "sample reservoir permeability 100-300 mD and 20 % demand uncertainty, 20 samples, show P10/P50/P90 of delivered heat". Correct: sample count 20, P10<=P50<=P90, ranges as asked, no run beyond the asked count.
+- functional-qa-study-I-S5 Sensitivity study. Goal: "which inputs matter most for delivered heat: depth, flow, supply temperature, heat pump COP". Correct: one-at-a-time or ranked result, sign and size of effects match physics (more flow and depth give more heat; delivered heat capped by demand), ranking explained.
+- functional-qa-study-I-S6 Bad requests. Goal: ask outside the caps (4 doublets, 400 m3/h, 60 K cooling) and an evolve/structure search. Correct: the agent refuses or clarifies with the PDF limits and states evolve is not available; nothing silently clamped.
+- functional-qa-study-I-S7 Study management. Goal: stop/resume a study, restart after a deploy, reopen a finished study in the UI. Correct: statuses true, results survive, no duplicate runs, Runs and logs match the chat.
+- functional-qa-study-I-S8 Follow-up. Goal: after S2 change the case (e.g. new supply temperature) and ask for the next step. Correct: the agent warns that the study is outdated (case_changed_after_study) and suggests rerunning.
 
 ## Status
+
+(one line per scenario; none run yet, waiting for the project id)
