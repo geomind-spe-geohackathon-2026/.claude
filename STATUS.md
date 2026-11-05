@@ -3,7 +3,9 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 10:31 UTC.
+Last updated: 2026-11-05 11:22 UTC.
+
+- Coordinator: Coordinator-IV, session_01J2V3UYqrLbCNN9zst5WY8d (since 11:21 UTC; Coordinator-III archived). Mode: hotfix. Usage pause since 11:20 UTC (resetsAt 14:10 UTC).
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
@@ -14,6 +16,8 @@ Last updated: 2026-11-05 10:31 UTC.
 - 10:55 UTC (hackathon-guides): documents 07085fc: `documents/project/quality-assurance/inputs/` holds hackathon-2026-assumptions.md (renamed from assumptions.md; the rename itself landed in debeb20) and hackathon-2026-case-guide.md, -design-guide.md, -analysis-guide.md, -report-guide.md. Global Knowledge upload PENDING: the auto-mode classifier refused `scripts.replace_knowledge`; the user runs it (command in the report to Coordinator-III), then deletes the old global entry assumptions.md (eb95027a). New Knowledge ids: (pending). Never in a project's files.
 
 - Backend 1.1.83 (2026-11-05 10:00 UTC, hotfix-python-II; includes hotfix-back-II's 1.1.80-1.1.82, QA-088 and QA-092): geomind 0.4.78 + gemini 0.6.12 LOCAL wheels (QA-074, 079, 084, 085, 086, 088 full runs, request 35).
+
+- 11:22 UTC: handbook-plant-design ch 1-11 done (documents fd81b3a; left ch 12, appendices A-D); handbook-techno-economics ch 1-15 (d53f06e).
 
 - 11:15 UTC (user): QA round 3 PAUSED (all five sessions finish their step and wait for the coordinator's resume). Handbooks replacing the hackathon-2026-*-guide files (general, book-like, read by section): handbook-plant-design (session_01J2V3UVax4NELQZ9gqGQ4t8), handbook-case-definition + handbook-engineering-reporting (session_01J2V3UVwPdMpj4qHKCUrfrf), handbook-techno-economics (session_01J2V3UVK9oFWcJQb2GuSbpF); hotfix-python-III adds read_rag outline/section. Knowledge upload by the coordinator when done; hackathon-2026-assumptions.md keeps its name.
 
@@ -65,8 +69,8 @@ Last updated: 2026-11-05 10:31 UTC.
 - Knowledge re-seeded by Sahand 2026-11-04 ~23:35 UTC with geomind 0.4.52 cost-sources (153 sourced
   rows). No row yet for opex.per_energy of the three chillers and opex.fixed.adsorption_chiller.
 
-- Release summaries to the user (Persian, what to test) after every deploy window: scheduled tasks trig_015qxocTTCBVkm3VzwXg6CRb (:07) and trig_01JW2gL9h8TXZxp7bjMyvaiH (:37) in Coordinator-III; a successor recreates them.
-- Usage-window check: send_later trig_01BA7egki6ZQA6XkYPzLAysF in Coordinator-III, next 2026-11-05 14:11 UTC
+- Release summaries to the user (Persian, what to test) after every deploy window: scheduled tasks trig_01DPzkqZPcFQx6PsQ8e53i52 (:07) and trig_01KxsFUkVb8Vo5beKrQiX3xS (:37) in Coordinator-IV; a successor recreates them.
+- Usage-window check: send_later trig_01PDidq5qh4bL1zp9ZzQVTik in Coordinator-IV, next 2026-11-05 14:11 UTC
   (resetsAt 14:10 UTC + 1 min). Last pause 01:50-04:12 UTC, resumed; pauses and resumes per `memory/feedback-usage-limit-pause.md`.
 
 ## How we work now
