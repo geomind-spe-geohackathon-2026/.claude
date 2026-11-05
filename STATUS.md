@@ -7,6 +7,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Coordinator: Coordinator-V, local session ntnu09811-sprightly-conway on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). Sessions are local background sessions (`claude --bg`, no Remote MCP on this account): `claude logs <id>`, `claude attach <id>`, message by name with SendMessage.
 
+- Backend 1.1.99 (hotfix-back-V, 2026-11-05): `ts` on step events and run-log steps. Live.
+
 - Backend 1.1.98 (hotfix-back-IV, 15:17 UTC): QA-144 live run totals count nested runs at any depth (geomind 0.4.95, gemini 0.6.16). Not live-checked.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
@@ -28,7 +30,7 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.98 (hotfix-back-IV): QA-144 run totals count nested runs at any depth (not live-checked). handbook-speed-I done and archived.
 
 - 18:10 UTC: handbook-case (ch 0 case checklist) and handbook-design (ch 0 design path) re-uploaded: handbook-case 1a064236, handbook-design 6d617b90. Account handover plan ready: .claude/account-handover.md (run only on the user's word "force stop").
-- Running sessions (Sahand's account, 2026-11-05 Phase 2): Coordinator-V (local, ntnu09811-sprightly-conway, Opus); hotfix-python-VI bg d019e2d6 (Opus); hotfix-back-V bg cf361c73 (Sonnet); hotfix-front-VI bg 6f827e10 (Sonnet). Not started: speed-analysis-II (when a baseline re-run is due), Manual QA-III (only if Fatemeh wants). Old, stopped: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
+- Running sessions (Sahand's account, 2026-11-05 Phase 2): Coordinator-V (local, ntnu09811-sprightly-conway, Opus); hotfix-python-VI bg fc7fbce0 RC session_0171QAFpRED2goj2DpwXRrXe (Opus); hotfix-back-V bg f2a893f7 RC (Sonnet); hotfix-front-VI bg 4f41d321 RC session_0171QAFrtije6qHrimSzKPcw (Sonnet); all three run with --remote-control so they show in the claude.ai sidebar. Not started: speed-analysis-II (when a baseline re-run is due), Manual QA-III (only if Fatemeh wants). Old, stopped: Coordinator-IV session_01J2V3UYqrLbCNN9zst5WY8d (Opus); hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY (Opus); hotfix-back-IV session_01J2V3UWBvFYRd3VG1pYpCXZ (Sonnet); hotfix-front-V session_01J2V3UVNQkaiH9cMvNv911G (Sonnet); speed-analysis-I session_01J2V3UVU2bDHYyBSSYgbNCc (Sonnet); Manual QA-II session_01J2V3UYeTzFtZEuQJvkuadd (Opus, Fatemeh's).
 
 - 18:00 UTC: QA-145 (Fatemeh, major: design run 70 min, 0 simulate, 27 hand patches, 107/231 re-reads) to hotfix-python-V session_01J2V3UWw2qHaxMQh8g5F2JY, top, together with plan C1/C2.
 
