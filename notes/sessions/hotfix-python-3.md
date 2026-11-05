@@ -74,4 +74,7 @@ IMPROVEMENTS.md: IMP-012 to IMP-018 marked done. IMP-019 (one-value choice such 
    path) and IMP-021 (examples from gemini's schema, offline evals from real refusals) are next.
 3. Prompts still repeat tool usage in places (case lead's economics section, design prompts):
    move such text into the tool's skill and leave the skill's name (single source).
-4. `qa.py next --area geomind,gemini --fixer hotfix-python`.
+4. Queued by the coordinator (minor, geomind, not yet claimed): QA-123 (a capacities read says
+   the heat exchanger is unused), QA-124 (the verdict gives no values for brine cooling, running
+   time and reinjection though the result rows carry them). QA-122 waits for the user.
+5. `qa.py next --area geomind,gemini --fixer hotfix-python`.
