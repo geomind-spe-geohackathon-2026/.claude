@@ -18,3 +18,7 @@ push, build locally, deploy at once by the mode's deploy steps.
 
 Sahand, 2026-11-05 16:54 UTC: releases and deploys need no OK from him any more (every package,
 gemini included): release, push, build locally and deploy at once.
+
+Sahand, 2026-11-05 16:55 UTC: a package session (geomind, gemini) does NOT build wheels either:
+the backend builds geomind and gemini itself from the pushed code (hotfix-back-VI sets this up).
+A package session only commits and pushes; the backend side builds and deploys.

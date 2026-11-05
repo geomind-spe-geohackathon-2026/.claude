@@ -1,5 +1,5 @@
 # Project memory (geomind-spe-hackathon-2026)
-- [Local builds, git push only](feedback-local-builds-git-push-only.md) — never wait for a GitHub release; push, build wheels locally, deploy; releases and deploys need no OK (gemini too)
+- [Git push only](feedback-local-builds-git-push-only.md) — never wait for a GitHub release; package sessions only push, the backend builds geomind/gemini itself and deploys; no OK needed
 
 The shared memory of every Claude session on this project: one fact per file, `[[name]]` links between them. Read this index at the start of a session; open a file when its topic comes up. Write new facts here, not in a session's private memory, and keep one line per file in this index.
 
