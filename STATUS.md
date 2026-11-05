@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 00:20 UTC.
+Last updated: 2026-11-05 00:10 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.56 (2026-11-05 00:08 UTC, hotfix-python-II): geomind 0.4.56 LOCAL wheel (skills folder `geomind/skills/<name>/SKILL.md` with roles; `calculate` tool, results in problem state `calculations`), gemini 0.6.5.
 
 - Backend 1.1.54 (2026-11-04 ~23:50 UTC, gemini 0.6.5: requests 33,34,36,37,38, QA-039, QA-043): geomind 0.4.55 as a LOCAL wheel,
   gemini 0.6.5, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
