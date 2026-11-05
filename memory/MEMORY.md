@@ -125,3 +125,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [All work via hotfix threads](feedback-all-work-via-hotfix-threads.md) — every item is a qa.py bug or task; hotfix threads handle it; no special worker threads
 - [General, not competition](feedback-general-not-competition.md) — code and handbooks are general; competition facts only in their own assumptions/input files
 - [Hotfix builds local](feedback-hotfix-build-local.md) — hotfix: backend builds gemini/geomind from local clones via Dockerfile.hotfix; never wait for GitHub releases
+- [Hotfix teams](feedback-hotfix-teams.md) — each hotfix area = lead + 3 members; members edit only their own files, lead commits/pushes/deploys
