@@ -34,3 +34,11 @@ with a stated time zone, a PDF only (no CSVs), and the economics answer of proje
 - Waiting for the coordinator's word that Knowledge is cleaned (QA-340: hackathon brief removed, assumptions file cleaned);
   then rerun the competition case from the 3 organiser files and check case AND design are sound; put that clean run in the report.
 - Driver: /tmp/claude-1000/qae2ecase/drive2.sh <session> <project> [free answer] acts on run.request (no stale page text).
+
+## Closed 2026-11-05 20:57 UTC (Sahand: close the QA-E2E threads, may reopen later)
+
+- Final: verified QA-085, 197, 198, 230, 255, 286, 301, 304, 318, 336 (199 verified by me, later set to fixed by its fixer);
+  fixed not retested QA-196, 199, 203, 243; QA-200 fixing; QA-306 wont-fix.
+- Runs of projects 16 and 17 cancelled at the close; projects 1-17 kept. The QA-351 knowledge-usage run was dropped
+  (it needs Sahand's OK for LLM spend before it starts).
+- On reopen: retest QA-200 (files-alone set_case refusals, still 4 in run 5c0ad032), QA-196, QA-203, QA-243, QA-199.
