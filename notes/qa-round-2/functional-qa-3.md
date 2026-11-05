@@ -35,6 +35,8 @@ Project "QA2 functional-qa-3 studies", auto-approve ON. Status per scenario is k
 - functional-qa-3-S3 Evolve ("Find the best structure"): finishes, structures ranked; progress/cancel work.
 - functional-qa-3-S4 Compare structures tab (frontend 1.1.70/71, backend 1.1.66-68): up to 10 unique structures
   ranked; compare 2-3; Open and Save work on every row.
+  Extra (Coordinator-II): Open AND Save a structure that is NOT rank 1 and not on the front (backend 1.1.69,
+  gemini 0.6.6 structure_plant); report the result to the coordinator in one line.
 - functional-qa-3-S5 Sample ("Test the uncertainty"): distribution, percentiles plausible, all samples within caps or
   violations flagged.
 - functional-qa-3-S6 Sensitivity ("Rank what matters most"): ranking sensible (heat demand/flow/depth ...), stated in chat.
