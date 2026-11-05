@@ -11,13 +11,15 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- 15:45 UTC (user): name is data-economics.csv/.md. Knowledge: data-economics.csv 74a0d44b, .md e470a627 uploaded; cost-sources.* (a2c6c5f8, 765d6eb4) stay until hotfix-python-IV releases the rename (geomind reads knowledge/cost-sources.csv at run time), then the coordinator deletes them.
+
 - Backend 1.1.92 (14:37 UTC, hotfix-python-IV): geomind 0.4.89: QA-131 (sensitivity via gemini, values= drivers; analysis lead sets ranges with set_case; never run_python); handbook-design name. Frontend 1.1.105: QA-133/134. Backend 1.1.91: QA-136. QA-135 frontend (newest result).
 
 - 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
 
-- 15:20 UTC (user): handbooks renamed handbook-case, handbook-design, handbook-economics, handbook-report (documents d963dee). Global Knowledge now: handbook-case 0f82fadb, handbook-design 2d8a2457, handbook-economics 634ca9c8, handbook-report 3664b76b, hackathon-2026-assumptions 8bd08430, cost-sources.csv a2c6c5f8 / .md 765d6eb4 (to be renamed economics-data). geomind mentions: hotfix-python-IV.
+- 15:20 UTC (user): handbooks renamed handbook-case, handbook-design, handbook-economics, handbook-report (documents d963dee). Global Knowledge now: handbook-case 0f82fadb, handbook-design 2d8a2457, handbook-economics 634ca9c8, handbook-report 3664b76b, hackathon-2026-assumptions 8bd08430, cost-sources.csv a2c6c5f8 / .md 765d6eb4 (to be renamed data-economics). geomind mentions: hotfix-python-IV.
 
 - 15:10 UTC: backend 1.1.90 (hotfix-back-III, QA-122 backend part: project_designs + plant_version). All 11 remaining QA runs cancelled by the coordinator (user order); sahand test 2 cb5a97c2 left running. IMP-025 display: one line per instance with its own step count ("Geoscientist I · Thinking · 12 steps").
 
@@ -27,13 +29,15 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
 
+- 15:45 UTC (user): name is data-economics.csv/.md. Knowledge: data-economics.csv 74a0d44b, .md e470a627 uploaded; cost-sources.* (a2c6c5f8, 765d6eb4) stay until hotfix-python-IV releases the rename (geomind reads knowledge/cost-sources.csv at run time), then the coordinator deletes them.
+
 - Backend 1.1.92 (14:37 UTC, hotfix-python-IV): geomind 0.4.89: QA-131 (sensitivity via gemini, values= drivers; analysis lead sets ranges with set_case; never run_python); handbook-design name. Frontend 1.1.105: QA-133/134. Backend 1.1.91: QA-136. QA-135 frontend (newest result).
 
 - 15:27 UTC: archived handbook-economics, hotfix-back-II, hotfix-python-III. All handbook sessions closed. Running: Coordinator-IV, hotfix-python-IV, hotfix-back-III, hotfix-front-III, Manual QA-II.
 
 - 15:25 UTC: backend 1.1.91 (hotfix-back-III): QA-136 report agent log readable (14.8 M tokens, 0.46 USD).
 
-- 15:20 UTC (user): handbooks renamed handbook-case, handbook-design, handbook-economics, handbook-report (documents d963dee). Global Knowledge now: handbook-case 0f82fadb, handbook-design 2d8a2457, handbook-economics 634ca9c8, handbook-report 3664b76b, hackathon-2026-assumptions 8bd08430, cost-sources.csv a2c6c5f8 / .md 765d6eb4 (to be renamed economics-data). geomind mentions: hotfix-python-IV.
+- 15:20 UTC (user): handbooks renamed handbook-case, handbook-design, handbook-economics, handbook-report (documents d963dee). Global Knowledge now: handbook-case 0f82fadb, handbook-design 2d8a2457, handbook-economics 634ca9c8, handbook-report 3664b76b, hackathon-2026-assumptions 8bd08430, cost-sources.csv a2c6c5f8 / .md 765d6eb4 (to be renamed data-economics). geomind mentions: hotfix-python-IV.
 
 - 15:10 UTC: backend 1.1.90 (hotfix-back-III, QA-122 backend part: project_designs + plant_version). All 11 remaining QA runs cancelled by the coordinator (user order); sahand test 2 cb5a97c2 left running. IMP-025 display: one line per instance with its own step count ("Geoscientist I · Thinking · 12 steps").
 
@@ -45,7 +49,7 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 14:55 UTC (user): DEPLOY AT ONCE: every finished fix goes out immediately (no :00/:30 windows) until the user says otherwise; lock still holds.
 
-- 14:50 UTC (user): rename cost-sources.csv/.md to economics-data.csv/.md (hotfix-python-IV, after Fatemeh's bugs); the coordinator then swaps them in Knowledge (delete a2c6c5f8, 765d6eb4).
+- 14:50 UTC (user): rename cost-sources.csv/.md to data-economics.csv/.md (hotfix-python-IV, after Fatemeh's bugs); the coordinator then swaps them in Knowledge (delete a2c6c5f8, 765d6eb4).
 
 - 14:45 UTC: functional-qa-plant-I (QA-116, QA-134) and functional-qa-case-I (QA-133; run 11597465 still waiting, Cancel broken) closed and archived. QA-133+134 to hotfix-back-III, which then cancels run 11597465. functional-qa-study-I closed and archived (run 1461ca81 cancelled; QA-121, QA-135). ALL five functional-qa sessions closed. Fatemeh's session is now "Manual QA-II".
 
