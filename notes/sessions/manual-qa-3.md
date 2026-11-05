@@ -82,3 +82,8 @@ Findings so far (2026-11-05, 42 runs, 00:13-15:17 UTC):
 2. Finish the open question above, answer Fatemeh, file the new bugs, send them to Coordinator-V.
 3. Keep the retest list (manual-qa-2.md + hotfix-front-VI's list above) for when tests are
    allowed.
+
+## Manual QA-IV, 2026-11-05 ~17:00 UTC
+
+- Log findings checked against live code (geomind 0.4.96, gemini 0.6.16) and filed: QA-147 (read_stored/calculate cannot read dotted keys like d0.esp, geomind), QA-148 (gemini reader.py TypeError on a mapping in inlets; chiller condenser loop has no tear first guess; needs Sahand's OK), QA-149 (evaluate_module 81 % refused). Sent to Coordinator-V. Not refiled (already fixed): control.dispatch IMP-019, failed_before QA-143, QA-145, m/s2.
+- Run 32a12115 summary for the report thread: documents/project/quality-assurance/reports/run-32a12115-complete-design.md (a99fad8); sent to Coordinator-V to forward.
