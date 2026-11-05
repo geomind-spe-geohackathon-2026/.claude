@@ -120,3 +120,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [No QA tests now](feedback-no-tests-now.md) — since 16:55 UTC 2026-11-05 no live/browser/LLM QA tests by any session until the user lifts it; unit tests allowed
 - [Force stop and account handover](feedback-force-stop-account-handover.md) — on the user's word 'force stop' run account-handover.md: all sessions stop and write notes; reopen on Sahand's account
 - [Start sessions in tmux with --remote-control](reference-start-sessions-bg-remote-control.md) — no Remote MCP on Sahand's account; normal interactive sessions in tmux, never --bg
+- [No branches, no worktrees in hotfix](feedback-no-branches-no-worktrees-hotfix.md) — work only on the default branch in the shared clone; never a new branch or worktree
