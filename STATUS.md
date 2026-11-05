@@ -15,6 +15,8 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.91 (2026-11-05 ~15:05 UTC, hotfix-back-III; geomind 0.4.87 + gemini 0.6.15 local wheels): 1.1.90 QA-122 backend part (Workspace project_designs + plant_version; geomind part with hotfix-python-IV), 1.1.91 QA-136 (report agent log tokens/cost readable). hotfix-back-III session_01J2V3UVuLrkzKAZV6dAkLmu replaced hotfix-back-II.
 
+- Frontend 1.1.107 (hotfix-front-IV): IMP-025 display (one line per instance with own step count); geomind 0.4.91 is already live, so the Manual QA-II timing run shows it.
+
 - 16:35 UTC (user approved all coordinator proposals): QA-135 option C (last simulate per run -> Results row; hotfix-back-III); sub-agents may read global Knowledge (Knowledge-only tool); IMP-019 approved (fill a choice only when gemini allows exactly one value); IMP-027, IMP-028, IMP-026 approved (hotfix-python-IV after IMP-025); ONE live run by Manual QA-II to time the parallel case stage.
 
 - Backend 1.1.95 (hotfix-python-IV): geomind 0.4.91: IMP-025 CASE stage live (Team list of {role, task} ≤4, instances "<Role> <Roman>", geoscientists have no file tools, lead writes once); catalogue renamed knowledge/data-economics.csv/.md; cost-sources.* deleted from Knowledge (16:30 UTC). Next for hotfix-python-IV: QA-128, QA-121, IMP-025 plant stage, read_file, QA-122.
@@ -46,6 +48,8 @@ Last updated: 2026-11-05 11:22 UTC.
 - Backend 1.1.89 (2026-11-05 14:27 UTC, hotfix-python-IV): geomind 0.4.87 + gemini 0.6.15 LOCAL wheels (QA-123, 124, 125 read_result series summary and module operation; QA-129 free plant searches size.doublets; QA-130 doublet flow capped at its pump's nominal_flow; QA-132 flow range read on reservoir.liquid_flow). User rule since ~14:26: deploy every fix at once, no windows (lock still holds).
 
 - 14:55 UTC (Fatemeh): her QA session is now named "Manual QA" (Manual QA-II, session_01J2V3UYeTzFtZEuQJvkuadd; was Fatemeh QA-II); notes/sessions/manual-qa-<n>.md. Successors: Manual QA-III, ...
+
+- Frontend 1.1.107 (hotfix-front-IV): IMP-025 display (one line per instance with own step count); geomind 0.4.91 is already live, so the Manual QA-II timing run shows it.
 
 - 16:35 UTC (user approved all coordinator proposals): QA-135 option C (last simulate per run -> Results row; hotfix-back-III); sub-agents may read global Knowledge (Knowledge-only tool); IMP-019 approved (fill a choice only when gemini allows exactly one value); IMP-027, IMP-028, IMP-026 approved (hotfix-python-IV after IMP-025); ONE live run by Manual QA-II to time the parallel case stage.
 
