@@ -43,3 +43,7 @@ CHANGE (Sahand approved 2026-11-05 20:52 Trondheim), replaces "members never com
    competition answer; minor and cosmetic bugs wait until the major queue is empty.
 The lead: assigns areas, resolves file conflicts, deploys in batches (~every 10 min), sets
 qa.py fixed with the deployed version, and asks QA threads to retest right after each deploy.
+
+Sahand, 2026-11-05 21:56 Trondheim: back and front have NO members any more; back-lead and
+front-lead fix bugs themselves (commit, push, deploy). Only the python team keeps the lead +
+members model (lead-II + members 1-4).
