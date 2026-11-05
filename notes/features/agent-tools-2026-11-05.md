@@ -32,7 +32,8 @@ conversions, the geomind agents never use a Claude model.
   field), or an earlier calculation's id.
 - Operations: add, subtract, multiply, divide, power, min, max, sum, mean; units go through gemini
   (quantities in, quantity out; no hand-written 24 or 1000).
-- A bare literal is refused with a clear error. (Exception to discuss later: none for now.)
+- A bare literal is refused with a clear error; the one exception is the integer exponent of `power`
+  (Sahand, 2026-11-05).
 - The result is stored as a derived value: id, value, unit, expression, and the chain of sources
   of every operand. Later tools and the report can cite it by id.
 - effect `compute`.
@@ -96,3 +97,6 @@ it is doing now, replaced by the next as each step ends. Source: the current too
 a short phrase per tool ("Reading the case", "Running the simulation", "Searching the web for
 <query>"); no tool running = "Thinking"; an unknown tool shows its name humanised. One line,
 truncated with an ellipsis, full text in a tooltip; muted; no layout jump.
+
+Decided (Sahand 2026-11-05 ~00:20 UTC): `calculate` allows exactly one plain number, the integer
+exponent of `power`; it is structural, not data.
