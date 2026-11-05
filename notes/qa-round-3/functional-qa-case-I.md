@@ -57,3 +57,7 @@ Chat 37fb7886 in "QA3 case", backend 1.1.84 / geomind 0.4.80, 2026-11-05 10:30-1
 - V1 depth 3000 m + return 55 C by chat: values changed, nothing else; QA-119 (reservoir pressure not re-derived or flagged).
 - V2 reject the proposed economics, give own numbers: stopped at the Set case approval card (chat 37fb7886, NOT approved, run left waiting); QA-120 (discount_rate sent as 8 with no unit). On resume: deny or approve with "discount rate 0.08", then check the stored economics and the list of values without a source.
 - Not done: V3 a user with no files, case from the PDF only (needs a new project from the coordinator); retest QA-114, QA-118 when shipped.
+
+## Closed (Coordinator-IV, round 3 ends)
+
+Filed: QA-112 (verified), QA-114, QA-118, QA-119, QA-120, QA-133. Run 11597465 in chat 37fb7886 could NOT be cancelled (QA-133): it stays waiting at the Set case approval card (economics with discount_rate 8). V3 and the retests of QA-114/118 not done.
