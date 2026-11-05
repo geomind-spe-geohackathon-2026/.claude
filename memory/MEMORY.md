@@ -124,3 +124,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - [No branches, no worktrees in hotfix](feedback-no-branches-no-worktrees-hotfix.md) — work only on the default branch in the shared clone; never a new branch or worktree
 - [All work via hotfix threads](feedback-all-work-via-hotfix-threads.md) — every item is a qa.py bug or task; hotfix threads handle it; no special worker threads
 - [General, not competition](feedback-general-not-competition.md) — code and handbooks are general; competition facts only in their own assumptions/input files
+- [Hotfix builds local](feedback-hotfix-build-local.md) — hotfix: backend builds gemini/geomind from local clones via Dockerfile.hotfix; never wait for GitHub releases
