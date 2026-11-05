@@ -31,13 +31,13 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 14:45 UTC: functional-qa-plant-I (QA-116, QA-134) and functional-qa-case-I (QA-133; run 11597465 still waiting, Cancel broken) closed and archived. QA-133+134 to hotfix-back-III, which then cancels run 11597465. functional-qa-study-I closed and archived (run 1461ca81 cancelled; QA-121, QA-135). ALL five functional-qa sessions closed. Fatemeh's session is now "Manual QA-II".
 
-- 14:40 UTC (user-approved, coordinator): global Knowledge now holds the four handbooks: handbook-case-definition 2355088c, handbook-engineering-reporting bc8b41e4, handbook-plant-design 61619cce, handbook-techno-economics b019b649; hackathon-2026-assumptions.md re-uploaded c3510844 (was b3ba8363); the four hackathon-2026-*-guide entries deleted; cost-sources.csv a2c6c5f8 / .md 765d6eb4 unchanged.
+- 14:40 UTC (user-approved, coordinator): global Knowledge now holds the four handbooks: handbook-case 2355088c, handbook-report bc8b41e4, handbook-design 61619cce, handbook-economics b019b649; hackathon-2026-assumptions.md re-uploaded c3510844 (was b3ba8363); the four hackathon-2026-*-guide entries deleted; cost-sources.csv a2c6c5f8 / .md 765d6eb4 unchanged.
 
 - 14:30 UTC: Fatemeh QA handed over to Fatemeh QA-II session_01J2V3UYeTzFtZEuQJvkuadd (note notes/sessions/manual-qa-1.md); send Fatemeh findings there. functional-qa-simulation-I closed and archived (QA-125, QA-132; QA-132 with QA-130 to hotfix-python-IV). QA-107 with QA-126 to hotfix-front-III.
 
 - 14:25 UTC: functional-qa-report-I closed and archived (filed QA-099, 122, 123, 124; S2, S6-S11 untested). User: archive each QA session once it reports stopped.
 
-- 14:20 UTC (user): IMP-023 REJECTED (no sample-plant templates; design from handbook-plant-design, memory/feedback-design-from-handbook-not-templates.md); QA-122 APPROVED. QA sessions: cancel every QA run, complete their reports, then close (functional-qa-* stop for now).
+- 14:20 UTC (user): IMP-023 REJECTED (no sample-plant templates; design from handbook-design, memory/feedback-design-from-handbook-not-templates.md); QA-122 APPROVED. QA sessions: cancel every QA run, complete their reports, then close (functional-qa-* stop for now).
 
 - 14:17 UTC usage check: five-hour window reset; now seven_day allowed_warning (resetsAt 2026-11-11 23:00 UTC). Hotfix sessions work through it (user, 13:40 UTC); QA sessions stay paused by the user's word, not by usage. No further usage check scheduled.
 
@@ -57,7 +57,7 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Backend 1.1.84 (2026-11-05 10:30 UTC, hotfix-python-III): geomind 0.4.80 + gemini 0.6.12 LOCAL wheels (QA-090 stop rule, QA-091 supply temperatures running + heat/cold delivered, QA-094 return temperatures a design choice, QA-095 row co2-grid-organisers-2026 shipped (Knowledge re-upload of cost-sources.csv/.md still for Sahand), economics from an assumptions document in Knowledge first).
 
-- 2026-11-05 (handbook-others): the four hackathon-2026-*-guide.md files were removed from `documents/project/quality-assurance/inputs/` and replaced by the general handbooks handbook-case-definition.md, handbook-plant-design.md, handbook-techno-economics.md and handbook-engineering-reporting.md (the hackathon is their worked-example chapter). hackathon-2026-assumptions.md stays. Knowledge: the old guide entries are still there (case 2330c87c, design daf88c29, analysis 11f90cd2, report 678e9a43); replacing them with the handbooks is for the coordinator and the user.
+- 2026-11-05 (handbook-others): the four hackathon-2026-*-guide.md files were removed from `documents/project/quality-assurance/inputs/` and replaced by the general handbooks handbook-case.md, handbook-design.md, handbook-economics.md and handbook-report.md (the hackathon is their worked-example chapter). hackathon-2026-assumptions.md stays. Knowledge: the old guide entries are still there (case 2330c87c, design daf88c29, analysis 11f90cd2, report 678e9a43); replacing them with the handbooks is for the coordinator and the user.
 
 - 10:55 UTC (hackathon-guides): documents 07085fc: `documents/project/quality-assurance/inputs/` holds hackathon-2026-assumptions.md (renamed from assumptions.md; the rename itself landed in debeb20) and hackathon-2026-case-guide.md, -design-guide.md, -analysis-guide.md, -report-guide.md. Global Knowledge upload PENDING: the auto-mode classifier refused `scripts.replace_knowledge`; the user runs it (command in the report to Coordinator-III), then deletes the old global entry assumptions.md (eb95027a). New Knowledge ids: (pending). Never in a project's files.
 
@@ -65,9 +65,9 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - 11:26 UTC (Fatemeh): QA-127 + QA-109 (report default result and agent log) routed to hotfix-front-III, first after resume in one deploy; then QA-126 (Days covered backup class).
 
-- 11:23 UTC: handbook-case-definition.md and handbook-engineering-reporting.md COMPLETE (documents b3b2199; unverified items marked); handbook-others left: git rm hackathon-2026-*-guide.md + links. handbook-plant-design ch 1-11 done (documents fd81b3a; left ch 12, appendices A-D); handbook-techno-economics ch 1-15 (d53f06e).
+- 11:23 UTC: handbook-case.md and handbook-report.md COMPLETE (documents b3b2199; unverified items marked); handbook-others left: git rm hackathon-2026-*-guide.md + links. handbook-design ch 1-11 done (documents fd81b3a; left ch 12, appendices A-D); handbook-economics ch 1-15 (d53f06e).
 
-- 11:15 UTC (user): QA round 3 PAUSED (all five sessions finish their step and wait for the coordinator's resume). Handbooks replacing the hackathon-2026-*-guide files (general, book-like, read by section): handbook-plant-design (session_01J2V3UVax4NELQZ9gqGQ4t8), handbook-case-definition + handbook-engineering-reporting (session_01J2V3UVwPdMpj4qHKCUrfrf), handbook-techno-economics (session_01J2V3UVK9oFWcJQb2GuSbpF); hotfix-python-III adds read_rag outline/section. Knowledge upload by the coordinator when done; hackathon-2026-assumptions.md keeps its name.
+- 11:15 UTC (user): QA round 3 PAUSED (all five sessions finish their step and wait for the coordinator's resume). Handbooks replacing the hackathon-2026-*-guide files (general, book-like, read by section): handbook-design (session_01J2V3UVax4NELQZ9gqGQ4t8), handbook-case + handbook-report (session_01J2V3UVwPdMpj4qHKCUrfrf), handbook-economics (session_01J2V3UVK9oFWcJQb2GuSbpF); hotfix-python-III adds read_rag outline/section. Knowledge upload by the coordinator when done; hackathon-2026-assumptions.md keeps its name.
 
 - 10:30 UTC (Coordinator-III, user-approved): global Knowledge now holds hackathon-2026-assumptions.md b3ba8363 (QA-112 fix, 11:05 UTC; was ad184278), -case-guide 2330c87c, -design-guide daf88c29, -analysis-guide 11f90cd2, -report-guide 678e9a43, cost-sources.csv a2c6c5f8 and cost-sources.md 765d6eb4 (with the QA-095 organisers' row); old assumptions.md eb95027a deleted. All ready. QA3 testing released.
 

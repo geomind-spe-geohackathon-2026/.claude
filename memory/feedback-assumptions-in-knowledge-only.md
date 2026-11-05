@@ -11,8 +11,8 @@ eb95027a, uploaded 09:52 UTC); projects get only the three competition files. Th
 not upload it. The same holds for the planned hackathon guides (case, design, analysis, report).
 
 Renamed 2026-11-05 by hackathon-guides: `documents/project/quality-assurance/inputs/hackathon-2026-assumptions.md`,
-next to the general handbooks `handbook-case-definition.md`, `handbook-plant-design.md`,
-`handbook-techno-economics.md` and `handbook-engineering-reporting.md` (they replaced the four
+next to the general handbooks `handbook-case.md`, `handbook-design.md`,
+`handbook-economics.md` and `handbook-report.md` (they replaced the four
 `hackathon-2026-*-guide.md` files on 2026-11-05; the hackathon is their worked-example chapter);
 Knowledge ids in `STATUS.md`.
 

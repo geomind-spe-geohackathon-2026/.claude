@@ -49,7 +49,7 @@ Released this session: geomind 0.4.79 to 0.4.83, gemini 0.6.13.
   IMP-015 (`with_repeat_note`), IMP-018 (`dry_precheck` for build/patch/merge), QA-116 (a denied
   tool is not asked again in the request: `session.py::earlier_denial`).
 - 0.4.84: read_rag by section (`outline=true`, `section=`), knowledge hits carry `section`
-  (`tools/sections.py`; user request for handbooks handbook-plant-design.md etc.).
+  (`tools/sections.py`; user request for handbooks handbook-design.md etc.).
 - 0.4.85: QA-119 (`moved_reference_depth` check), QA-120 (`refuse_percents`).
 - 0.4.83: IMP-016 (`drivers.py::stuck_requirements`, 3 rounds), IMP-017 part 1 (a passed design
   with ranges is optimised once: `optimise_task`), QA-097, QA-099, QA-114.

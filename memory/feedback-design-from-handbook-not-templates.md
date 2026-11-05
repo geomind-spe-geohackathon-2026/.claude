@@ -1,13 +1,13 @@
 ---
 name: feedback-design-from-handbook-not-templates
-description: IMP-023 decided: no gemini sample plants as templates; agents design from handbook-plant-design in Knowledge (2026-11-05)
+description: IMP-023 decided: no gemini sample plants as templates; agents design from handbook-design in Knowledge (2026-11-05)
 metadata:
   type: feedback
 ---
 
 User, Coordinator-IV's chat, 2026-11-05 14:20 UTC: IMP-023 parts (a)-(c) rejected. The agents do
 NOT start from gemini's six hackathon plant files as templates. The failing design path (QA-129,
-IMP-023 measurements) is solved with `handbook-plant-design.md` in the global Knowledge: the
+IMP-023 measurements) is solved with `handbook-design.md` in the global Knowledge: the
 design lead and engineers read it by section (read_rag outline/section) and build, size,
 simulate, check and optimize from it.
 
