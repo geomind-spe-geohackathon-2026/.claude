@@ -26,3 +26,11 @@ file it and go on (coordinator rule). Poll runs at most every 5 s (QA-217), cach
 
 Retest QA-336, QA-318, QA-301, QA-200, QA-085 when fixed; then new inputs: hourly file with an offset, a file
 with a stated time zone, a PDF only (no CSVs), and the economics answer of project 12 after QA-336.
+
+## Update 20:33 UTC
+
+- Projects 13 (PDF only, OK), 14 (QA-301 verified, 7 min), 15 (QA-318 reopened, cancelled) added; report has rows 10-13.
+- Open now: QA-336 (stuck run 3152a411 still shows no card), QA-318 (repair_series gaps), QA-200, QA-085 fixed-not-retested.
+- Waiting for the coordinator's word that Knowledge is cleaned (QA-340: hackathon brief removed, assumptions file cleaned);
+  then rerun the competition case from the 3 organiser files and check case AND design are sound; put that clean run in the report.
+- Driver: /tmp/claude-1000/qae2ecase/drive2.sh <session> <project> [free answer] acts on run.request (no stale page text).
