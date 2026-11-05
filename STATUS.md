@@ -3,9 +3,11 @@
 The short, current state every session needs. Read it at the start of every session. When any of
 it changes, change it here at once (one line, with the UTC time), before you go on.
 
-Last updated: 2026-11-05 05:33 UTC.
+Last updated: 2026-11-05 06:33 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
+
+- Backend 1.1.75 (2026-11-05 06:30 UTC, hotfix-python-II): gemini 0.6.10 + geomind 0.4.71 LOCAL wheels (QA-082 depth named first, simulate changes set plant options; QA-083 internal errors carry their cause, bare inlet names coded).
 
 - Backend 1.1.73 (2026-11-05 05:30 UTC, hotfix-python-II): gemini 0.6.8 + geomind 0.4.69 LOCAL wheels (QA-080: flow range over several requirements; case lead writes one min+max rule).
 
