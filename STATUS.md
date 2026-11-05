@@ -54,10 +54,10 @@ Last updated: 2026-11-05 00:20 UTC.
   deploy with `scripts/hotfix_deploy.sh` (one deploy at a time).
 - QA sessions qa-1, qa-4, qa-5 paused by Sahand 2026-11-04 23:25 UTC and ARCHIVED ~23:30 UTC;
   their state is in `notes/sessions/qa-paused-2026-11-04.md`. QA round 2 started 2026-11-04 23:36 UTC (briefs `notes/qa-round-2/`, agent-browser only):
-  all on Sonnet since 23:45 UTC (only hotfix sessions on Opus):
-  qa-func-1-II session_01J2V3UWQ5zYo1TfCiAKXF4d (chat + case), qa-func-2-II session_01J2V3UYJGYnJTqhfgaSGAWw
-  (design + simulation), qa-func-3-II session_01J2V3UW9DXpV2MR9cERLnwW (economics, scoring, report),
-  qa-ux session_01J2V3UYjXaURZYEzofAQh3n (UI/UX). Their Opus first generations are archived. (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
+  all on Sonnet since 23:45 UTC. Since 2026-11-05 00:25 UTC (Sahand, usage) only
+  qa-func-1-II session_01J2V3UWQ5zYo1TfCiAKXF4d runs QA: one project through the whole pipeline, owning
+  qa-func-1/2/3 scenarios. qa-func-3-II archived; qa-func-2-II (session_01J2V3UYJGYnJTqhfgaSGAWw) and qa-ux
+  (session_01J2V3UYjXaURZYEzofAQh3n) finish their current scenario, then stop and are archived. (Started 2026-11-04 20:11 UTC; instructions in `notes/qa-round-2026-11-04/`):
   qa-1 session_01J2V3UXnAof6WqpiA2JPxxG, qa-2 session_01J2V3UYuCFrxrXdWLCwzWro,
   qa-3 session_01J2V3UWmkUwP3g42jGxxz9g, qa-4 session_01J2V3UZkFGKUyXLCP3gYmk4,
   qa-5 session_01J2V3UVCHoDxQNsjwpBxtzH, qa-6 session_01J2V3UXM3DCMhq41Hx27eqV,
