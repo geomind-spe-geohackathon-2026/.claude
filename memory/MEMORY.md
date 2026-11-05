@@ -107,4 +107,4 @@ Older lines name files as `/mnt/project-files/...`: [../handoff/path-map.md](../
 - SERVICES how-to: /mnt/project-files/notes/run-services.md.
 - USER RULE (Sahand 2026-11-03 18:26 UTC, GEOMIND II): geomind Dell session installs gemini wheels ITSELF [[feedback-gemini-install-allowed]]
 - [Coordinator: no submission work](feedback-coordinator-no-submission.md) — coordinator leaves deadline/submission alone; does only what the user asks
-- [Hotfix deploys every half hour](feedback-hotfix-deploy-every-half-hour.md) — hotfix sessions deploy at each :00/:30 UTC on their own; coordinator holds nothing
+- [Hotfix deploys every half hour](feedback-hotfix-deploy-every-half-hour.md) — hotfix sessions release and deploy everything ready at each :00/:30 UTC; no holds, no separate release approval
