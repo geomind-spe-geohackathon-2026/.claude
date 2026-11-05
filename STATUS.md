@@ -7,7 +7,7 @@ Last updated: 2026-11-05 11:22 UTC.
 
 - Coordinator: Coordinator-V (peer name Coordinator-V) on Sahand's account (Phase 2 of account-handover.md started 2026-11-05; Coordinator-IV stopped). Mode: hotfix. Release summary: session cron job 094886e2 (:07 and :37, session-only, expires after 7 days). Sessions are normal interactive sessions in tmux with --remote-control (no Remote MCP on this account; background sessions could not edit the shared clones): `tmux attach -t <name>`, message by name with SendMessage.
 
-- geomind main 0666b5d (hotfix-python-VI): QA-145 work committed but NOT released, still says 0.4.95: nobody builds a geomind wheel until it ships as 0.4.96 (successor: notes/sessions/hotfix-python-6.md).
+- Backend 1.1.100 (hotfix-python-VII, 2026-11-05 ~17:00 UTC): geomind 0.4.96 (c323454, tag v0.4.96) + gemini 0.6.16 local wheels. QA-145 fixed: design engineers propose from the brief, lead builds once, one fill_parts, one patch_plant (list form, no_change). Not live-retested. Next for hotfix-python-VII: QA-122 geomind part.
 
 - Frontend 1.1.113 (hotfix-front-VI, 2026-11-05): plan E2 stage timer per agent line from server `ts`. Live, not live-checked.
 
