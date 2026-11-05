@@ -65,6 +65,8 @@ Last updated: 2026-11-05 09:30 UTC.
 - No file holds Persian text; chat with the user in Persian.
 - Commit and push everything when a piece of work ends.
 
+- QA round 3 (since 2026-11-05 09:41 UTC, Sonnet, briefs `notes/qa-round-3/`; writing scenarios until the QA3 projects are seeded after the 10:00 UTC deploy): functional-qa-case-I session_01J2V3UX7PBCQPBsuYm1yhTy, functional-qa-plant-I session_01J2V3UX9jou1ZLL5ywtpesJ, functional-qa-simulation-I session_01J2V3UZ8hMoK5EHwvn5Ufhv, functional-qa-study-I session_01J2V3UYN8UWRzdAY8qbX1DH, functional-qa-report-I session_01J2V3UXX5DGJR5QX7cknLLh. Project ids: (pending, from hotfix-back-II).
+
 ## QA round (started 2026-11-04 20:00 UTC)
 
 - Hotfix sessions resumed 2026-11-04 20:25 UTC (paused 20:10-20:25). Deploy windows at :00 and :30 UTC
