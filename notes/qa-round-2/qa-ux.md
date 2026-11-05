@@ -42,13 +42,20 @@ Project for all clicking: "QA2 qa-ux flow". Evidence in `/tmp/qa-ux/`, bugs thro
   collapse, long project names truncated with title.
 - qa-ux-S11 Retests of frontend bugs set fixed: QA-048, QA-053, QA-031 and any new one.
 
-## Status
+## Status (final, stopped 2026-11-05 ~00:30 UTC on the coordinator's word: UI/UX is not a priority)
 
-(one line per scenario, updated while testing)
-- S1 done (login, projects list, new project dialog, nav links, project sub-pages; Design link /design/case?chat=...). 
-- S2 done: attach 3 files (chips ready, names truncated), Enter sends.
-- S3 done: streaming OK; tool rows vague ("Search rag 1+ matches" x15). QA-062 (chat opens at top while a card waits).
-- S4 done: approval card QA-057, no decision trace QA-058, question card single-line input QA-059, leaked note QA-061; chips (approve all/change some/stop) work.
-- S5 partial: empty states of Plant/Study/Results fine (QA-064 cosmetic); deploy-window bare 404 QA-060. Not yet: provider error, cancel, offline.
-- S6 partial: Case demand chart matches the CSV (cooling peak 10 MW 19 Jul, 23.7 GWh, 365 points).
-- S7-S11: not started (functional projects have no plant/results yet; waiting). Own run still asks questions (case v3).
+Own project "QA2 qa-ux flow" (4cfeab2d-73e3-4299-a1f8-afec3d7e4bae); its first chat run (159de1e5-...) was left RUNNING
+(case lead / process engineer stage, Auto-approve on). Frontend 1.1.5x, backend 1.1.55 at the end.
+
+- S1 done: login, projects list, new-project dialog, nav links, project sub-pages. Bugs: QA-060 (bare 404 in a deploy window).
+- S2 done: attach PDF + 2 CSVs (chips "ready", names truncated), Enter sends.
+- S3 done: streaming, steps list, tables render; tool rows vague ("Search rag 1+ matches" x15). QA-062 (chat opens at top while a card waits).
+- S4 done: QA-057 (approval JSON indentation), QA-058 (approve/deny/answer leave no trace), QA-059 (15-value question, one-line input), QA-061 (leaked "Already answered ... request-530" note). Chips approve all / change some / stop work; Enter submits an answer; Deny with reason is honoured by the agent.
+- S5 partial: empty states of Plant/Study/Results fine (QA-064 cosmetic). NOT done: provider error, cancel, offline, reload-during-run beyond QA-062.
+- S6 partial: Case demand chart matches the CSV (cooling peak 10 MW on 19 Jul, 23.7 GWh, 365 points). NOT done: heating chart, Site/Utilities/Economics/Time tabs checked only by screenshot (not read), edit validation.
+- S7, S8 not started (no plant/results/report existed in any QA2 project yet).
+- S9 partial: Esc closes the dialog, Enter submits; tab order and focus rings not checked.
+- S10 partial: New project dialog fits at 1440x900 and 390x844, not at 1280x577 (QA-066). Chat and design at 390 px not checked.
+- S11 retests: QA-048 is already `verified` by someone else. QA-053: streamed texts in my run were complete (no mid-word stop seen), not formally verified. QA-031: started (closed the browser for 7 min with Auto-approve on) but the agent-browser session lost its login on close, so the result was not read; run 159de1e5 can be inspected under Runs and logs to see whether it waited for an approval. Both still `fixed`.
+
+Bugs filed by qa-ux: QA-057, 058, 059, 060, 061, 062, 064, 066 (QA-063, 065 are other sessions').
