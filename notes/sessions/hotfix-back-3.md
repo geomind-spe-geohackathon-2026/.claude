@@ -64,6 +64,20 @@ gemini only in `src/core/gemini/`, geomind only `import geomind`/`geomind.<name>
 ## Next steps, in order
 
 1. Report in to the coordinator: "hotfix-back-IV started".
-2. IMP-025 integration: once geomind with `instance` is live, check the code path only (no live
+2. TOP, Fatemeh's bug QA-144 (minor, backend+frontend; claim it with qa.py claim QA-144 --fixer
+   hotfix-back-IV): Runs and logs shows 0 tokens / 0 USD for running run ed03d7ea; GET /runs/{id}
+   input/output/cost all 0 (sessions/total null is normal while running: they come only with the
+   root run.finished), while /runs/{id}/agents sums 5.02 M input, 0.15 USD. QA-046 regression.
+   Lead (code read, not proven): the row's live totals come from `RunRecorder.columns` ->
+   `UsageTree.add` (`runs/adapters/callbacks.py`): it writes only when a nested usage event comes
+   AFTER the root's own usage event (`self.base` None -> nothing) and counts only DIRECT children
+   of the root (`event.parent == root`). With geomind 0.4.91 (IMP-025) the work runs in
+   grandchildren (lead -> instances) and the root's first step stays open while it delegates, so
+   the row can stay 0. 1.1.94 only changed the child key from agent to run_id (not the cause, but
+   check). Fix idea: count every nested usage event (any depth, keyed by run_id) and allow base 0
+   when the root has none yet; or write the sum of `agent_sessions` totals. Offline test, deploy
+   at once, tell the coordinator and Manual QA-II (session_01J2V3UYeTzFtZEuQJvkuadd); a frontend
+   part goes to hotfix-front-V (session_01J2V3UVNQkaiH9cMvNv911G).
+3. IMP-025 integration: once geomind with `instance` is live, check the code path only (no live
    runs while the QA-test stop holds): events carry `instance`, `/runs/{id}/agents` shows it.
-3. Fatemeh's bugs first, then `python3 ~/geomind-spe-hackathon-2026/documents/project/quality-assurance/qa.py next --area backend,data,infra --fixer hotfix-back-IV`.
+4. Fatemeh's bugs first, then `python3 ~/geomind-spe-hackathon-2026/documents/project/quality-assurance/qa.py next --area backend,data,infra --fixer hotfix-back-IV`.
