@@ -13,3 +13,10 @@ metadata:
 18:55 gave prompts/gemini-general-not-competition.md (only the generality fix; 9 sections): competition -> inputs/examples/hackathon_2027 (plant.json, rules.json, limits.json); remove challenge_rules, HackathonPlant, template competition example values, optim profile=None default (rules arg); no built-in profiles, add profiles.from_csv/from_values (any step); schedule any time step, operating_days -> operating_time + checks.operating_time; no competition defaults (gradient, surface temp, injection pump setpoint...); rewrite citations; quality grep test, competition e2e same numbers, coverage test, second problem (hourly, colder, 1 doublet). Generic Constraint design deferred to API discussion.
 18:53 Sahand: gemini is the SOURCE OF TRUTH; inputs adapt to gemini (converted into gemini shapes outside gemini), never gemini to inputs; our design must be the best possible general form. Added to prompt section 0.
 19:35 Generality prompt DONE on refactor (af803e4..ca04dea, unpushed): no hackathon/challenge in gemini/, quality test; examples inputs/examples/hackathon_2027 (plant.json, plant_with_treatment.json, rules, limits) + shallow_district (hourly, 1 doublet); coverage test 13 cases; operating_time; profiles.from_csv/from_values; template examples raise NotImplementedYet. Open: DEFAULT_INJECTION_PUMP_EFFICIENCY 0.7 unsourced -> told to make required, then push. Report again wrongly said geomind has no break: geomind main 2964c69 uses gm.profiles.get/names (cli.py:109-112, runs.py:62,95), spec_schema, from_template, operating_days, HackathonPlant in prompts -> geomind adaptation needed.
+
+Handbooks (Sahand, 2026-11-05 17:06 UTC): the Knowledge handbooks (handbook-case, -design,
+-economics, -report) are general textbooks on design and on how to do it in gemini, never
+competition files. No competition numbers, limits or worked hackathon example inside them; every
+competition fact or assumption goes in its own file (`hackathon-2026-assumptions.md`, case inputs).
+Whatever the competition needs is taught as a real, general chapter or lesson, so the same books
+solve similar problems. Do not overfit them to the hackathon.
