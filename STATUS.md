@@ -7,11 +7,11 @@ Last updated: 2026-11-05 00:10 UTC.
 
 ## Production (geomind.team, api.geomind.team, on the NTNU Dell)
 
-- Backend 1.1.56 (2026-11-05 00:08 UTC, hotfix-python-II): geomind 0.4.56 LOCAL wheel (skills folder `geomind/skills/<name>/SKILL.md` with roles; `calculate` tool, results in problem state `calculations`), gemini 0.6.5.
-
-- Backend 1.1.56 (2026-11-05 ~00:15 UTC, skills folder + calculate; 1.1.55 sandbox worker): geomind 0.4.56 as a LOCAL wheel,
-  gemini 0.6.5, alembic 0014. Deploys resume running runs (QA-035; 21:00 and 21:30 resumed all).
-- Frontend 1.1.50 (deployed 2026-11-04 21:08 UTC). Hotfix sessions deploy themselves with two calls:
+- Backend 1.1.56 (2026-11-05 00:08 UTC, hotfix-python-II): geomind 0.4.56 LOCAL wheel (skills folder
+  `geomind/skills/<name>/SKILL.md` with roles; `calculate` tool, results in problem state `calculations`),
+  gemini 0.6.5, alembic 0014. 1.1.55 gave the worker the run_python sandbox (docker socket) and SearXNG.
+  Deploys resume running runs (QA-035).
+- Frontend 1.1.57 (2026-11-05 00:00 UTC: busy indicator and activity line by the agent name, QA-048). Hotfix sessions deploy themselves with two calls:
   `cd <repo>`, then exactly `scripts/hotfix_deploy.sh`.
 - Agents: every role on `deepseek/deepseek-v4.1-flash-1017`, OpenRouter provider `morph/fp8` first
   (`GEOMIND_PROVIDER=morph/fp8`), since 2026-11-04 20:20 UTC; `GEOMIND_CONTEXT_WINDOW=200000`.
