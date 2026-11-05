@@ -1,0 +1,28 @@
+# QA-E2E-case-I handover (2026-11-05 ~20:00 UTC)
+
+Role: plan documents/project/plans/qa-round-e2e-ai.md, row QA-E2E-case-I (chat to a complete case, S1/S3/S6).
+Hotfix mode, no code changes; live runs, browser and LLM allowed for this thread (memory/feedback-no-tests-now.md).
+Chat with Sahand in Persian, times in Trondheim time (CET) in chat, UTC in files. Never stop after a bug:
+file it and go on (coordinator rule). Poll runs at most every 5 s (QA-217), cache the login token.
+
+## State
+
+- Report: documents/project/quality-assurance/reports/QA-E2E-case-I-2026-11-05.md (rounds 1 and 2), SCENARIOS.md row E2E-case.
+- Projects QA-TEST QA-E2E-case-I 1-12 on geomind.team, all kept (ids in the report).
+- Project 12 (331bf443) run 3152a411 is stuck on QA-336 (economics question not shown). Leave it as evidence.
+- Filed: QA-196, 197, 198, 199, 200, 203, 230, 243, 255, 286, 301, 304, 306, 318, 336. Reopened QA-085.
+  Open/reopened at handover: QA-200, QA-301, QA-318, QA-336, QA-085; verified: 197, 198, 199, 230, 255, 286, 304.
+
+## Tools (scratch, recreate if gone)
+
+- agent-browser sessions named qa-e2e-case-<n> (one per project), viewport 1440x900; log in with
+  FIRST_ADMIN_EMAIL/PASSWORD from backend/.env at run time (never write them down).
+- A New project now asks "Turn on auto-approve for this chat?": answer No.
+- Approve buttons sit inside a scroll box: scrollintoview the ref before click.
+- The accessibility value of a number input is the raw number; check the screenshot before reporting display bugs.
+- Run state: GET /assistant/runs?project=<id> (status, request), /assistant/runs/<id>/log, /design/case?project=<id>.
+
+## Next
+
+Retest QA-336, QA-318, QA-301, QA-200, QA-085 when fixed; then new inputs: hourly file with an offset, a file
+with a stated time zone, a PDF only (no CSVs), and the economics answer of project 12 after QA-336.
