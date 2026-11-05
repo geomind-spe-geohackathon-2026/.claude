@@ -1,6 +1,6 @@
 ---
 name: reference-start-sessions-bg-remote-control
-description: On Sahand's account there is no Remote MCP (create_session); start sessions on the Dell with claude --bg --remote-control so they show in the claude.ai sidebar
+description: On Sahand's account there is no Remote MCP; start sessions on the Dell as normal interactive claude in tmux with --remote-control (not --bg)
 metadata:
   type: reference
 ---
@@ -21,3 +21,8 @@ STATUS.md. Recurring coordinator tasks: CronCreate (session-only, expire after 7
 
 **Why:** the account handover moved the work to an account without the Remote MCP server.
 **How to apply:** every successor (session-refresh.md) is started this way on this account.
+
+**Change, 2026-11-05 (user):** do NOT use `--bg`: a background session refuses edits in the shared
+clones (it wants a worktree). Start every session as a normal interactive session in tmux:
+`tmux new-session -d -s '<title>' -x 220 -y 50 -c ~/geomind-spe-hackathon-2026 "claude --remote-control '<title>' -n '<title>' --model claude-opus-5-5 --permission-mode auto '<first prompt>'"`
+(add `--resume <sessionId>` to keep a session's context). Watch with `tmux capture-pane -p -t '<title>'`.
