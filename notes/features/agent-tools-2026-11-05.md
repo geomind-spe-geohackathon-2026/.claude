@@ -100,3 +100,8 @@ truncated with an ellipsis, full text in a tooltip; muted; no layout jump.
 
 Decided (Sahand 2026-11-05 ~00:20 UTC): `calculate` allows exactly one plain number, the integer
 exponent of `power`; it is structural, not data.
+
+Changed (Sahand 2026-11-05 ~00:25 UTC): `calculate` takes named constants (`pi`, `e`; kind
+`constant`) and plain numbers with a unit (kind `number`, shown as plain in the expression), but
+every calculation needs at least one sourced operand (case, assumption, catalogue, stored,
+calculation); constants do not count. This replaces "a bare literal is refused" above.
